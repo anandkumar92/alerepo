@@ -194,6 +194,10 @@ ALE_Load.buildCSS([{
                     media : 'screen'
                    },
                    {
+                    href : 'resources/js/lib/videojs/6.7.3/video-js.min.css',
+                    media : 'screen'
+                   },
+                   {
                     href : 'resources/css/blueprint/screen.css',
                     media : 'screen, projection'
                    },
@@ -259,6 +263,7 @@ ALE_Load.buildCSS([{
                    }]);
                    
 ALE_Load.buildJS({'resources' : ['resources/js/lib/jquery/jquery.js',
+                                 'resources/js/lib/videojs/6.7.3/video.min.js',
                                  'resources/js/lib/dd_roundies/DD_roundies_0.0.2a.js',
                                  'resources/js/lib/jquery/extensions.js',
                                  'resources/js/lib/qunit/qunit.js',
