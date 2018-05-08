@@ -286,22 +286,22 @@ function Interview(app)
     
     $('#lightbox_transcript').remove();
     
-    try
-    {      
-     flowplayer('*').each(function()
-       {
-        if (this.isLoaded() === true)
-         {
-          this.stop();
-          this.close();
-          this.unload();
-         }
-       });
-    }
-   catch(e)
-    {
-//     alert(e)
-    }
+//     try
+//     {      
+//      flowplayer('*').each(function()
+//        {
+//         if (this.isLoaded() === true)
+//          {
+//           this.stop();
+//           this.close();
+//           this.unload();
+//          }
+//        });
+//     }
+//    catch(e)
+//     {
+// //     alert(e)
+//     }
    
    // Removing flowplayer now every time because of compatibility with toolkit
 //   $('a.flowplayer').remove();
@@ -334,55 +334,61 @@ function Interview(app)
      {
       lightboxPrefix = ''
      }
-    
+    var playerId = "videojs_" + app.template.videoplayerHelper().nextVideoPlayerId();
     // Create a fresh player since one does not exist
-    if ($(lightboxPrefix + 'a.flowplayer').length === 0 || $('a.flowplayer:has(.reloaded)').length >= 1)
+    if ($(lightboxPrefix + '.video-js').length === 0)
      {
-      id.html('<a class="flowplayer" href="/s3scorm/ale/content/assets/' + file + '" id="flowplayer_' + app.template.flowplayerHelper().nextFlowplayerId() + '">&nbsp;</a>');
-      
+    //   id.html('<a class="flowplayer" href="/s3scorm/ale/content/assets/' + file + '" id="flowplayer_' + app.template.flowplayerHelper().nextFlowplayerId() + '">&nbsp;</a>');
+      id.html('<video class="video-js" id="'+ playerId +'" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/'+ file +'" type="video/mp4"></source></video>')
       if ($('#lightbox_toolkit_lb.interview').length > 0)
        {
-        DOMelement = '#lightbox_toolkit_lb.interview a.flowplayer:eq(0)';
+        DOMelement = '#lightbox_toolkit_lb.interview .video-js:eq(0)';
        }
       else
        {
-        DOMelement = 'a.flowplayer:eq(' + ($('a.flowplayer').length - 1) + ')';
+        DOMelement = '.video-js:eq(' + ($('.video-js').length - 1) + ')';
        }
 
-      app.template.flowplayerHelper().registerFlowplayer({
-                                                          playerId : $f('*').length,
-                                                          DOMelement : DOMelement
-                                                         });
-      
-      $(DOMelement).flowplayer({
-                                src : app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-                                wmode : 'opaque'
-                               },
-                               {
-                                clip : {
-                                        autoPlay : false,
-                                        onStart : function(clip)
-                                                   {
-                                                    // This will set the first (default video) link to active if the play button is clicked in the flowplayer video and the first clip is the same as the first file
-                                                    if (clip.url === ('/s3scorm/ale/content/assets/' + data[0].videos[0].file.content))
-                                                     {
-                                                      $('div.excerpt:eq(0) li:eq(0) span.status').html('&nbsp;(viewing)');
+    //   app.template.flowplayerHelper().registerFlowplayer({
+    //                                                       playerId : $f('*').length,
+    //                                                       DOMelement : DOMelement
+    //                                                      });
+    function onPlayerReady(){
+        this.on('loadedmetadata',function(){
+            console.log('metaData loaded');
+        })
+    }
+    
+      app.template.videoplayerHelper().initializePlayer(playerId, {controls: true,autoplay: false,preload: 'auto'}, onPlayerReady);
+    //   $(DOMelement).flowplayer({
+    //                             src : app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
+    //                             wmode : 'opaque'
+    //                            },
+    //                            {
+    //                             clip : {
+    //                                     autoPlay : false,
+    //                                     onStart : function(clip)
+    //                                                {
+    //                                                 // This will set the first (default video) link to active if the play button is clicked in the flowplayer video and the first clip is the same as the first file
+    //                                                 if (clip.url === ('/s3scorm/ale/content/assets/' + data[0].videos[0].file.content))
+    //                                                  {
+    //                                                   $('div.excerpt:eq(0) li:eq(0) span.status').html('&nbsp;(viewing)');
                                                       
-                                                      $('div.excerpt:eq(0) li:eq(0) a').addClass('active');
-                                                     }
-                                                   }
-                                       }
-                               });
+    //                                                   $('div.excerpt:eq(0) li:eq(0) a').addClass('active');
+    //                                                  }
+    //                                                }
+    //                                    }
+    //                            });
       
       if ($('#lightbox_toolkit_lb.interview').length > 0)
        {
 //        app.template.flowplayerHelper().load('#lightbox_toolkit_lb.interview a.flowplayer:eq(0)');
-        app.template.flowplayerHelper().play('#lightbox_toolkit_lb.interview a.flowplayer:eq(0)');
+        app.template.videoplayerHelper().play('#lightbox_toolkit_lb.interview .video-js:eq(0)');
        }
       else
        {
 //        app.template.flowplayerHelper().load(DOMelement);
-        app.template.flowplayerHelper().play(DOMelement);
+        app.template.videoplayerHelper().play(playerId);
        }
      }
     else
@@ -390,20 +396,22 @@ function Interview(app)
       // Since a player exists, just change the source
       if ($('#lightbox_toolkit_lb.interview').length > 0)
        {
-        DOMelement = '#lightbox_toolkit_lb.interview a.flowplayer:eq(0)';
+        DOMelement = '#lightbox_toolkit_lb.interview .video-js:eq(0)';
        }
       else
        {
-        DOMelement = 'a.flowplayer:eq(' + ($('a.flowplayer').length - 1) + ')';
+        DOMelement = '.video-js:eq(' + ($('.video-js').length - 1) + ')';
        }
+
       
       // setClip method does not work correctly, after browsing flowplayer's forum this is the solution to replace setClip:
-      app.template.flowplayerHelper().getClip(DOMelement).update({
-                                                                  autoPlay : true,
-                                                                  url : ('/s3scorm/ale/content/assets/' + file)
-                                                                 });
-
-      app.template.flowplayerHelper().play(DOMelement);
+    //   app.template.flowplayerHelper().getClip(DOMelement).update({
+    //                                                               autoPlay : true,
+    //                                                               url : ('/s3scorm/ale/content/assets/' + file)
+    //                                                              });
+                                                                
+        app.template.videoplayerHelper().setClip(document.querySelector(DOMelement), ('/s3scorm/ale/content/assets/' + file), true );
+    //   app.template.videoplayerHelper().play(DOMelement);
      }
     
     // Check if the default is loaded, if it is a clicked link then do the first block
@@ -432,6 +440,169 @@ function Interview(app)
                              file : file
                             });
    }
+   /**
+   * First it will remove the transcript link if it exists, unload any active flowplayer instances, then the logic for loading the new flowplayer commences.  At the end, it is determined if a transcript exists or not.
+   * @param args - file, groupId, linkId
+   */
+  function setVideoOld(args)
+  {
+   args = args || {};
+   
+   var data = getData().paneGroups,
+       DOMelement,
+       id,
+       file,
+       groupId = args.groupId || 0,
+       linkId = args.linkId || 0;
+   
+   $('#lightbox_transcript').remove();
+   
+   try
+   {      
+    flowplayer('*').each(function()
+      {
+       if (this.isLoaded() === true)
+        {
+         this.stop();
+         this.close();
+         this.unload();
+        }
+      });
+   }
+  catch(e)
+   {
+//     alert(e)
+   }
+  
+  // Removing flowplayer now every time because of compatibility with toolkit
+//   $('a.flowplayer').remove();
+  
+   if ($('div#lightbox_data_videoURL').length > 0)
+    {
+     id = $('div#lightbox_data_videoURL');
+    }
+   else
+    {
+     id = $('div#data_videoURL');
+    }
+   
+   file = args.file || data[0].videos[0].file.content;
+
+   // Set status    
+   $('div.excerpt li span.status').each(function(i, e)
+                                         {
+                                          if ($(this).html() === '&nbsp;(viewing)')
+                                           {
+                                            $(this).html('&nbsp;(viewed)');
+                                           }
+                                         });
+   
+   if ($('#lightbox_toolkit_lb.interview').length > 0)
+    {
+     lightboxPrefix = '#lightbox_toolkit_lb ';
+    }
+   else
+    {
+     lightboxPrefix = ''
+    }
+   
+   // Create a fresh player since one does not exist
+   if ($(lightboxPrefix + 'a.flowplayer').length === 0 || $('a.flowplayer:has(.reloaded)').length >= 1)
+    {
+     id.html('<a class="flowplayer" href="/s3scorm/ale/content/assets/' + file + '" id="flowplayer_' + app.template.flowplayerHelper().nextFlowplayerId() + '">&nbsp;</a>');
+     
+     if ($('#lightbox_toolkit_lb.interview').length > 0)
+      {
+       DOMelement = '#lightbox_toolkit_lb.interview a.flowplayer:eq(0)';
+      }
+     else
+      {
+       DOMelement = 'a.flowplayer:eq(' + ($('a.flowplayer').length - 1) + ')';
+      }
+
+     app.template.flowplayerHelper().registerFlowplayer({
+                                                         playerId : $f('*').length,
+                                                         DOMelement : DOMelement
+                                                        });
+     
+     $(DOMelement).flowplayer({
+                               src : app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
+                               wmode : 'opaque'
+                              },
+                              {
+                               clip : {
+                                       autoPlay : false,
+                                       onStart : function(clip)
+                                                  {
+                                                   // This will set the first (default video) link to active if the play button is clicked in the flowplayer video and the first clip is the same as the first file
+                                                   if (clip.url === ('/s3scorm/ale/content/assets/' + data[0].videos[0].file.content))
+                                                    {
+                                                     $('div.excerpt:eq(0) li:eq(0) span.status').html('&nbsp;(viewing)');
+                                                     
+                                                     $('div.excerpt:eq(0) li:eq(0) a').addClass('active');
+                                                    }
+                                                  }
+                                      }
+                              });
+     
+     if ($('#lightbox_toolkit_lb.interview').length > 0)
+      {
+//        app.template.flowplayerHelper().load('#lightbox_toolkit_lb.interview a.flowplayer:eq(0)');
+       app.template.flowplayerHelper().play('#lightbox_toolkit_lb.interview a.flowplayer:eq(0)');
+      }
+     else
+      {
+//        app.template.flowplayerHelper().load(DOMelement);
+       app.template.flowplayerHelper().play(DOMelement);
+      }
+    }
+   else
+    {
+     // Since a player exists, just change the source
+     if ($('#lightbox_toolkit_lb.interview').length > 0)
+      {
+       DOMelement = '#lightbox_toolkit_lb.interview a.flowplayer:eq(0)';
+      }
+     else
+      {
+       DOMelement = 'a.flowplayer:eq(' + ($('a.flowplayer').length - 1) + ')';
+      }
+     
+     // setClip method does not work correctly, after browsing flowplayer's forum this is the solution to replace setClip:
+     app.template.flowplayerHelper().getClip(DOMelement).update({
+                                                                 autoPlay : true,
+                                                                 url : ('/s3scorm/ale/content/assets/' + file)
+                                                                });
+
+     app.template.flowplayerHelper().play(DOMelement);
+    }
+   
+   // Check if the default is loaded, if it is a clicked link then do the first block
+   if (args.file !== undefined)
+    {      
+     $('div.excerpt:eq(' + groupId + ') li:eq(' + linkId + ') span.status').html('&nbsp;(viewing)');
+     
+     $('div.excerpt li a').removeClass('active');
+     
+     $('div.excerpt:eq(' + groupId + ') li:eq(' + linkId + ') a').addClass('active');
+    }
+   else
+    {
+     // First page load, don't play it by default
+     app.template.flowplayerHelper().load(DOMelement);
+    }
+   
+   if ($('a.transcript').length > 0)
+    {
+     $('a.transcript').remove();
+    }
+   
+   app.template.transcript({
+                            appendLinkTo : '#main_content_container',
+                            DOMelement : DOMelement,
+                            file : file
+                           });
+  }
   
   /**
    * Run by toolkit when the template is invoked from the toolkit bar.

@@ -1897,3 +1897,9 @@ body #lightbox_toolkit_lb.box_lightBox .glovebox_img{
     margin-left: 15px;
     width: 171px;
 }
+.video-js{
+  width: 100%;
+}
+.video-js .vjs-icon-placeholder{
+  position: static;
+}

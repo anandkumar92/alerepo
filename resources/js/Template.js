@@ -15,6 +15,8 @@ function Template(app)
       _previousTemplateNameBodyClass = 'home',
       _previousTemplateSkinBodyClass = '',
       _flowplayers = [],
+      _currentVideoPlayerId = 0,
+      _videoPlayers= [],
       test;
   
   // Private methods
@@ -900,7 +902,55 @@ function Template(app)
                                       }
                                     });
    }
-
+  function videoplayerHelper(){
+    return {
+      getVideoPlayers: function(){
+        return videojs.getPlayers();
+      },
+      getVideoPlayer: function(playerId){
+        return videojs.getPlayer(playerId);
+      },
+      nextVideoPlayerId: function(){
+        return ++_currentVideoPlayerId;
+      },
+      currentVideoPlayerId: function(){
+        return _currentVideoPlayerId;
+      },
+      initializePlayer: function(playerId, options, callback){
+        options = options || {
+          controls: true,
+          autoplay: false,
+          preload: 'auto'
+        }
+        videojs(playerId, options, callback)
+      },
+      play: function(playerId){
+        myPlayer = videojs.getPlayer(playerId);
+        myPlayer.ready(function(){
+          myPlayer.play();
+        })
+      },
+      pause: function(playerId){
+        myPlayer = videojs.getPlayer(playerId);
+        myPlayer.ready(function(){
+          myPlayer.pause();
+        })
+      },
+      setClip: function(playerId, clip, playClip){
+        myPlayer = videojs.getPlayer(playerId);
+        myPlayer.src(playerId);
+        if(playClip){
+          myPlayer.ready(function() {
+            myPlayer.play();
+          })
+        }
+      },
+      getClip: function(playerId){
+        myPlayer = videojs.getPlayer(playerId);
+        return myPlayer.src();
+      }
+    }
+  }
   /**
    * Keeps track of all flowplayers
    * Used by bindData to insert unique <a> flowplayers
@@ -1608,4 +1658,5 @@ function Template(app)
   this.showNotepad = showNotepad;
   this.transcript = transcript;
   this.Widget = Widget;
+  this.videoplayerHelper = videoplayerHelper;
  }
