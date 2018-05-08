@@ -916,6 +916,9 @@ function Template(app)
       currentVideoPlayerId: function(){
         return _currentVideoPlayerId;
       },
+      getVideoPlayerId: function(DOMelement){
+        return _videoPlayers[DOMelement];
+      },
       initializePlayer: function(playerId, options, callback){
         options = options || {
           controls: true,
@@ -938,7 +941,7 @@ function Template(app)
       },
       setClip: function(playerId, clip, playClip){
         myPlayer = videojs.getPlayer(playerId);
-        myPlayer.src(playerId);
+        myPlayer.src(clip);
         if(playClip){
           myPlayer.ready(function() {
             myPlayer.play();
@@ -948,7 +951,26 @@ function Template(app)
       getClip: function(playerId){
         myPlayer = videojs.getPlayer(playerId);
         return myPlayer.src();
+      },
+      registerVideoPlayer: function(args){
+        var DOMelement = args.DOMelement,
+            player = args.playerId;
+            _videoPlayers[DOMelement] = player;
       }
+      // registerFlowplayer : function (args)
+      //                       {
+      //                        var DOMelement = args.DOMelement,
+      //                            player = args.playerId;
+                             
+      //                        _flowplayers[DOMelement] = player;
+                             
+      //                        // Added these while debugging vidNotesRemediation to make it more associative-array-ish. May be able to remove later.
+      //                        _flowplayers.length++;
+      //                        _flowplayers[_flowplayers.length] = {
+      //                                                             DOMelement : DOMelement,
+      //                                                             player : player
+      //                                                            };
+      //                       }
     }
   }
   /**

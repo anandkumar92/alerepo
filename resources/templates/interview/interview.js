@@ -348,7 +348,10 @@ function Interview(app)
        {
         DOMelement = '.video-js:eq(' + ($('.video-js').length - 1) + ')';
        }
-
+       app.template.videoplayerHelper().registerVideoPlayer({
+        playerId: playerId,
+        DOMelement: DOMelement
+       });
     //   app.template.flowplayerHelper().registerFlowplayer({
     //                                                       playerId : $f('*').length,
     //                                                       DOMelement : DOMelement
@@ -383,7 +386,8 @@ function Interview(app)
       if ($('#lightbox_toolkit_lb.interview').length > 0)
        {
 //        app.template.flowplayerHelper().load('#lightbox_toolkit_lb.interview a.flowplayer:eq(0)');
-        app.template.videoplayerHelper().play('#lightbox_toolkit_lb.interview .video-js:eq(0)');
+        // app.template.videoplayerHelper().getVideoPlayerId('#lightbox_toolkit_lb.interview .video-js:eq(0)');
+        app.template.videoplayerHelper().play(app.template.videoplayerHelper().getVideoPlayerId('#lightbox_toolkit_lb.interview .video-js:eq(0)'));
        }
       else
        {
@@ -410,7 +414,7 @@ function Interview(app)
     //                                                               url : ('/s3scorm/ale/content/assets/' + file)
     //                                                              });
                                                                 
-        app.template.videoplayerHelper().setClip(document.querySelector(DOMelement), ('/s3scorm/ale/content/assets/' + file), true );
+        app.template.videoplayerHelper().setClip(app.template.videoplayerHelper().getVideoPlayerId(DOMelement), ('/s3scorm/ale/content/assets/' + file), true );
     //   app.template.videoplayerHelper().play(DOMelement);
      }
     
@@ -425,6 +429,7 @@ function Interview(app)
      }
     else
      {
+        //  ---------------------------Will change this line-----------------------------------
       // First page load, don't play it by default
       app.template.flowplayerHelper().load(DOMelement);
      }
