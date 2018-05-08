@@ -3,7 +3,7 @@ body.textTop #data_contentTextTop {
  margin: 50px;
 }
 
-body.textTop div .flowplayer {
+body.textTop div .flowplayer,body.textTop div .video-js {
  height: 100px;
 }
 
@@ -19,7 +19,7 @@ body.video #data_contentText {
 	width: 600px;
 }
 
-body.wide_vid a.flowplayer {
+body.wide_vid a.flowplayer,body.wide_vid .video-js {
 	width: 640px !important;
 }
 
