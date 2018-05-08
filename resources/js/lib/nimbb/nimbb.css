@@ -1,0 +1,214 @@
+img.flashUpgrade {
+ margin-top: 10px;
+}
+
+p.flashUpgrade {
+ color: #fff;
+ margin: 10px;
+}
+
+.accept {
+ background: url("../../../img/sprite.gif") -298px -909px;
+ display: block;
+ float: right;
+ height: 26px;
+ margin: 0 auto;
+ outline: 0px;
+ text-indent: -10000px;
+ width: 92px;
+}
+
+.nimbb_controls {
+ margin: 10px;
+ overflow: auto;
+ position: relative;
+}
+
+.nimbb_subcontrols {
+ margin: 10px auto 0;
+ overflow: auto;
+ position: relative;
+ text-align: center;
+ width: 262px;
+}
+
+.nimbb_subcontrols_wrapper {
+ clear: both;
+ /* Don't know how these rules made it back in */
+ /*
+ float: right;
+ margin: 0 30px;
+ overflow: auto;
+ width: 50%;
+ */
+}
+
+.nimbb_subcontrols a {
+ display: block;
+}
+
+.object_wrapper {
+ margin-top: 5px;
+}
+.display {
+ display: block !important;
+}
+
+.no_display {
+ display: none !important;
+}
+
+.object_wrapper {
+ margin-top: 5px;
+}
+
+.play {
+ background: url(../../../img/sprite.gif) -341px -867px;
+ display: block;
+ float: left;
+ height: 32px;
+ left: -5px;
+ margin: 0 auto;
+ outline: 0px;
+ position: relative;
+ text-indent: -10000px;
+ width: 32px;
+}
+
+.playing {
+ color: #fff;
+ font-size: 16px;
+ font-weight: bold;
+ left: 0px;
+ padding-top: 4px;
+ position: absolute;
+ text-align: center;
+ text-decoration: none;
+ top: -4px;
+ width: 100%;
+}
+
+/*
+.playOnly div.object_wrapper object,
+.playOnly div.object_wrapper object embed {
+ height: 0px;
+ width: 0px;
+}
+*/
+.progress_content {
+ background: url(../../../img/bg_recorderPlaying.gif) repeat-x;
+ height: 24px;
+ left: 0px;
+ position: absolute;
+ top: 0px;
+ width: 1px;
+}
+
+.progress_wrapper {
+ background: #4a4a4a;
+ height: 24px;
+ margin: 0 auto;
+ position: relative;
+ width: 80%;
+}
+
+.progress_wrapper.isRecording {
+ height: 30px;
+}
+
+.progress_wrapper.isRecording .progress_content {
+ background: url(../../../img/bg_recorderRecording.gif) repeat-x;
+ height: 30px;
+}
+
+.progress_wrapper a {
+ color: #fff;
+ outline: none;
+ text-decoration: none;
+ z-index: 1;
+}
+
+.progress_wrapper a:hover {
+ cursor: auto;
+}
+
+.progress_wrapper a.play:hover,
+.progress_wrapper a.stopPlaying:hover {
+ cursor: pointer;
+}
+
+.record {
+ background: url(../../../img/sprite.gif) -235px -950px;
+ display: block;
+ height: 32px;
+ margin: 0 auto;
+ outline: 0px;
+ text-indent: -10000px;
+ width: 126px;
+}
+
+.record_container {
+ background: #717171;
+ float: right;
+ margin: 50px 30px 20px 30px;
+ min-width: 300px;
+ position: relative;
+ text-align: center;
+ width: 50%;
+}
+
+.record_text {
+ color: #fff;
+ margin: 0 auto;
+ padding: 10px 0;
+ width: 80%;
+}
+
+.recording {
+ color: #fff;
+ float: left;
+ font-size: 16px;
+ font-weight: bold;
+ left: 0;
+ padding-top: 4px;
+ position: absolute;
+ text-align: center;
+ text-decoration: none;
+ top: -4px;
+ width: 100%;
+}
+
+.rerecord {
+ background: url(../../../img/sprite.gif) -14px -950px;
+ display: block;
+ float: left;
+ height: 32px;
+ margin: 0 auto;
+ outline: 0px;
+ text-indent: -10000px;
+ width: 170px;
+}
+
+.stopPlaying {
+ background: url(../../../img/sprite.gif) -378px -867px;
+ display: block;
+ float: left;
+ height: 26px;
+ left: -5px;
+ margin: 0 auto;
+ outline: 0px;
+ position: relative;
+ text-indent: -10000px;
+ width: 32px;
+ z-index: 9 !important; /* Overrides JS */
+}
+
+.stopRecording {
+ background: url(../../../img/sprite.gif) -115px -909px;
+ display: block;
+ height: 26px;
+ margin: 0 auto;
+ outline: 0px;
+ text-indent: -10000px;
+ width: 102px;
+}

@@ -1,0 +1,90 @@
+.textContainer{
+    float: left;
+    margin: 0 5px;
+}
+
+#data_content_container{
+    float: left;
+    width: 1000px;
+}
+
+.textContainer textarea{
+    height: 400px;
+    resize: none;
+    width: 300px;
+}
+
+.optionSelect{
+    border: 2px solid #0000FF;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.cursorDefault{
+    cursor: default;
+}
+
+.option{
+    border: 2px solid #FFFFFF;
+}
+
+.textContainer img{
+    border: 1px solid;
+    float: left;
+    margin-right: 20px;
+    width: 55px;
+}
+
+#button_content{ 
+    margin-left: 335px;
+    margin-bottom: 35px;
+}
+
+.imgContainer{
+    font-size: 20px;
+}
+
+.selectScreen .imgContainer{
+    float: left;
+    margin: 20px;
+    text-align: center;
+    width: 170px;
+}
+
+.buttonInactive{
+    background: none repeat scroll 0 0 #BFBFBF;
+    cursor: default;
+}
+
+.buttonActive{
+    background: none repeat scroll 0 0 #3366FF;
+    cursor: pointer;
+}
+
+#select,#submit{
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 55px;
+}
+
+#lightbox_data_content_container .campaignAnswer{
+    border: 1px solid;
+    margin: 20px 0;
+    padding: 5px;
+    width: 96%;
+}
+
+#lightbox_data_content_container .imgContainer{
+     font-size: 20px;
+}
+
+#lightbox_data_content_container .imgContainer img{
+    border: 1px solid;
+    float: left;
+    width: 55px;
+    margin-right: 20px;
+}

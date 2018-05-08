@@ -1,0 +1,197 @@
+.contextual_glossary {
+ border-bottom: 1px dotted #00f;
+ text-decoration: none;
+}
+
+.contextual_glossary:hover {
+ cursor: help;
+}
+
+.contextual_view {
+ position: absolute !important;
+ width: 230px;
+ z-index: 999;
+}
+
+.contextual_view .bodydiv {
+ margin:0px 26px 5px;
+}
+
+.contextual_view .bodydiv h3 {
+ margin-bottom: 10px;
+}
+
+.contextual_view .bodydiv p {
+ font-size: 14px;
+}
+
+.contextual_view .sb-border,
+.contextual_view .sb-shadow {
+ background : #333;
+}
+
+.contextual_view .sb-inner {
+ background : #fff;
+}
+
+.full_view_alphaorder {
+ margin: 0 auto;
+ padding-bottom: 8px;
+ overflow: auto;
+ padding-top: 26px;
+ width: 375px;
+}
+
+.full_view_alphaorder a {
+ background-color: transparent !important; /* !important to override from parent class */
+ background-image: url("../images/glossarysprite.png");
+ background-position: 0px -44px;
+ background-repeat: no-repeat;
+ color: #FFFFFF;
+ display: block;
+ font-size: 15px;
+ font-weight: bold;
+ float: left;
+ height: 22px;
+ margin-right: 5px;
+ margin-bottom: 7px;
+ text-align: center;
+ text-transform: uppercase;
+ text-decoration: none;
+ outline: none;
+ width: 22px;
+}
+
+.full_view_alphaorder a.alpha_highlight, .full_view_alphaorder a:hover {
+ background-position: 0px -79px;
+}
+
+.full_view a.alpha_disable {
+ background-position: 0 -221px !important;
+ cursor: default;
+}
+
+.full_view_alpha_content {
+ background-image: url(../images/dashed_bg.png);
+ background-position: left bottom;
+ background-repeat: repeat-x;
+ padding-bottom: 8px;
+ padding-top: 8px;
+}
+
+.full_view_alpha_content p {
+ margin-bottom: 0px !important; /* !important to override from screen.css */
+}
+
+.full_view_alpha_content_heading {
+ font-weight: bold;
+}
+
+.full_view_body_wrapper {
+ clear: both;
+}
+
+.full_view_close {
+ background-image: url("../images/glossarysprite.png");
+ background-position: 0 -120px;
+ background-repeat: no-repeat;
+ float: right;
+ height: 18px;
+ margin-top: 4px;
+ outline: none;
+ width: 18px;
+}
+
+.full_view_content_wrapper {
+ border-top: 1px solid #B2B2B2;
+ clear: both;
+ margin-bottom: 33px;
+ margin-left: 15px;
+ margin-right: 12px;
+ overflow-y: auto;
+ padding: 0 10px;
+}
+
+.full_view_header {
+ margin: 9px 24px 0px 24px;
+ overflow: auto;
+}
+
+.full_view .sb-border,
+.full_view .sb-shadow {
+ background: #D1D0D0;
+}
+
+.full_view .sb-inner {
+ background: url(../images/full_view_top_bg.gif) repeat-x left top #D1D0D0;
+}
+
+.full_view_title {
+ color: #fff;
+ float: left;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.full_view_alpha_video {
+ background-image: url("../images/glossarysprite.png");
+ background-position: 0 -254px;
+ background-repeat: no-repeat;
+ margin-left: 5px;
+ padding: 0px 5px;
+ text-decoration: none;
+}
+
+.full_view {
+ width: 570px;
+ z-index:3;
+}
+
+.glossary {
+ background-image: url("../images/glossarysprite.png");
+ background-position: 1px -171px;
+ background-repeat: no-repeat;
+ float: left;
+ height: 27px;
+ margin-left: 50px;
+ margin-right:54px;
+ outline: none;
+ width: 53px;
+}
+
+/*.glossary_active {
+ background-image: url("../images/glossary_active.png") !important;
+ background-position: left top;
+ background-repeat: no-repeat;
+ float: left;
+ height: 44px;
+ margin-left: 50px;
+ margin-right: 86px;
+ margin-top: -11px;
+ outline: none;
+ padding: 0 5px;
+ width: 40px;
+}*/
+.glossary_active {
+ background-image: url("../images/glossarysprite.png");
+ background-position: 1px -171px;
+ background-repeat: no-repeat;
+ float: left;
+ height: 27px;
+ margin-left: 50px;
+ margin-right:54px;
+ outline: none;
+ width: 53px;
+}
+
+.pointer {
+ background-image: url(../images/glossarysprite.png);
+ background-position: 0 1px;
+ background-repeat: no-repeat;
+ bottom: 8px;
+ height: 21px;
+ left: 24px;
+ position: relative;
+ top: -19px;
+ width: 31px;
+}

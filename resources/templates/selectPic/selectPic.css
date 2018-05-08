@@ -1,0 +1,171 @@
+a.feedback {
+ background: url(../../img/sprite.gif);
+ clear: none;
+ display: inline-block;
+ float: left;
+ height: 20px;
+ margin-top: -2px;
+ vertical-align: text-bottom;
+ width: 17px;
+}
+
+a.feedback.correct {
+ background-position: -69px -49px; 
+}
+
+a.feedback.incorrect {
+ background-position: -41px -51px;
+}
+
+a.more {
+ color: #1086d9;
+ float: right;
+ text-decoration: none;
+}
+
+a.title {
+ color: #1086d9;
+ font-size: 11pt;
+ font-weight: bold;
+ outline: none;
+ text-decoration: none;
+}
+
+body.selectPic.twoOptions div#slides_container {
+ max-width: 488px;
+}
+
+body.selectPic.twoOptions div#slides_container.selected {
+ max-width: 494px;
+}
+
+body.selectPic.twoOptions div#button_content {
+ width: 500px;
+}
+
+body.spanish #lightbox_toolkit_lb #masthead_container {
+ height: auto;
+}
+
+body.spanish #masthead_container {
+ height: 54px;
+}
+
+body.spanish div.tooltip {
+ background: url(../../img/sprite.gif);
+ background-position: -17px -10606px;
+ display: none;
+ float: left;
+ height: 30px;
+ margin-bottom: 5px;
+ margin-left: 40px;
+ width: 362px;
+}
+
+div.option {
+ -moz-border-radius: 15px;
+ -webkit-border-radius: 15px;
+ background-color: #e5e5e5;
+ float: left;
+/* height: 160px;*/
+ margin: 0 10px 15px;
+ padding: 8px 15px;
+ text-align: center;
+ width: 194px;
+}
+
+div.option.selected {
+ background-color: #FFFFFF;
+ border: 3px solid #c0c0c0;
+ margin-top: -3px;
+}
+
+div.option.selected a.title {
+ color: black;
+}
+
+div.option img {
+ border: 8px solid white;
+ cursor: pointer;
+ display: block;
+ margin: 5px auto;
+}
+
+div#button_content {
+ margin-left: 40px;
+ width: 748px;
+}
+
+div#slides_container {
+ -moz-border-radius: 15px;
+ -webkit-border-radius: 15px;
+ background-color: #f3f3f3;
+ clear: both;
+ height: auto;
+ margin-left: 40px;
+ padding: 15px 6px 0;
+ max-width: 732px;
+}
+
+div#slides_container.selected {
+ max-width: 738px;
+}
+
+div#slides_content {
+ color: #1086d9;
+ margin-bottom: 15px;
+ height: 100%;
+}
+
+img#lightbox_data_emailAuthorImage {
+ display: none;
+}
+
+input#continue,
+input#submit,
+input#tryAgain {
+ background: url(../../img/sprite.gif);
+ border: 0px;
+ float: right;
+ height: 26px;
+ margin: 10px 0 10px 10px;
+ outline: 0px;
+ width: 169px;
+}
+
+input#continue {
+ background-position:-578px -1003px;
+}
+
+input#submit {
+ background: url(../../img/sprite.gif);
+ border: 0px;
+ float: right;
+ height: 26px;
+ margin-top: 10px;
+ outline: 0px;
+ width: 169px;
+}
+
+input#submit {
+ background-position: -388px -1003px;
+}
+
+input#submit:hover, input#tryAgain:hover, input#continue:hover {
+ cursor: pointer;
+}
+
+input#submit.disableds {
+ background-position: -388px -1043px;
+ float: right;
+}
+
+input#submit.disableds:hover {
+ cursor: default;
+}
+
+input#tryAgain {
+ background: url(../../img/revise.png);
+ width: 144px;
+}
+

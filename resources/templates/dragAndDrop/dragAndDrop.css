@@ -1,0 +1,317 @@
+a.draggable {
+ color: #000;
+ display: table;
+ height: 60px;
+ left: 0px;
+ position: absolute; /* Drag & Drop adds this anyhow so it needs to be styled in anticipation of this */
+ text-decoration: none;
+ width: 200px;
+}
+
+a.draggable span {
+ display: table-cell;
+ line-height: 1;
+ padding: 5px;
+ vertical-align: middle;
+}
+
+li.yellow_box a {
+ background-position:0 -305px;
+}
+
+#questions_container .droppable a{
+ background-position:0 -305px;
+}
+a.droppable{
+ left: 2px;
+ top: 2px;
+}
+
+a.draggable:hover {
+ cursor: move;
+}
+
+a.draggable.correct:hover,
+a.draggable.incorrect:hover {
+ cursor: auto;
+}
+
+a.feedback {
+ background: url(../../img/sprite.gif);
+ display: block;
+ height: 20px;
+ position: absolute;
+ right: -15px;
+ top: 20px;
+ width: 17px;
+}
+
+a.feedback.correct {
+ background-position: -69px -49px; 
+}
+
+a.feedback.incorrect {
+ background-position: -41px -51px;
+}
+
+a.ui-draggable-dragging {
+ z-index: 999999 !important;
+}
+
+a#reset {
+ background: url(../../img/sprite.gif) -14px -1002px;
+ display: block;
+ float: left;
+ height: 26px;
+ margin: 10px;
+ outline: 0px;
+ width: 169px;
+}
+
+a#reset.disabled {
+ background-position: -14px -1042px;
+}
+
+a#reset.disabled:hover {
+ cursor: default;
+}
+
+div#answers_container {
+ float: left;
+ width: 410px;
+}
+
+div#answers_container h2 {
+ border-bottom: 1px dotted #000;
+ font-weight: bold;
+}
+
+div#answers_container p {
+ margin: 10px;
+}
+
+div#answers_content {
+ margin: 0 auto;
+ width: 406px;
+}
+
+div#answers_content ul {
+ float: left;
+ list-style-type: none;
+ margin: 3px;
+ padding: 0px;
+ width: 400px;
+}
+
+div#answers_content ul li {
+ float: left;
+ height: 60px;
+ margin: 0 0 2px 0;
+ overflow: visible;
+ position: relative;
+ text-align: center;
+ width: 200px;
+}
+
+div#answers_content .niftyFix{
+ height: 32px;
+}
+
+div#button_content {
+ background-color: #FFFFFF;
+ clear: both;
+ overflow: auto;
+ width: 480px;
+}
+
+div#group_wrapper_container {
+ background: #f3f3f3;
+ float: left;
+ overflow: visible;
+ position: relative;
+ width: 480px;
+}
+
+div#group_wrapper_container div.clearingDiv {
+ height: 5px;
+}
+
+div#main_content_container {
+ margin: 0 40px;
+ overflow: visible;
+}
+
+div#questions_container {
+ float: left;
+ padding-left: 5px;
+}
+
+div#questions_container > h2 {
+ border-bottom: 1px dotted #000;
+ font-weight: bold;
+ width: 480px;
+}
+
+div#questions_container div.group {
+ float: left;
+ text-align: center;
+ width: 240px;
+}
+
+div#questions_container div.group h2 {
+ font-size: 1.4em;
+ margin: 10px 5px 5px;
+}
+
+div#questions_container div.group ul {
+ list-style-type: none;
+ margin: 10px auto;
+ padding: 0px;
+ position: relative;
+ width: 200px;
+}
+
+div#questions_container div.group ul li {
+ color: #bfbfbf;
+ height: 60px;
+ margin: 0 0 5px;
+ line-height: 5;
+ position: relative;
+ width: 200px;
+}
+
+div#questions_container .niftyFix {
+ color: #bfbfbf;
+ display: block;
+ float: left;
+ font-weight: bold;
+ padding: 20px 0;
+ text-decoration: none;
+ width: 200px;
+}
+
+div#questions_container div.group ul li.ui-droppable {
+ font-weight: bold;
+}
+
+input#continue,
+input#submit,
+input#tryAgain {
+ background: url(../../img/sprite.gif);
+ border: 0px;
+ float: right;
+ height: 26px;
+ margin: 10px;
+ outline: 0px;
+ width: 169px;
+}
+
+input#continue {
+ background-position: -578px -1003px;
+}
+
+input#continue:hover {
+ cursor: pointer;
+}
+
+input#continue.disabled {
+ background-position: -578px -1043px;
+}
+
+input#continue.disabled:hover {
+ cursor: default;
+}
+
+input#submit {
+ background-position: -388px -1003px;
+}
+
+input#submit:hover {
+ cursor: pointer;
+}
+
+input#submit.disableds {
+ background-position: -388px -1043px;
+ float: right;
+}
+
+input#submit.disableds:hover {
+ cursor: default;
+}
+
+input#tryAgain {
+ background-position: -199px -1003px;
+}
+
+input#tryAgain:hover {
+ cursor: pointer;
+}
+
+input#tryAgain.disabled {
+ background-position: -199px -1043px;
+}
+
+span.small {
+ font-size: 7pt;
+}
+
+.correct {
+ background-position: 0px -183px;
+}
+
+.draggable,
+.droppable {
+ background-image: url("sprite.png");
+}
+
+.droppable {
+ background-position: 0px -122px;
+ z-index: 1;
+}
+
+.hover {
+ background-position: 0 -60px; 
+}
+
+.incorrect {
+ background-position: 0 -242px;
+}
+
+body.dragdropGrouping #group_wrapper_container{
+ height: 605px;
+}
+
+body.dragdropGrouping .group{
+ position: absolute;
+}
+
+body.dragdropGrouping #group_1{
+ top: 180px;
+}
+
+body.dragdropGrouping #group_2{
+ top: 300px;
+}
+
+body.dragdropGrouping #group_3{
+ top: 420px;
+}
+
+body.dragdropGrouping #group_4{
+ right: 0;
+}
+
+body.dragdropGrouping #group_5{
+ right: 0;
+ top: 180px;
+}
+
+body.dragdropGrouping #group_6{
+ right: 0;
+ top: 300px;
+}
+
+body.dragdropGrouping #group_7{
+ right: 0;
+ top: 420px;
+}

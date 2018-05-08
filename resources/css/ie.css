@@ -1,0 +1,445 @@
+a.ALE_finish.button {
+ position: absolute;
+ bottom: 10px;
+ right: 0px;
+}
+
+body {
+ text-align: left;
+}
+
+body #lightbox_toolkit_lb.content.counterpoint #lightbox_data_timeline.data_timeline {
+	margin-top: 0;
+}
+
+body #lightbox_toolkit_lb.content #lightbox_data_timeline.data_timeline,
+body.counterpoint #lightbox_toolkit_lb.content #lightbox_data_timeline.data_timeline {
+ margin-top: -254px;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+body.captions .jcarousel-skin-tango .jcarousel-clip-horizontal {
+ height: 380px;
+}
+
+body.conclusionNotes #main_container * {
+ zoom: 0;
+}
+
+body.conclusionNotesStatic div#body_container div#body_inner_container {
+ float: left;
+ padding-left: 0px;
+}
+
+/* Margin-top is 100px less than in standards browsers */
+body.content .data_timeline {
+ margin: -254px auto 0;
+}
+
+body.content #main_container #main_content_container {
+	overflow: visible;
+}
+
+body.counting div#feedback,
+body.counting div#feedback_icon {
+ zoom: 0;
+}
+
+body.selectAndJustify div.imageDiv,
+body.selectAndJustify #data_image {
+	max-width: 316px;
+}
+
+body.selectAndJustify div#question_container {
+	max-width: 900px;
+}
+
+body.selectAndJustify div.aleInline.leftRegion,
+body.selectAndJustify div.aleInline.rightRegion {
+	float: left;
+}
+
+body.simConvoSplit div.questions_container div.clear {
+ overflow: hidden;
+}
+
+body.simConvoSplit div#main_container *,
+body.vidNotesRemediation div#main_container * {
+ zoom: 0;
+}
+
+body.soc div#lightbox_things_lb.soc div.lightbox_title_content {
+ background-color: white !important;
+ margin-top: 0 !important;
+}
+
+#lightbox_toolkit_lb.counterpoint #lightbox_data_timeline.data_timeline {
+	margin-top: 0;
+}
+
+#lightbox_toolkit_lb.graph.soc div#lightbox_data_clickPic_content {
+	margin-bottom: 10px;
+}
+
+body.multiWebPage .niftyFix {
+ height: 266px;
+}
+
+body.multiWebPage.autoWidth .jcarousel-next,
+body.multiWebPage.autoWidth .jcarousel-prev {
+ height: 261px;
+}
+
+body.noteTextWebPage div#webpage_container_wrapper {
+ overflow: visible !important;
+}
+ 
+body.selectPic #main_container div.feedback {
+ zoom: 0;
+}
+
+body.selectAndJustify div#main_container * {
+	/*zoom : 0;
+*/}
+ 
+/* Overriding CSS3 border-radius set in simConvo.css */
+body.simConvo #conclusion_content_container {
+ border: 0px;
+}
+
+/* Overriding "max-width: 95%" rule set in vidNotes.css */
+body.vidNotes .contentColumn img {
+ width: 95%;
+}
+
+/* FOR IE 7 UI issue */
+body.vidNotes #main_header_container {
+ overflow: hidden;
+}
+
+div.answer_vals {
+ top: -18px;
+}
+
+div.atlas_overflow_fix {
+ overflow: visible !important;
+ overflow-x: hidden !important;
+}
+
+div.lightbox {
+ border: 6px solid #333;
+ padding-top: 11px;
+}
+
+div.lightbox .lightbox_title_content {
+ margin: 0px;
+}
+
+body.soc.graph #lightbox_things_lb div.pointer,
+#lightbox_things_lb.soc div.pointer {
+ top: -51px;
+}
+
+div.lightbox .pointer {
+ top: -27px;
+}
+
+div.lightbox .lightbox_content_container ul {
+ margin-bottom: -20px;
+}
+
+div.lightbox .lightbox_title_content a.close {
+ top: 10px;
+}
+
+div.lightbox_content_container #main_container #main_content_container {
+ overflow: hidden;
+}
+
+div#free_write_content_right_container {
+ padding: 25px 10px 0 30px !important;
+}
+
+div#email_content_container {
+ overflow: hidden; /*to fix scroll bar issue of IE7*/
+}
+
+div#lightbox_things_lb .lightbox_content_container ul {
+ margin-bottom: 0;
+}
+
+div#lightbox_toolkit_lb a.close {
+ top: 10px; 
+}
+
+div#page_array_container {
+ margin-left: -340px;
+}
+
+.button {
+ line-height: 20px;
+}
+
+.button.ALE_save_and_exit {
+ position: absolute;
+ top: 15px;
+ right: 0px;
+}
+
+.lightbox .jcarousel-skin-tango .jcarousel-clip-horizontal, 
+body.sources .jcarousel-skin-tango .jcarousel-clip-horizontal {
+ height: 500px;
+}
+
+/* Overriding the default 'width: auto' setting in simConvo.css 
+ * The div's increase the specificity required for override
+ */
+div.playOnly div.record_container {
+ width: 300px;
+}
+
+.question {
+ text-align: left;
+}
+
+.question .saveAndContinue.button,
+.question #submit {
+ left: -30px;
+}
+
+#answerAndContinue {
+ float: none !important; /* Override css to solve alignment issue in vidNotes */
+}
+
+/*this css should apply for conclusion record audio and sim convo*/
+.record_container a.playing.nimbb_button,
+.record_container a.recording.nimbb_button {
+ left: 0px;
+ position: absolute;
+ top: -4px;
+}
+
+/*apply for conclusionRecap*/
+body.conclusionRecap_sp div#rightTop_container.rightTop {
+	height: 40px;
+}
+
+body.conclusionRecap div#data_viewer div#contentBody,
+body.conclusionRecap_sp div#data_viewer div#contentBody {
+	overflow: visible;
+}
+
+body.conclusionRecap  .record_container .progress_wrapper,
+body.conclusionRecap_sp  .record_container .progress_wrapper{
+ top: 15px;	
+}
+
+body.conclusionRecap div.record_container,
+body.conclusionRecap_sp div.record_container {
+ margin: -18px 320px 0 0;
+}
+
+body.conclusionRecap #attemptInfo,
+body.conclusionRecap_sp #attemptInfo {
+ margin: 10px 10px 10px 15px;
+}
+
+#data_book_graphic {
+ padding-bottom: 10px;
+}
+
+#book_description_content {
+ text-align: left;
+}
+
+#data_header_subtitle {
+ text-align: left;
+}
+
+#data_header_title {
+ text-align: left;
+}
+
+#data_html_content {
+ text-align: left;
+ min-height: 100px;
+}
+
+#data_html_content_wrapper {
+ overflow: auto;
+ position: relative;
+}
+
+#data_media_content_header {
+ text-align: left;
+}
+
+#data_media_content_wrapper {
+ padding-bottom: 10px;
+}
+
+#data_movie_title {
+ text-align: left;
+}
+
+#free_write_content_right_container textarea {
+ left: -10px;
+}
+
+#global_masthead {
+ text-align: left;
+}
+
+#global_masthead button{
+ margin-top: -60px;
+}
+
+#lightbox_things_lb .pointer {
+ top: -24px;
+}
+
+#lightbox_toolkit_lb {
+
+}
+
+#main_container * {
+ zoom: 1;
+}
+
+body #main_container.toolkitIEFix {
+ padding-bottom: 100px;
+}
+
+#main_container h3,
+#main_container .chooseOne {
+ zoom: 0;
+}
+
+#main_content_container #data_tooltip {
+ float: none;
+}
+
+#main_header_container h1 {
+ line-height: 1.3em;
+}
+
+#masthead_progress_bar {
+ overflow: hidden;
+}
+
+#navigation_container {
+ left: 0px;
+}
+
+#navigation_container .ALE_save_and_exit.button {
+ position: absolute;
+ right: 5px;
+ top: 15px;
+}
+
+#progress_bar_steps {
+ width: 165px;
+}
+
+#recordAudio_container div#textarea_container {
+ overflow: visible;
+}
+
+#recordAudio_container div#textarea_container textarea {
+ margin-left: -30px;
+}
+
+#recordAudio_container div#textarea_container a.nimbb_button.save {
+ clear: none;
+}
+
+body.conclusionNotes div#body_container div#body_inner_container {
+ padding-left: 10px;
+}
+
+body.conclusionNotes div#body_container div#body_inner_container UL {
+ float: none;
+}
+
+#question_content .niftyFix{
+ height: 255px;
+}
+
+.rightBottom #data_viewer #subTitle .caption{
+ margin-left: 245px;
+}
+#contentBody .headerRow .number{
+ margin: 0 14px 0 12px;	
+}
+#contentBody .resultIcon{
+ margin: -23px 27px 0 0;
+}
+#contentBody .answerRow div.answer{
+ margin-top: -23px;
+}
+#data_viewer #subTitle span.results{
+ margin-left: 515px;
+}
+#contentBody .answerRow .category{
+ margin-left: 35px;
+}
+#contentBody .answerRow .rowNo{
+ margin-right: 18px;
+}
+#nav_container{
+ top: 56px;
+}
+#nav_container span {
+ margin-top: 2px;
+}
+#rightTop_container .navs{
+ height: 26px;
+}
+.conclusionRecap #main_header_container h1{
+ padding-top: 20px;
+}
+.conclusionRecap #data_viewer #subTitle .results{
+ margin-left: 420px;
+}
+
+#lightbox_toolkit_lb.interview .lightbox_content_container UL {
+	margin-bottom: 0;
+}
+
+#lightbox_toolkit_lb.interview .lightbox_content_container UL LI {
+	padding-left: 5px;
+}
+
+#lightbox_toolkit_lb.themes.assessment .lightbox_content_container UL {
+	margin-bottom: 0;
+}
+
+#main_container #nav_container.leftTop{
+ left: -160px;
+}
+#note_container #save_button{
+ margin-left: -14px;	
+}
+#note_message{
+ top: 100px;
+}
+.listRef #data_infoText{
+ vertical-align: top;
+ margin-top: 28px;	
+}
+.selectAndJustify.listRef #link_container{
+ text-align: left;
+}
+.selectAndJustify .excerpt .arrow{
+ left: 22px;
+}
+.selectAndJustify .excerpt div.title{
+ padding-top: 2px;
+}
+.selectAndJustify .lightbox.small .pointer{
+ top: -27px;
+}
+.selectAndJustify .lightbox.small .lightbox_title_content a.close{
+ top: -5px;	
+}

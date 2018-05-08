@@ -1,0 +1,43 @@
+#data_header_title {
+ margin: 10px 35px;
+}
+
+#data_header_title h1 {
+ font-size: 22px;
+ font-weight: bold;
+}
+
+#question_container {
+ background: #efefef;
+ margin: 30px;
+ width: 70%;
+}
+
+#question_container div.answer {
+ margin: 0 0 5px 0;
+}
+
+#question_container div.answer input:hover,
+#question_container div.answer label:hover {
+ cursor: pointer;
+} 
+
+#question_container div.question {
+ margin: 20px 30px;
+ overflow: auto;
+}
+
+#question_container div.question .button.saveAndContinue {
+ margin: 20px 0;
+}
+
+#question_container div.question input.button#submit {
+ background-color: transparent;
+ background-position: -13px -729px;
+ border: 0;
+ cursor: pointer;
+ height: 26px;
+ margin: 20px 0;
+ text-indent: -10000px;
+ width: 220px;
+}

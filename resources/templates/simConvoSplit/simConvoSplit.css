@@ -1,0 +1,254 @@
+a.flowplayer {
+ height: 227px;
+}
+
+body.puntos a.flowplayer{
+	height: 275px;
+}
+
+body.audio_only .flowplayer {
+ height: 30px !important;
+}
+
+.compare_your_recording {
+ display: none;
+}
+
+.lightbox {
+ margin-top: 10px;
+}
+
+.lightbox_content_container h3 {
+ color: #000;
+ font-size: 14px;
+ font-weight: bold;
+ margin: 0 0 5px 0;
+}
+
+.lightbox_content_container li {
+ background: #e5e5e5;
+ display: block !important; /* Some JS is overriding this setting to inline-block which IE doesn't recognize */
+ margin: 10px 10px 20px 10px;
+ position: relative;
+}
+
+.lightbox_content_container li div.sprite {
+ position: absolute;
+}
+
+.lightbox_content_container li div.sprite.quoteLeft {
+ top: 4px;
+ left: 5px;
+}
+ 
+.lightbox_content_container li div.sprite.quoteRight {
+ bottom: 2px;
+ right: 5px;
+}
+
+.lightbox_content_container li a {
+ color: #1086d9;
+ display: block;
+ outline: none;
+ padding: 10px 42px;
+ text-decoration: none;
+}
+
+.lightbox_content_container ul {
+ list-style: none;
+ margin: 0 0 10px 0;
+ overflow: auto;
+ padding: 0;
+}
+
+.lightbox_content_container .record_container_wrapper {
+ background: #e5e5e5;
+ display: block !important; /* Somehow this rule is getting set inine as inline-block */
+}
+
+.lightbox_content_container .record_container_wrapper h2 {
+ border-bottom: 1px dotted #000;
+ font-size: 14px;
+ font-weight: bold;
+ padding: 5px 5px 5px 15px;
+}
+
+.lightbox_content_container .record_container_wrapper .compare_your_recording,
+.lightbox_content_container .record_container_wrapper .record_your_answer {
+ margin: 10px auto;
+ width: 400px;
+}
+
+.player .playing.nimbb_button {
+ visibility: hidden;
+}
+
+.playOnly {
+ background: #fff;
+ overflow: auto;
+ padding-bottom: 10px;
+}
+
+.playOnly h2 {
+ font-size: 15px;
+ font-weight: bold;
+ margin: 10px 0 5px 20px;
+}
+
+.playOnly img {
+ float: left;
+ margin-left: 30px;
+ width: 130px;
+}
+
+.playOnly .nimbb_button.playing {
+ text-indent: 20px;
+}
+
+/* ie.css has a override for IE 7 */
+.playOnly .record_container {
+ float: left;
+ margin: 0 10px 10px 15px;
+ width: auto;
+}
+
+/*.pointer {
+ left: 147px;
+ position: absolute;
+ top: -79px;
+}*/
+
+.progress_wrapper a {
+ z-index: 2;
+}
+
+.question_content {
+ overflow: auto;
+}
+
+.questions_container {
+ overflow: auto;
+ padding-left: 25px;
+}
+
+.questions_container a {
+ color: #1086d9;
+ font-weight: bold;
+ line-height: 2;
+ text-decoration: none;
+}
+
+.questions_container div {
+ /*
+ background: #f3f3f3;
+ background: #ccc;
+ */
+ border-bottom: 1px solid #ccc;
+ overflow: auto;
+}
+
+.questions_container div.first {
+ border-top: 2px solid #ccc;
+}
+
+.questions_container div.clear {
+ height: 4px;
+ overflow: hidden;
+}
+
+.questions_container h2 {
+ float: left;
+ margin: 25px 0 0 15px;
+ width: 200px
+}
+
+.questions_container ul {
+ float: left;
+ list-style: none;
+ margin: 10px 20px 10px 0;
+ padding: 0
+}
+
+.question_content .video_container h1,
+.question_content .questions_container h1 {
+ border-bottom: 1px dotted #000;
+ margin-bottom: 15px;
+ padding-bottom: 15px;
+}
+
+.record_container {
+ margin: 0px;
+ width: 100%;
+}
+
+.record_text {
+ color: #000;
+}
+
+.sprite.checkmark {
+ margin: 6px 5px 0;
+}
+
+.video_container {
+ float: left;
+ overflow: hidden;
+ width: 400px;
+}
+
+.video_container h1 {
+ margin-left:10px; 
+}
+
+#conclusion_content_container {
+ background: #fff;
+ border: 10px solid #f5f5f5;
+ border-radius: 10px;
+ float: left;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ overflow: auto;
+}
+
+#conclusion_player_container {
+ margin: 15px 15px 15px 0;
+ padding-left: 420px;
+}
+
+#conclusion_player_container h1 {
+ background: #fff;
+ font-size: 15px;
+ font-weight: bold;
+ margin: 0 0 0 10px;
+ padding: 10px;
+}
+
+#conclusion_success_header {
+ background: #d1f0be;
+ color: #33660e;
+ font-weight: bold;
+ margin: 0 0 10px;
+}
+
+#conclusion_success_header p {
+ margin: 16px;
+}
+
+#data_conclusion_video_container {
+ float: left;
+ margin: 15px;
+ width: 400px;
+}
+
+#player_wrapper {
+ float: left;
+}
+
+#simConvo_container {
+ margin: 0 30px 300px 30px; /* 300px margin-bottom is required to prevent lightbox inaccessibility */
+ overflow: auto;
+}
+
+#test {
+ overflow: hidden;
+ width: auto;
+}

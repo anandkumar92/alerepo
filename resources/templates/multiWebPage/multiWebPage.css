@@ -1,0 +1,230 @@
+div#webpage_images_container:hover {
+ cursor: pointer;
+}
+
+div.data_slide {
+ background-color: white;
+ border: 1px solid #d6d0bc;
+ float: left;
+ margin-top: 5px;
+ padding: 5px;
+ /* width: auto; May add this back momentarily */
+}
+ 
+img.data_slide {
+ height: 177px;
+}
+ 
+.divider {
+ margin-right:-30px !important;
+}
+
+.frame {
+ color: #D62300;
+ /*cursor: pointer;*/
+ font-size: 12pt;
+ font-weight: bold;
+ line-height: 0;
+}
+
+.frame p {
+ line-height: 1;
+ margin: 0;
+}
+
+.injector {
+ background: url("verticalRule.jpg") repeat-y scroll 308px 0 transparent;
+}
+
+/*nifty rounded corners will only work with the selected element containing another element*/
+.niftyFix {
+ display: block;
+ height: 281px;
+ width: 32px;
+}
+
+#data_articleTitle {
+ border-bottom: 1px solid #e2e2e2;
+ font-size: 12pt;
+ font-weight: bold;
+ margin: auto;
+ width: 95%;
+}
+
+#data_subText_container {
+ margin:5px 0;
+}
+
+#data_subText_container a {
+ color: #1086d9;
+ font-size: 10pt;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#data_webPageHeader {
+ color: #d62300;
+ display: inline;
+ font-size: 14pt;
+ font-weight: bold;
+ margin: 0px;
+}
+
+#fakeNavigationImage {
+ float: right; 
+}
+
+#mainImage {
+ border: 5px solid white; 
+}
+
+#mainImage_container {
+ border: 1px solid #d1caaf;
+ height: 209px;	
+}
+
+#mycarousel li {
+ width: auto;
+}
+
+#scroller_content_container {
+ margin: 10px auto auto;
+}
+
+#webpage_body_container {
+ border: 1px solid #e2e2e2;
+ padding-top: 10px;
+}
+
+#webpage_images_container {
+ display: none;
+ margin: auto;
+ margin-top: 10px;
+ width: 95%;
+}
+
+#webpage_content_container {
+ float: left;
+ margin: auto auto auto 20px;
+ width: 910px;
+}
+
+#webpage_header_content {
+ height: 107px;	
+}
+
+#webpage_images_container {
+ background-color: #e2e2e2;
+ height: 312px;
+ width: 850px; 
+}
+
+#webpage_left_container {
+ float: left;
+ margin: 15px 15px 0 35px; 
+}
+
+#webPageHeader_container {
+ overflow: auto;
+}
+
+body.noWebPage div#webpage_body_container{
+ padding-top: 0;
+}
+
+body.noWebPage div#webpage_header_content {
+ display: none;
+}
+
+body.noWebPage div#webpage_images_container {
+ display: none !important;
+}
+
+body.noWebPage img#browserHeaderImage{
+ display: none;
+}
+
+body.noWebPage #data_articleTitle {
+ display: none;
+}
+
+body.noWebPage .injector {
+ background: none;
+}
+
+/* this css is used for both SP_SC01a_02 & SP_SC01b_02 templates */
+
+body.SP_SC01a_02 .jcarousel-skin-tango {
+ margin : 0;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-clip-horizontal, 
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-container-horizontal {
+ height : 377px;
+ width : 570px;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+ left : 5px;
+ right : auto;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+ left : auto;
+ right : 5px;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-item-horizontal {
+ margin-right : 0px 3px;
+}
+ 
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-next-horizontal,
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-prev-horizontal {
+ height : 370px;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-next-horizontal {
+ background-position : -32px 170px;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-prev-horizontal {
+ background-position : -64px 170px;
+}
+
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-next-disabled,
+body.SP_SC01a_02 .jcarousel-skin-tango .jcarousel-prev-disabled {
+ background-position : -96px 170px;
+ cursor : default;
+}
+
+body.SP_SC01a_02 .niftyFix {
+ height : 373px;
+}
+
+body.SP_SC01a_02 #webpage_body_container {
+ padding : 0px;
+}
+ 
+body.SP_SC01a_02 #scroller_content_container {
+ margin : 0px;
+}
+
+body.SP_SC01a_02 #webpage_content_container {
+ float : none;
+ margin-left : auto;
+ margin-right : auto;
+ width : 650px;
+}
+
+body.SP_SC01a_02 #webpage_header_content {
+ display : none;
+}
+
+body.SP_SC01a_02 img.data_slide {
+ height : 320px;
+ width : 555px;
+}
+
+body.SP_SC01a_02 ul#mycarousel {
+ height : 650px;
+}

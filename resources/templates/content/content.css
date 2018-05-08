@@ -1,0 +1,137 @@
+body.conclusion #main_content_container {
+ width: 100%;
+}
+
+body.conclusion #data_contentText {
+ margin-left: 40px;
+}
+
+body.conclusion #graphic_container {
+ width: auto;
+}
+
+body.content #main_content_container {
+ margin: 10px auto;
+ overflow: auto;
+ width: 900px;
+}
+
+body.counterpoint object, #lightbox_toolkit_lb.counterpoint object {
+ height: 500px;
+ width: 848px;
+}
+
+body.counterpoint .data_timeline, #lightbox_toolkit_lb.counterpoint .data_timeline {
+ height: 500px;
+ margin: auto;
+}
+
+body.counterpoint #data_contentText, body.counterpoint #graphic_container, #lightbox_toolkit_lb.counterpoint #data_contentText, #lightbox_toolkit_lb.counterpoint #graphic_container {
+ display: none;
+}
+
+body.counterpoint #lightbox_toolkit_lb.content #graphic_container {
+ display: inline;
+}
+
+body.counterpoint #lightbox_toolkit_lb.content #lightbox_data_timeline {
+ height: 291px;
+ margin: -354px auto 0;
+ position: relative;
+ top:0;
+ width: 848px;
+}
+
+body.counterpoint #lightbox_toolkit_lb.content #lightbox_data_timeline object {
+ height: 291px;
+ width: 848px;
+}
+
+body.counterpoint #lightbox_toolkit_lb.content #main_container {
+ height: auto;
+	min-width: 0;
+	width: auto;
+}
+
+body.counterpoint #main_container {
+	width: auto;
+}
+
+body.shrunkGraphic #data_graphic {
+ padding-top: 40px;
+ width: 400px;
+}
+
+body.soc .data_contentText {
+	width: 800px;
+}
+
+body.soc #main_content_container {
+	margin: 0;
+	margin-left: 25px;
+}
+
+body.timeline #data_contentText,
+#lightbox_toolkit_lb.timeline #lightbox_data_contentText {
+	display: none;
+}
+
+body.wideText #data_contentText {
+ width: 480px;
+}
+
+.data_contentText {
+ background-color: white;
+ border-radius: 15px;
+ float: left;
+ font-size: 10pt;
+ margin-bottom: 100px;
+ min-height: 400px;
+ padding: 15px 10px 0;
+ width: 400px;
+}
+
+/* Additional IE rules for this element in ie.css */
+.data_timeline, body.counterpoint lightbox_toolkit_lb.content .data_timeline {
+ height: 291px;
+ margin: -354px auto 0;
+ position: relative;
+ width: 848px;
+}
+
+.data_timeline object object {
+ outline: none;
+}
+
+#data_caption {
+ display: block;
+ font-size: 12pt;
+ clear: both;
+}
+
+#graphic_container {
+ float: left;
+ height: 375px;
+ margin-left: 75px;
+ margin-top: 25px;
+ width: 300px;
+}
+
+#lightbox_toolkit_lb.counterpoint #main_container {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 900px;
+}
+
+#lightbox_toolkit_lb.counterpoint #main_content_container {
+	display: none;
+}
+
+#lightbox_toolkit_lb #main_container {
+	min-height: 0;
+}
+
+.lightbox_content_container #main_container #main_content_container {
+ overflow: auto;
+ width: auto;
+}

@@ -1,0 +1,172 @@
+body {
+ margin-top: 0;
+ background: url('/s3scorm/ale/content/assets/HIS_MIS01_01_his_BG_impeachment_repeatableBG.jpg') repeat;
+ background-position: 0px 58px;
+}
+
+body.noTabs #free_write_content_left_container {
+ width: 200px;
+}
+
+body.content #data_paragraph {
+ display: none;
+}
+
+body.content.conclusion #main_content_container {
+ width: 935px;
+}
+
+body.freeWrite_en div#free_write_content_right_container {
+ padding: 0 !important;
+}
+
+body.HS_atlas #main_container {
+ min-width: 970px;
+}
+
+body.video #main_container{
+ min-height: 400px;
+}
+
+div#masthead_container {
+ height: 62px;
+}
+
+div#page_array_container {
+ background-image: none;
+}
+
+.ebook_link {
+ display: none;
+}
+
+.full_glossary, .glossary {
+ visibility: hidden;
+}
+
+.json_text {
+ padding-top: 5px;
+}
+
+.json_text p {
+ font-size: 10pt;
+}
+
+.lightbox #main_content_container {
+	overflow: hidden;
+}
+
+.lightbox_content_container {
+	margin: 15px 25px 10px;
+}
+
+.lightbox_content_container #main_header_container {
+ padding-top: 0;
+}
+
+.lightbox_html_content {
+ overflow: visible;
+}
+
+#global_masthead {
+ background-color: white;
+ border-bottom: 0;
+ height: 58px;
+ padding-left: 20px;
+ position: relative;
+ line-height: 3.8;
+ margin: 0;
+}
+
+#global_masthead h2 {
+ display: inline;
+ margin: 0;
+}
+
+#global_masthead h3 {
+ display: inline;
+ margin: 0;
+ padding-bottom: 0;
+}
+
+#lightbox_toolkit_lb #main_container {
+ background: none;
+ min-width: 0;
+ overflow: visible;
+ width: auto;
+}
+
+#main_container {
+ background: url('/s3scorm/ale/content/assets/HIS_MIS01_01_impeachment_background.jpg') no-repeat;
+ margin-bottom: 52px;
+ min-height: 100%;
+}
+
+#masthead_progress_bar {
+ display: none;
+}
+
+#nav_menu_header_graphic {
+ background-position: -20px -556px;
+}
+
+/* 2012 changes */
+body.blank object {
+ outline: none;
+}
+
+body.blank #data_content_container {
+ text-align: center;
+}
+
+body.conclusionRecap div.aleInline a#finish_btn {
+ display: none;
+}
+
+body.conclusionRecap #body_container {
+ background-color: transparent;
+}
+
+body.conclusionRecap #data_viewer {
+ background-color: white;
+ padding: 0 10px 10px;
+}
+
+body.content div#main_content_container {
+ margin: 0;
+ margin-left: 40px;
+}
+
+body.content.counterpoint div#data_timeline {
+ float: left;
+ margin-left: 40px;
+}
+
+body.freeWrite_en.noTabs #free_write_content_left_container {
+ display: none;
+}
+
+body.themes_summary h2#data_question_containerH2,
+#lightbox_toolkit_lb.themes_summary h2#data_question_containerH2 {
+ display: none;
+}
+
+body.themes div.choose {
+ width: 120px;
+}
+
+body.themes div.answer_vals input {
+ margin-right: 10px;
+}
+
+body.themes div.answer_vals {
+ width: 180px;
+}
+
+body.themes div#lightbox_val.small {
+ width: 235px;
+}
+
+body.themes div#lightbox_val.small .pointer {
+ left: 85px;
+}

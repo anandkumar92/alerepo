@@ -1,0 +1,29 @@
+body.inline_graphics div#main_content_container {
+ margin: 0 30px;
+}
+
+body.inline_graphics .inline_gfx {
+ display: inline;
+ margin: 10px;
+}
+
+body.inline_graphics .inline_gfx img {
+ max-height: 150px;
+}
+
+body.puntosInlineGraphics div#main_content_container {
+ margin: 0 30px;
+}
+
+body.puntosInlineGraphics .inline_gfx {
+ display: inline;
+ margin: 10px;
+}
+
+body.puntosInlineGraphics .inline_gfx img {
+ max-height: 550px;
+}
+
+body.puntosTables div#data_content_container td {
+	border: 1px solid black;
+}

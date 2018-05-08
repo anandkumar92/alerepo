@@ -1,0 +1,228 @@
+body.freeWrite .button.ALE_accept {
+ clear: right;
+}
+
+body.noTab div#free_write_container_wrapper {
+	width: 60%;
+}
+
+body.noTab div#free_write_content_left_container {
+	display: none;
+}
+
+body.noTab div#free_write_content_right_container {
+	padding: 0px 6px 0 20px;
+}
+
+body.trueFalse #content_wrapper ul li {
+ border-bottom: 1px dashed #000000;
+ color: #737373;
+ float: left;
+ width: 100%;
+}
+
+body.trueFalse #content_wrapper ul li span {
+ color: #000000;
+ margin: 0;
+}
+
+body.trueFalse #content_wrapper ul li p {
+ float: left;
+ margin: 0 25px 5px;
+ width: 80%;
+}
+
+#content_container a.save {
+ background: url(../../img/sprite.gif) -422px -868px ;
+ color: #1086d9;
+ display: block;
+ float: left;
+ font-size: 16px;
+ height: 24px;
+ margin-left:53px;
+ text-decoration: none;
+ text-indent: -64px;
+ white-space: nowrap;
+ width: 24px;
+}
+
+#content_wrapper {
+ background: #fff;
+ border-top: 2px solid #dedede;
+ margin-right: 10px;
+ min-width: 500px;
+ overflow: hidden;
+}
+
+#content_wrapper div {
+ display: none;
+ margin: 10px;
+}
+
+#data_article_content img,
+#data_notes_content img,
+#data_video_content img,
+#data_video_notes_content img {
+ width: 100%;
+}
+
+#data_header,
+#heading {
+ font-size: 20px;
+}
+
+#content_wrapper div ul li {
+ border-bottom: 1px dotted #000;
+ margin-bottom: 10px;
+}
+
+#content_wrapper div ul p {
+ 
+}
+
+#content_wrapper div ul span {
+ float: left;
+ margin-left: -20px;
+}
+
+#content_wrapper div ul {
+ list-style: none;
+ margin-top: 15px;
+}
+
+#free_write_container {
+ background-color: #f3f3f3;
+ /* overflow: auto; */ /* added clearfix class to support ie instead */
+ width: 100%;
+}
+
+#free_write_container_wrapper {
+ margin: 15px;
+ padding: 10px;
+}
+
+#free_write_container_wrapper .sb-border ,
+#free_write_container_wrapper .sb-inner ,
+#free_write_container_wrapper .sb-shadow {
+ background: #f3f3f3;
+}
+
+#free_write_content_left_container {
+ float: left;
+ width: 522px;
+ z-index: 2;
+}
+
+/* ie.css has a higher specificity override for ie for this rule */
+#free_write_content_right_container {
+ padding: 25px 6px 0 536px;
+}
+
+#free_write_content_right_container h1{
+ font-size: 19px;
+ font-weight: bold;
+}
+
+#free_write_content_right_container p{
+ font-size: 14px;
+ margin: 0;
+}
+
+#free_write_content_right_container textarea {
+ float: right;
+ width: 100%;
+}
+
+#header_container {
+ margin-left: -11px;
+}
+
+#main_content_container {
+ margin: 0 30px 70px;
+ min-width: 500px;
+}
+
+#media_content_wrapper,
+#notes_content_wrapper {
+ background: none repeat scroll 0 0 #FFFFFF;
+ border-top: 2px solid #E5E5E5;
+ margin: 0 2% 2%;
+ overflow: auto;
+ padding: 2% 2% 20%;
+}
+
+#palette_container {
+ margin-top: -58px !important; /* Overrides palette.js override */
+}
+
+#notes_content_wrapper {
+ display: none;
+}
+
+#notes_content_wrapper .wrapper {
+ border-bottom: 1px dotted #000000;
+ clear: both;
+ overflow: auto;
+ padding: 10px 5px;
+ text-align: justify;
+}
+
+#tabs {
+ display: block;
+ overflow: auto;
+ top: 2px;
+ z-index: 9;
+}
+
+#tabs ul {
+  margin: 0px;
+ }
+
+#tabs .active {
+ background: url("free_write_prv_active.gif") no-repeat scroll left top transparent;
+ cursor: default;
+ float:left;
+ padding-right:10px;
+ text-align:center;
+}
+
+#tabs .active a {
+ background: url("free_write_prv_active_a.gif") no-repeat scroll right top transparent;
+ color: #000000;
+ cursor: default;
+ display: block;
+ font-size: 15px;
+ font-weight: bold;
+ line-height: 1.2em;
+ margin-left: 13px;
+ padding: 7px 29px 5px 16px !important;
+ text-align: center;
+ text-decoration: none;
+}
+
+#tabs li {
+ background: url("free_write_prv_inactive.gif") no-repeat scroll left top transparent;
+ cursor: pointer;
+ float: left;
+ padding-right: 10px;
+ text-align: center;
+}
+
+#tabs li a {
+ background: url("free_write_prv_inactive_a.gif") no-repeat scroll right top transparent;
+ color: #1086D9;
+ cursor: pointer;
+ display: block;
+ font-size: 15px;
+ line-height: 1.2em;
+ margin-left: 13px;
+ padding: 3px 26px 4px 13px;
+ text-decoration: none;
+ outline: none;
+}
+
+#tabs ul {
+ list-style-type: none;
+ margin-left: 0;
+ padding-left: 10px;
+}

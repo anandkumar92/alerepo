@@ -1,0 +1,21 @@
+{
+ "metadata" : [
+  {
+   "masthead" : {
+                 "chapter_name" : "",
+                 "chapter_number" : "",
+                 "chapter_description" : ""
+                },
+   "page_title" : "McGraw-Hill Connect",
+   "template" : "blank"
+  }
+ ],
+ "content" : [ 
+  {
+   "header" : "Tomar apuntes sobre el segmento de radio &#171;El manejo saludable del estr&#233;s&#187;",
+   "paragraph" : "Complete el p&#225;rrafo. Use el condicional o pasado de subjuntivo de los verbos entre par&#233;ntesis.",
+   "content_container" : "any HTML can go in here including other data-bindable containers like <div id='data_another_container'></div>.",
+   "another_container" : "this"
+  }
+ ]
+}

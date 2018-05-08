@@ -1,0 +1,1246 @@
+/**
+ * the skins css for CJ, copied from Soc
+ */
+body {
+ background: url("/s3scorm/ale/content/assets/CJ_SC01_01_medium.jpg") no-repeat fixed left top #c7cccf;
+}
+
+body.cj_courts {
+ background: url("/s3scorm/ale/content/assets/CJ_SC02_01_medium.jpg") no-repeat fixed left top #c7cccf;
+}
+
+div.discipline_logo {
+ display: none !important;
+}
+
+body.conclusionRecap #body_container {
+ background-color: transparent;
+}
+
+body.conclusionRecap #data_viewer {
+ background-color: white;
+}
+
+body.conclusionRecap #data_viewer.selectAndJustify div.resultIcon {
+ display: none;
+}
+
+body.cj_email textarea,
+#lightbox_toolkit_lb.cj_email textarea {
+ margin-top: 0;
+}
+
+body.cj_email div#free_write_content_right_container,
+#lightbox_toolkit_lb.cj_email #free_write_content_right_container {
+ padding-right: 0;
+ padding-top: 0;
+}
+
+body.cj_email #free_write_content_right_container textarea,
+#lightbox_toolkit_lb.cj_email #free_write_content_right_container textarea {
+ width: 858px;
+}
+
+body.cj_email div#free_write_container,
+#lightbox_toolkit_lb.cj_email div#free_write_container {
+ background-color: white;
+ padding: 50px 50px 10px;
+}
+
+#lightbox_toolkit_lb.cj_email div#free_write_container {
+ padding: 1px 30px 10px !important;
+}
+
+#lightbox_toolkit_lb.cj_email div#free_write_container #content_container{
+ border: 1px solid gray;
+ padding: 5px;
+}
+
+body.conclusionRecap #navigation_container {
+ display: none;
+}
+
+body.conclusionRecap #lightbox_toolkit_lb.noteTextNewspaper #main_container,
+body.conclusionRecap #lightbox_toolkit_lb.noteTextNewspaper #main_header_container {
+ margin-top: 0;
+ min-width: 0;
+}
+ 
+body.content.conclusion ul {
+ margin-bottom: 30px;
+}
+
+body.content.conclusion .data_contentText {
+ width: auto;
+}
+ 
+body.conclusion div.national_drug,
+#lightbox_toolkit_lb.conclusion div.national_drug {
+ background: url("/s3scorm/ale/content/assets/SOC_01_01_NIDA1.png") no-repeat scroll 0 0 transparent;
+ float: left;
+ height: 62px;
+ margin-bottom: 30px;
+ margin-right: 5px;
+ width: 240px;
+}
+
+body.conclusion div.sentencing,
+#lightbox_toolkit_lb.conclusion div.sentencing {
+ background: url("/s3scorm/ale/content/assets/SOC_01_01_USSentencingComm.png") no-repeat scroll 0 0 transparent;
+ float: left;
+ height: 74px;
+ margin-bottom: 30px;
+ width: 445px;  
+}
+
+body.conclusion div.center_drug,
+#lightbox_toolkit_lb.conclusion div.center_drug {
+ background: url("/s3scorm/ale/content/assets/SOC_01_01_CESAR.gif") no-repeat scroll 0 0 transparent;
+ float: left;
+ height: 48px;
+ margin-bottom: 30px;
+ width: 200px;
+}
+
+body.conclusion div.statistics,
+#lightbox_toolkit_lb.conclusion div.statistics {
+ background: url("/s3scorm/ale/content/assets/SOC_01_01_BLS.png") no-repeat scroll 0 0 transparent;
+ float: left;
+ height: 48px;
+ margin-bottom: 30px;
+ width: 445px;
+}
+
+body.conclusionRecap #data_viewer.themes #contentBody .answerRow {
+ /*padding-bottom: 15px;
+*/}
+
+body.dragAndDrop div#button_content {
+ background-color: transparent;
+}
+
+body.interview #data_videoURL,
+#lightbox_toolkit_lb.interview #lightbox_data_videoURL {
+ background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ cursor: pointer;
+ height: 333px;
+ width: 500px;
+}
+
+body.noteTextEmail .sb, .sbi, .sb *, .sbi * {
+ z-index: 0;
+}
+
+body.soc.selectAndJustify #main_container {
+ min-height: 1500px;
+}
+ 
+body.soc.selectAndJustify #lightbox_toolkit_lb #main_container {
+ min-height: 0;
+} 
+ 
+#lightbox_toolkit_lb.soc.audio.clickPic #clickPic_container {
+ width: 750px;
+}
+
+#lightbox_toolkit_lb.soc.audio.clickPic div.sprite.clickPic {
+ display: none;
+}
+
+#lightbox_toolkit_lb.soc.audio.clickPic #lightbox_data_clickPic_content {
+ background-image: url("/s3scorm/ale/content/assets/SOC_SC01_01_BaltimoreMap_static.png") !important;
+ margin-bottom: 15px;
+ margin-left: 15px;
+}
+ 
+body.soc.graph #lightbox_toolkit_lb.lightbox .sb-inner {
+ background: url("../../../img/modal.gif") repeat-x scroll center top #FFFFFF;
+}
+ 
+body.soc.graph.arrestsGraphic #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.arrestsGraphic #lightbox_data_clickPic_content {
+ height: 965px;
+ width: 801px;
+} 
+
+body.soc.graph.DrugOffensesGraphic #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.DrugOffensesGraphic #lightbox_data_clickPic_content {
+ height: 659px;
+ width: 873px; 
+} 
+
+body.soc.graph.homicidesGraph #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.homicidesGraph #lightbox_data_clickPic_content {
+ height: 841px;
+ width: 757px; 
+}
+
+body.soc.graph.sc2A #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc2A #lightbox_data_clickPic_content {
+ height: 717px;
+ width: 802px; 
+}
+
+body.soc.graph.sc2B #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc2B #lightbox_data_clickPic_content {
+ height: 694px;
+ width: 578px; 
+}
+
+body.soc.graph.sc2C #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc2C #lightbox_data_clickPic_content {
+ height: 726px;
+ width: 627px; 
+}
+
+body.soc.graph.sc2D #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc2D #lightbox_data_clickPic_content {
+ height: 538px;
+ width: 650px; 
+}
+
+body.soc.graph.sc3A #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc3A #lightbox_data_clickPic_content {
+ height: 486px;
+ width: 700px; 
+ 
+}body.soc.graph.sc3B #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc3B #lightbox_data_clickPic_content {
+ height: 355px;
+ width: 851px; 
+ 
+}body.soc.graph.sc3C #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc3C #lightbox_data_clickPic_content {
+ height: 480px;
+ width: 707px; 
+ 
+}body.soc.graph.sc3D #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc3D #lightbox_data_clickPic_content {
+ height: 452px;
+ width: 706px; 
+}
+
+body.soc.graph.sc4A #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc4A #lightbox_data_clickPic_content {
+ height: 342px;
+ width: 854px; 
+}
+
+body.soc.graph.sc4B #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph.sc4B #lightbox_data_clickPic_content {
+ height: 702px;
+ width: 600px; 
+}
+
+body.soc.graph.arrestsGraphic #clickPic_container,
+body.soc #lightbox_toolkit_lb.arrestsGraphic #clickPic_container {
+ width : 819px;
+}
+
+body.soc.graph.DrugOffensesGraphic #clickPic_container,
+body.soc #lightbox_toolkit_lb.DrugOffensesGraphic #clickPic_container {
+ width : 893px;
+}
+
+body.soc.graph.homicidesGraph #clickPic_container,
+body.soc #lightbox_toolkit_lb.homicidesGraph #clickPic_container {
+ width : 776px;
+}
+
+body.soc.graph.sc2A #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc2A #clickPic_container {
+ width : 822px;
+}
+
+body.soc.graph.sc2B #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc2B #clickPic_container {
+ width : 598px;
+}
+
+body.soc.graph.sc2C #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc2C #clickPic_container {
+ width : 646px;
+}
+
+body.soc.graph.sc2D #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc2D #clickPic_container {
+ width : 670px;
+}
+
+body.soc.graph.sc3A #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc3A #clickPic_container {
+ width : 723px;
+}
+
+body.soc.graph.sc3B #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc3B #clickPic_container {
+ width : 876px;
+}
+
+body.soc.graph.sc3C #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc3C #clickPic_container {
+ width : 727px;
+}
+
+body.soc.graph.sc3D #clickPic_container,
+body.soc #lightbox_toolkit_lb.graph.sc3D #clickPic_container {
+ width : 726px;
+}
+
+body.soc.graph.sc4A #clickPic_container,
+body.soc #lightbox_toolkit_lb.sc4A #clickPic_container {
+ width : 875px;
+}
+
+body.soc.graph.sc4B #clickPic_container,
+body.soc #lightbox_toolkit_lb.sc4B #clickPic_container {
+ width : 621px;
+}
+
+body.soc.graph.sc2 #lightbox_things_lb.soc .lightbox_html_content {
+ margin-top: -26px;
+ margin-bottom: 7px;
+}
+
+body.soc.graph.sc2 div.lightbox.normal {
+ height: 150px;
+}
+
+body.soc.conclusionRecap div.buttons_sprite.conclusion {
+ display: none;
+}
+ 
+body.soc.conclusionRecap div#data_viewer.selectAndJustify .answerRow .aleInline {
+ max-width: 460px;
+}
+
+body.conclusionRecap div#data_viewer.themes .aleInline {
+ max-width: 500px;
+}
+
+body.dragAndDrop div#questions_container > h2 {
+ width: 800px;
+}
+
+body.clickPicStatic.soc div.sprite.clickPic, div#lightbox_toolkit_lb.clickPicStatic.soc div.sprite.clickPic {
+ height: 50px;
+ width: 50px;
+ background-image: url(/alecoreMultiTest/resources/img/CJ_SC03_01_listen_to_vmail_icon.png);
+ background-position: 0px 0px;
+ background-repeat: no-repeat
+}
+
+body.clickPicStatic.soc div.lightbox.normal,
+div#lightbox_toolkit_lb.clickPicStatic.soc div.lightbox.normal {
+ /*height: 575px;
+ */height: auto;
+}
+
+body.clickPicStatic.soc div.lightbox.normal img, div#lightbox_toolkit_lb.clickPicStatic.soc div.lightbox.normal img {
+ /*max-height: 325px;
+*/}
+
+div#lightbox_toolkit_lb.dragAndDrop div#questions_container > h2 {
+ display: none;
+}
+ 
+div#lightbox_toolkit_lb.dragAndDrop div#questions_container div.group h2 {
+ font-size: 13pt;
+}
+ 
+div#lightbox_toolkit_lb.dragAndDrop div#questions_container {
+ background-color: white !important;
+}
+ 
+body.dragAndDrop div#group_wrapper_container,
+div#lightbox_toolkit_lb.dragAndDrop div#group_wrapper_container {
+ width: auto !important;
+}
+ 
+body.dragAndDrop .clear,
+div#lightbox_toolkit_lb.dragAndDrop .clear {
+ clear: none;
+}
+ 
+body.dragAndDrop #answers_container,
+div#lightbox_toolkit_lb.dragAndDrop #answers_container {
+ width: 800px;
+}
+ 
+body.dragAndDrop div#questions_container {
+ clear: left;
+ margin-bottom: 50px;
+}
+
+div#lightbox_toolkit_lb.dragAndDrop div#questions_container {
+ clear:left;
+ margin-bottom: 0;
+}
+
+div#lightbox_toolkit_lb.dragAndDrop div#main_container {
+ max-width: 990px;
+ width:auto;
+}
+
+div#lightbox_toolkit_lb.dragAndDrop a.draggable span {
+ font-size: 10pt !important;
+}
+
+body.dragAndDrop div#answers_content,
+div#lightbox_toolkit_lb.dragAndDrop div#answers_content {
+ width: 906px;
+}
+ 
+body.dragAndDrop div#answers_content ul,
+div#lightbox_toolkit_lb.dragAndDrop div#answers_content ul {
+ width: 900px;
+}
+ 
+body.dragAndDrop div#group_wrapper_container b.niftycorners,
+div#lightbox_toolkit_lb.dragAndDrop div#group_wrapper_container b.niftycorners {
+ margin-top: 0 !important;
+}
+ 
+body.dragAndDrop div#group_wrapper_container div.clearingDiv,
+div#lightbox_toolkit_lb.dragAndDrop div#group_wrapper_container div.clearingDiv {
+ height: 100%;
+}
+ 
+body.dragAndDrop div#group_wrapper_container div.clear.clearingDiv,
+div#lightbox_toolkit_lb.dragAndDrop div#group_wrapper_container div.clear.clearingDiv {
+ clear: both;
+}
+
+body.dragAndDrop #lightbox_toolkit_lb #main_container.assessment.themes,
+body.freeWrite_en #lightbox_toolkit_lb #main_container.assessment.themes {
+ width: 885px;
+}
+
+body.interview div.button_container,
+#lightbox_toolkit_lb.interview div.button_container {
+ display: none;
+}
+
+body.no_nav #nav_container {
+ display: none;
+}
+
+body.noteTextNewspaper div#body_container {
+ font-size: 11pt;
+}
+
+body.noteTextNewspaper.soc #newspaper_container {
+ border: 1px solid #BDBBBC;
+}
+
+body.noteTextNewspaper.soc #newspaper_header_container {
+ border: 0;
+}
+
+body.selectAndJustify.noFeedback .excerpt.correct div.checkIcon,
+body.selectAndJustify.noFeedback .excerpt.incorrect div.checkIcon,
+#lightbox_toolkit_lb.selectAndJustify.noFeedback .excerpt.correct div.checkIcon,
+#lightbox_toolkit_lb.selectAndJustify.noFeedback .excerpt.incorrect div.checkIcon,
+body.selectAndJustify.noFeedback div#infoArea,
+#lightbox_toolkit_lb.selectAndJustify.noFeedback div#infoArea {
+ display: none !important;
+}
+
+body.selectAndJustify .excerpt,
+div#toolkit_lightbox_lb.selectAndJustify .excerpt {
+ max-width: 800px;
+}
+ 
+body.selectAndJustify .excerpt div.title .answer,
+div#toolkit_lightbox_lb.selectAndJustify .excerpt div.title .answer {
+ max-width: 98%;
+}
+ 
+body.selectAndJustify.accordionRef .leftRegion,
+div#toolkit_lightbox_lb.selectAndJustify.accordionRef .leftRegion {
+ background-color: white;
+ border: none;
+ width: auto;
+}
+ 
+body.selectAndJustify .rightRegion,
+div#toolkit_lightbox_lb.selectAndJustify .rightRegion {
+ max-width: 825px;
+}
+
+body.selectAndJustify #question_content .contentWrapper,
+body.selectAndJustify #question_content {
+ /*min-height: 580px;
+*/}
+
+body.selectAndJustify #question_content .contentWrapper div.questionBody div.subText,
+#lightbox_toolkit_lb.selectAndJustify #question_content .contentWrapper div.questionBody div.subText {
+ padding-left: 25px;
+ text-indent: 0;
+}
+
+body.selectAndJustify.accordionRef .leftRegion,
+#lightbox_toolkit_lb.selectAndJustify .leftRegion {
+ height: 245px; 
+}
+
+body.selectAndJustify.accordionRef.largePic .leftRegion,
+#lightbox_toolkit_lb.selectAndJustify.largePic .leftRegion {
+ height: 268px; 
+}
+
+body.selectAndJustify_soc .excerpt h1,
+div#toolkit_lightbox_lb.selectAndJustify_soc .excerpt h1 {
+ padding: 10px 0 8px;
+}
+ 
+body.selectAndJustify_soc .excerpt h1 .answer,
+div#toolkit_lightbox_lb.selectAndJustify_soc .excerpt h1 .answer {
+ max-width: 95%;
+}
+ 
+body.selectAndJustify_soc .main_wrapper {
+ min-width: 1090px;
+}
+
+body.soc div.lightbox.drivingRecord .image_caption_content .imageCaptionURL {
+ margin-left: -20px;
+ width: 440px;
+}
+
+body.soc.interview div.button_container {
+ display: none;
+}
+
+body.soc.societyToday ul,
+#lightbox_toolkit_lb.soc.societyToday ul {
+ padding-left: 0;
+}
+
+body.soc.societyToday #data_articleTitle {
+ font-family: arial;
+}
+
+body.soc.societyToday li,
+#lightbox_toolkit_lb.soc.societyToday li {
+ font-size: 9pt;
+ line-height: 1.2;
+ list-style-type: none;
+ margin-bottom: 12px;
+}
+
+body.soc.themes div#main_container {
+ min-width: 1075px;
+}
+ 
+body.soc.themes div.choose,
+#lightbox_toolkit_lb.themes div.choose {
+ width: 160px;
+}
+ 
+body.soc.assessment.themes div#button_content {
+ background-color: white;
+ margin: auto;
+}
+
+div#question_content #infoArea,
+div#question_content #infoArea.correct {
+ background-color: #5F5A59;
+}
+
+div.checkIcon {
+ background: url("../../../img/things_info.png") no-repeat scroll left center transparent !important;
+}
+
+td div.checkIcon{
+ background-position : top center !important;
+}
+
+div.sprite.correct,
+div.sprite.incorrect {
+ background: url("../../../img/things_info.png") no-repeat scroll left center transparent !important;
+ background-position: 0 0;
+ margin-left: 5px;
+ margin-top: -3px;
+}
+
+div#data_instruction h3 {
+ max-width: 75%;
+}
+
+h2#data_paragraph {
+ max-width: 75%;
+}
+
+img#data_tooltip{
+ display:none;
+}
+#main_header_container h2{
+ font-size: 13px !important;
+}
+table.summaryTbl td{
+ padding: 0;
+}
+table.summaryTbl h4{
+ margin-bottom: 8px;
+}
+table.summaryTbl h2{
+ font-size: 1.2em;
+ font-weight: bold;
+}
+#data_chapter_description{
+ font-size: 24px;
+ padding-top: 10px;
+}
+#global_masthead h3{
+ font-size: 24px; 
+}
+body.content #main_content_container{
+ margin: 0 30px;
+ overflow: hidden;
+}
+#global_masthead{
+ background-color: #333333;
+ margin: 0;
+ position: relative;
+}
+.data_contentText{
+ width: 770px;
+ padding: 0;
+ margin-left: 10px;
+}
+.data_contentText .contentWrapper{
+ margin: 120px 10px 0 50px;
+}
+.data_contentText td{
+ vertical-align: top;
+}
+#toolkit_container.horizontal div.toolkit-title.selected.last{
+ background-position: -169px 0;
+ height: 35px;
+ line-height: 2.5;
+ min-width: 167px;
+ margin-top: 0;
+}
+#global_masthead .masthead_header{
+ margin: 0 auto;
+ width: auto;
+}
+#masthead_container #saveExit{
+ color: #1086D9;
+ position: absolute;
+ right: 21px;
+ text-decoration: none;
+ top: 10px;
+}
+
+#toolkit_container.horizontal div.toolkit_header {
+ background: url("../../../img/toolkit_tab_soc.png") no-repeat scroll 0 0 transparent;
+ width: 140px;
+}
+
+#toolkit_container.horizontal div.notepad-icon {
+ background: url("../../../img/pysch_toolkit_sprite2.png") no-repeat scroll -344px 0 transparent;
+ float: right;
+ height: 30px;
+ width: 26px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container div.toolkit_item {
+ /*background: url('../../../img/ALE_socPsych_icons.png') no-repeat scroll -158px 0 transparent;*/
+ background: url('../../../img/toolkit_pages_sprite.png') no-repeat scroll -158px 0 transparent;
+ height: 57px;
+ /*margin: auto;*/
+ margin-left: 48px;
+ width: 56px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container div.talk_active {
+ background-position: -60px 0px; 
+}
+#toolkit_container.horizontal div.toolkit_item_container div.talk_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.talk_inactive {
+ background-position: -549px 0px; 
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.talk_active {
+ background-position: -304px 0px; 
+}
+#toolkit_container.horizontal div.toolkit_item_container div.read_active {
+ background-position: 0px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.read_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.read_inactive {
+ background-position: -487px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.read_active {
+ background-position: -244px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.research_active {
+ background-position: -181px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.research_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.research_inactive {
+ background-position: -669px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.research_active {
+ background-position: -426px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.investigate_active {
+ background-position: -121px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.investigate_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.investigate_inactive {
+ background-position: -609px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.investigate_active {
+ background-position: -364px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.hypothesize_active {
+ background-position: -120px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.hypothesize_active.inactive {
+ background-position: -609px 0px;
+}
+.lightbox_content_container.floatImage p.header{
+ font-size: 16px;
+}
+.lightbox_content_container.floatImage b{
+ font-size: 18px;
+}
+.lightbox_content_container.floatImage img{
+ float:right;
+ max-width: 180px;
+ margin: -15px 10px 40px 30px;
+}
+.masthead_header #data_chapter_name, .masthead_header #data_chapter_description{
+ color: #ffffff;
+}
+.top .sprite.logo{
+ float: none;
+ left: 10px;
+ margin-left: 10px;
+ position: absolute;
+ width: 100px;
+ height: 35px;
+ background-position: -10px -140px;
+}
+
+.discipline_logo {
+ background-image: url("../../../img/discipline_soc.png");
+ left: 59px;
+ position: absolute;
+ top: 25px;
+ width: 90px;
+}
+
+/** Toolkit related **/
+body.soc #lightbox_things_lb.soc div.pointer {
+ background: url("/s3scorm/ale/content/assets/soc_lightbox_arrow.png") no-repeat scroll 0 0 transparent;
+ height: 50px;
+ width: 92px;
+}
+
+body.soc #lightbox_things_lb.soc .lightbox_title_content {
+ background-color: transparent;
+ margin-top: 6px;
+}
+
+body.sources #lightbox_toolkit_lb.interview #main_container #main_content_container {
+ width: auto;
+}
+
+#lightbox_toolkit_lb.graph div.sprite.clickPic {
+ cursor: pointer;
+}
+
+#lightbox_toolkit_lb.graph div#main_container {
+ width: auto;
+}
+
+body.interview #lightbox_toolkit_lb.video #main_container {
+ min-width: 0px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container {
+ background-color: transparent;
+ max-width: 135px;
+ min-width: 135px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container div.toolkit_item {
+ margin: auto;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container a {
+ margin-left: 0;
+}
+
+#lightbox_toolkit_lb.noteTextNewspaper {
+ height: auto;
+}
+
+#lightbox_toolkit_lb.noteTextNewspaper #main_container {
+ min-width: 0;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.freeWrite_en #free_write_container {
+ margin-left: 10px;
+ margin-right: 0;
+ width: 100%;
+}
+
+#lightbox_toolkit_lb.freeWrite_en #main_content_container {
+ margin-left: 5px;
+}
+
+#lightbox_toolkit_lb.freeWrite_en #free_write_container_wrapper {
+ margin-left: 0;
+}
+
+#lightbox_toolkit_lb.noteTextNewspaper.societyToday {
+ max-width: 850px;
+}
+
+#lightbox_toolkit_lb.noteTextNewspaper.societyToday {
+ max-width: 850px;
+}
+
+#lightbox_toolkit_lb.interview #main_container {
+ width: auto;
+}
+
+#lightbox_toolkit_lb.interview #question_content {
+ min-height: auto;
+}
+
+#lightbox_toolkit_lb.sources div.json_text ul li {
+ width: 45%;
+}
+
+body.soc.dragAndDrop #lightbox_data_question_containerH2 {
+ border: none;
+}
+
+body.soc .data_contentText {
+ margin-bottom: 0;
+}
+
+body.themes.soc #lightbox_toolkit_lb #main_container {
+ min-height: 0;
+ min-width: 0;
+}
+
+body.themes div#lightbox_toolkit_lb.selectAndJustify .answer {
+ float: none;
+ width: auto;
+}
+
+body.dragAndDrop.soc #lightbox_toolkit_lb .lightbox_content_container,
+body.themes.soc #lightbox_toolkit_lb .lightbox_content_container {
+ min-height: 0;
+}
+
+body.video a.flowplayer {
+ background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ height: 400px;
+ width: 600px;
+}
+
+body.interview a.flowplayer,
+#lightbox_toolkit_lb.interview {
+ background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+}
+
+body.video div#lightbox_toolkit_lb.lightbox_window_width.noteTextNewspaper {
+ width: auto;
+}
+
+body.soc #lightbox_toolkit_lb.themes.soc.assessment #portrait_container {
+ display: none;
+}
+
+body.soc #lightbox_toolkit_lb.themes.soc.assessment #lightbox_data_tooltip {
+ display: none;
+}
+
+body.soc #lightbox_toolkit_lb.themes.soc.assessment #main_container {
+ min-width: 0;
+ width: 755px;
+}
+
+body.soc #lightbox_toolkit_lb.themes.soc.assessment #questions_container {
+ width: auto;
+ margin-bottom: 0;
+}
+
+body.soc.selectAndJustify .contentWrapper {
+ 
+}
+ 
+body.video.soc div#lightbox_toolkit_lb.themes div#questions_container .answer {
+ width: 785px; 
+}
+
+body.video #lightbox_toolkit_lb.themes.soc.assessment.lightbox_window_width {
+ height: auto;
+ width: auto;
+}
+
+#lightbox_things_lb.soc .sb-inner {
+ background: white;
+}
+
+#lightbox_toolkit_lb .close {
+ background: url("../../../img/sprite.gif") repeat scroll -44px -17px transparent;
+ height: 20px;
+ position: absolute;
+ top: 0;
+ width: 20px;
+}
+ 
+#lightbox_toolkit_lb.lightbox, .lightbox .sb-inner {
+ background: url("../../../img/modal.gif") repeat-x scroll center top #FFFFFF;
+}
+ 
+#lightbox_toolkit_lb.content .data_contentText {
+ width: 745px;
+ margin-right: 10px;
+}
+
+#lightbox_toolkit_lb.content #graphic_container,
+#lightbox_toolkit_lb.content .data_timeline {
+ display: none;
+}
+
+#lightbox_toolkit_lb.clickPicStatic #lightbox_data_clickPic_content {
+ background: none no-repeat scroll center center transparent;
+ margin-left: 15px;
+ position: relative;
+}
+
+#lightbox_toolkit_lb.clickPic #lightbox_data_paragraph {
+ display: none;
+}
+
+#lightbox_toolkit_lb.selectAndJustify_soc .excerpt {
+ max-width: 800px;
+}
+
+#lightbox_toolkit_lb.clickPicStatic.lightbox_window_width,
+#lightbox_toolkit_lb.selectAndJustify_soc.lightbox_window_width {
+ height: auto;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.conclusion.lightbox_window_width #main_container {
+ width: auto;
+}
+
+#lightbox_toolkit_lb.conclusion #lightbox_data_contentText {
+ width: auto;
+}
+
+#lightbox_toolkit_lb.content #main_container {
+ width: 810px;
+}
+
+#lightbox_toolkit_lb.content.lightbox_window_width {
+ height: auto;
+ width: auto;
+}
+
+#lightbox_toolkit_lb #main_container {
+ width: 900px;
+}
+
+body.conclusionRecap #lightbox_toolkit_lb.cj_pages #main_container {
+ min-width : 940px !important;
+}
+
+#lightbox_toolkit_lb div#questions_container > h2 {
+ border: none;
+}
+
+div#lightbox_toolkit_lb.selectAndJustify div.main_wrapper div.aleInline.rightRegion {
+ min-width: 600px;
+ width: auto;
+ max-width: 640px;
+}
+
+#lightbox_toolkit_lb.video #lightbox_data_header,
+#lightbox_toolkit_lb.video #lightbox_data_paragraph {
+ margin-left: 20px;
+}
+
+#lightbox_toolkit_lb.video #main_container {
+ max-width: 675px;
+ min-width: 0;
+}
+
+#lightbox_toolkit_lb.video .lightbox_content_container #main_container #main_content_container {
+ height: 405px;
+ margin-left: 25px;
+ margin-right: 25px;
+ width: 625px;
+}
+
+#lightbox_toolkit_lb.interview.lightbox_window_width {
+ height: auto;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.interview div#lightbox_data_videoURL {
+ float: left;
+ margin-left: 40px;
+ width: 500px;
+}
+
+#lightbox_toolkit_lb.interview h2#lightbox_data_paragraph {
+ max-width: 900px;
+}
+
+#lightbox_toolkit_lb.interview #main_container {
+ margin-bottom: 10px;
+}
+
+#lightbox_toolkit_lb.interview .flowplayer {
+ height: 333px;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.noteTextNewspaper.soc #main_container {
+ font-size: 11pt;
+ height: 550px;
+ margin-right: 10px;
+ overflow-y: scroll;
+}
+
+div#lightbox_toolkit_lb.selectAndJustify div.checkIcon {
+ display: none;
+}
+
+div#lightbox_toolkit_lb.selectAndJustify div.excerpt div.title {
+ cursor: default;
+}
+
+#lightbox_toolkit_lb.under_modal.toolkit_ignore {
+ z-index: 1 !important;
+}
+
+#lightbox_toolkit_lb.selectAndJustify #main_container {
+ margin-right: 20px;
+ width: auto;
+}
+ 
+#lightbox_toolkit_lb.video .flowplayer {
+ height: 400px;
+ width: auto;
+}
+
+
+/*
+#toolkit_container.buttons div.icons-container a.single-page div.button{
+ background: url("/s3scorm/ale/content/assets/CJ_SC01_01_FTOicon.png") no-repeat scroll 0 0 transparent;
+}
+
+#toolkit_container.buttons div.icons-container div.toolkit_box div.button{
+ background: url("/s3scorm/ale/content/assets/CJ_SC01_01_gloveBoxIcon.png") no-repeat scroll 0 0 transparent;
+}
+
+body.cj_courts #toolkit_container.buttons div.icons-container a.single-page div.button{
+ background: url("/s3scorm/ale/content/assets/CJ_SC02_01_da_icon.png") no-repeat scroll 0 0 transparent;
+}
+
+body.cj_courts #toolkit_container.buttons div.icons-container div.toolkit_box div.button{
+ background: url("/s3scorm/ale/content/assets/CJ_SC02_01_briefcase_icon.png") no-repeat scroll 0 0 transparent;
+}*/
+
+body.cj_courts #lightbox_toolkit_lb.box_lightBox .glovebox_img{
+ background: url("/s3scorm/ale/content/assets/briefcase.jpg") no-repeat scroll 0 0 transparent;
+ float: left;
+ height: 159px;
+ margin-left: 15px;
+ width: 171px;
+}
+
+#lightbox_toolkit_lb.box_lightBox .glovebox_img{
+ background: url("/s3scorm/ale/content/assets/Glovebox.jpg") no-repeat scroll 0 0 transparent;
+ float: left;
+ height: 124px;
+ margin-left: 15px;
+ width: 171px;
+}
+
+#lightbox_toolkit_lb.cj_email #lightbox_data_email_header{
+ overflow: hidden;
+}
+
+#lightbox_toolkit_lb.cj_email #free_write_container{
+ width: 810px;
+}
+
+.contextual_view{
+ width: 400px;
+}
+
+.cj_pages #mycarousel *{
+ font-size: 13px !important;
+}
+
+.cj_pages #mycarousel > li li{
+ width: 490px !important;
+}
+
+.cj_pages .calendar{
+background: url("/s3scorm/ale/content/assets/cj_courts_dayplannerbg.png") no-repeat scroll 0 0 transparent;
+ height: 462px;
+ position: absolute;
+ width: 605px;
+}
+
+.cj_pages .calendar li{
+ background-color: transparent !important;
+ list-style: none outside none;
+}
+
+.cj_pages .calendar .timings{
+ padding-left: 20px;
+}
+
+.cj_pages .calendar .schedule.first{
+ margin: 70px 0 0 50px;
+}
+
+.cj_pages .calendar .schedule.second{
+ margin: 15px 0 0 50px;
+}
+
+.cj_pages .calendar .day{
+ font-weight: bold;
+ margin-bottom: 5px;
+}
+
+.cj_pages .website{
+ background: url("/s3scorm/ale/content/assets/cj_courts_website.png") no-repeat scroll 0 0 transparent;
+ height: 60px;
+ width: 605px;
+}
+
+.cj_pages .header{
+ font-weight: bold;
+ margin: 10px 0;
+}
+
+.cj_pages .contentContainer p{
+ margin: 8px 0;
+ text-indent: 0px;
+}
+
+.cj_pages .contentContainer .inlineImage{
+ border: 1px solid #E4E5E5;
+ float: right;
+ padding: 2px;
+ text-align: center;
+ width: 125px;
+}
+
+.cj_pages .contentContainer .inlineImage .image{
+ height: 125px;
+ width: 125px;
+} 
+
+.cj_pages .contentContainer.websiteContainer{
+ border: 1px solid #E4E5E5;
+ height: 375px;
+ padding: 2px 2px 0 2px;
+ width: 598px;
+}
+
+.cj_pages .contentContainer .inlineImage.source_1 .image{
+ background: url("/s3scorm/ale/content/assets/cj_courts_doug.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.cj_pages .tribune_header{
+ background: url("/s3scorm/ale/content/assets/cj_courts_rockpoint_tribune.png") no-repeat scroll 0 0 transparent;
+ height: 100px;
+ margin-left: 120px;
+ width: 413px;
+}
+
+.cj_pages .contentContainer .inlineImage.source_2 .image{
+ background: url("/s3scorm/ale/content/assets/cj_courts_julie.jpg") no-repeat scroll 0 0 transparent;
+} 
+
+.cj_pages .eagle_header{
+ background: url("/s3scorm/ale/content/assets/cj_courts_weekly_eagle.png") no-repeat scroll 0 0 transparent;
+ height: 90px;
+ margin-left: 120px;
+ width: 413px;
+}
+
+.cj_pages .contentContainer .inlineImage.source_3 .image{
+ background: url("/s3scorm/ale/content/assets/cj_courts_alvarez.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.cj_pages .badge_header{
+ background: url("/s3scorm/ale/content/assets/cj_courts_badge.png") no-repeat scroll 0 0 transparent;
+ height: 70px;
+ margin-left: 260px;
+}
+
+#lightbox_toolkit_lb.cj_pages.noteTextNewspaper .badge_header{
+ margin-left: 310px;
+}
+
+.cj_pages .contentContainer .headerLeft{
+ float: left;
+}
+
+.cj_pages .contentContainer .headerRight{
+ float: right;
+}
+
+.cj_pages .contentContainer .line{
+ border-top: 1px solid;
+ margin: 10px 60px;
+}
+
+.cj_pages .contentContainer .footerSource{
+ text-align: center;
+}
+
+.cj_pages .letter_header{
+ background: url("/s3scorm/ale/content/assets/cj_courts_da_letterhead.png") no-repeat scroll 0 0 transparent;
+ height: 87px;
+ margin-left: 0px;
+}
+
+.cj_pages .contentContainer th, .cj_pages .contentContainer td{
+ background: none repeat scroll 0 0 transparent;
+ border-right: 1px solid #000000;
+ border-bottom: 1px solid #000000;
+ padding: 2px;
+}
+
+.cj_pages .contentContainer tr.firstRow th{
+ border-top: 1px solid #000000;
+}
+
+.cj_pages .contentContainer .firstColumn {
+ border-left: 1px solid #000000;
+ width: 240px;
+}
+
+.noteTextNewspaper .big_header{
+ font-size: 18px;
+ font-weight: bold;
+}
+
+#lightbox_toolkit_lb.cj_calendar #main_content_container{
+ height: 500px;
+}
+
+#lightbox_toolkit_lb.cj_pages .contentContainer.websiteContainer {
+ height: auto;
+}
+
+#lightbox_toolkit_lb.cj_pages.imageMargin img {
+ margin-left: 185px;
+}

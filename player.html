@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+            "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+    <title>
+      McGraw-Hill - Active Learning Environments
+    </title>
+    <script>
+    
+     var API_1484_11 = {
+       Initialize : function (e)
+                     {
+                      //console.info('API.Initialize loaded: ' + e);
+                      return true;
+                     },
+       GetLastError : function (e)
+                       {
+                        //console.info('API.GetLastError loaded: ' + e);
+                        return true;
+                       },
+       GetErrorString : function (e)
+                         {
+                          //console.info('API.GetErrorString loaded: ' + e);
+                          return true;
+                         },
+       GetDiagnostic : function (e)
+                        {
+                         //console.info('API.GetDiagnostic loaded: ' + e);
+                         return true;
+                        },
+       Terminate : function (e)
+                    {
+                     //console.info('API.Terminate loaded: ' + e);
+                     return true;
+                    },
+       GetValue : function (name)
+                   {
+                    //console.info('API.GetValue loaded: cmi.' + name.split('.', 2)[1] + ' (' + name + ')');
+                    //alert('cmi[' + name + ']:\n' + cmi[name]);
+                    //return cmi[name.split('.', 2)[1]];
+                    return cmi[name];
+                   },
+       SetValue : function (name, val)
+                   {
+                    //console.info('API.SetValue loaded: name = ' + name + ', val = ' + val);
+                    // This only supports 1 level of cmi value setting (ex: not cmi.something.another_thing = value)
+                    //cmi[name.split('.', 2)[1]] = val;
+                    cmi[name] = val;
+                    return true;
+                   },
+       Commit : function (e)
+                 {
+                  //console.info('API.Commit loaded: ' + e);
+                  return true;
+                 }
+      }
+
+     cmi = {
+            'cmi.location' : null,
+            'cmi.progress_measure' : 0,
+            'cmi.completion_status' : '',
+            'cmi.testing' : 'test'/*,
+            'cmi.interactions._count' : 2,
+            'cmi.interactions.0.id' : 0,
+            'cmi.interactions.0.learner_response' : 'fbefd8b431',
+            'cmi.interactions.1.id' : 1,
+            'cmi.interactions.1.learner_response' : 'asd'/*,
+            'cmi.interactions.2.id' : 2,
+            'cmi.interactions.2.learner_response' : '0',
+            'cmi.interactions.3.id' : 3,
+            'cmi.interactions.3.learner_response' : '0'
+            */
+           }
+     ExternalConfig = "audioProvider|Viddler!cancelUrl|http://connectqastaging.mhhe.com:80/connect/hmSectionHomePortal.do?sectionId=381494!courseId|381493!courseName|ale testing!dueDate|Thu Aug 19 13:41:00 EDT 2010!instructorName|TWO, HM Instructor!lmsAssignmentId|887663!lmsAudioProviderAuthenticationUrl|http://connectqastaging.mhhe.com:80/connect/restservices/viddlerservice/authenticate!lmsBrand|default!lmsName|Connect!lmsVideoProviderAuthenticationUrl|http://connectqastaging.mhhe.com:80/connect/restservices/viddlerservice/authenticate!roleName|S!saveAndExitUrl|http://connectqastaging.mhhe.com:80/connect/hmSectionHomePortal.do?sectionId=381494!sectionId|381494!sectionName|ale testing!submitUrl|http://connectqastaging.mhhe.com:80/connect/hmSectionHomePortal.do?sectionId=381494!videoProvider|Viddler";
+     
+     /*
+     externalConfig = {
+        'lmsName' : 'Connect',
+        'dueDate' : '10/10/10', // due date of the assignment
+        'roleName' : 'I', // "I|S"
+        'instructorName' : 'Instructor Name', // last name, first name + middle
+        'courseId' : 'Course ID',
+        'courseName' : 'Course Name',
+        'sectionId' : '',
+        'sectionName' : '',
+        'lmsAssignmentId' : '',
+        'saveAndExitUrl' : 'http://www.mcgraw-hill.com', // don't "complete", save current state and come back to LMK...same as cancel
+        'cancelUrl' : '', // come back to LMK...http://conne/connect/hmSectionHomePortal.do
+        'submitUrl' : '', // "complete" attempt and come back to LMS
+        'lmsBrand' : '', // logo? or Economica
+        'audioProvider' : '', // Viddler
+        'lmsAudioProviderAuthenticationUrl' : '', // connectcom/restservices/viddler/authenticate
+        'videoProvider' : '', //e.g, Viddler
+        'lmsVideoProviderAuthenticationUrl' : '' // e.g, http://connect.mcgraw-hill.com/connect/restservices/viddler/authenticate
+       }
+       */
+       /*  var indexSrc = "index.html" + document.location.search;
+       document.getElementsByTagName('frameset')[0].innerHTML = '<frame src="' + indexSrc + '" name="ScormContent" id="ScormContent">' */
+  /* var indexSrc = "index.html" + document.location.search;
+  var frameSet = document.createElement('frameset');
+  frameSet.innerHTML = '<frame src="' + indexSrc + '" name="ScormContent" id="ScormContent">'
+  document.getElementsByTagName('html')[0].appendChild(frameSet); */
+    window.onload = function(){
+    document.getElementById('ScormContent').src = "index.html" + document.location.search;
+    }
+    </script>
+  </head>
+  <frameset>
+    <frame name="ScormContent" id="ScormContent">
+  </frameset>
+</html>

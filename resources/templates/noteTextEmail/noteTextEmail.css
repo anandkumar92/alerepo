@@ -1,0 +1,201 @@
+body.attachment #attachmentGraphic{
+	height: 56px;
+	width:48px;
+}
+
+body.attachment #email_footer #email_attachment {
+ display: inline;
+}
+
+body.contemporary div#data_contemporary_line,
+#lightbox_toolkit_lb.contemporary div#lightbox_data_contemporary_line {
+ background: url("contemp_icons.jpg") no-repeat scroll 450px 7px transparent;
+ border-top: 1px solid #d3d3d3;
+ font-size: 11pt;
+ font-weight: bold;
+ margin-left: 30px;
+ padding-left: 5px;
+ padding-top: 5px;
+ width: 650px;
+}
+
+body.contemporary div#email_container,
+#lightbox_toolkit_lb.contemporary div#email_container {
+	background: url("reply.jpg") no-repeat scroll right top #FFFFFF;
+}
+
+body.contemporary div#email_container_wrapper,
+#lightbox_toolkit_lb.contemporary div#email_container_wrapper {
+	width: 650px;
+	margin-top: 5px;
+}
+
+body.contemporary div#email_header_container,
+#lightbox_toolkit_lb.contemporary div#email_header_container {
+	background: url("star.jpg") no-repeat scroll 5px 15px transparent;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	height: 40px;
+	padding-top: 12px;
+}
+
+body.contemporary #email_header_container dt,
+#lightbox_toolkit_lb.contemporary #email_header_container dt {
+	color: #999999;
+	font-weight: normal;
+	margin-right: 5px;
+}
+
+body.contemporary #data_toLabel,
+body.contemporary #data_toName,
+body.contemporary #data_emailTitle,
+#lightbox_toolkit_lb.contemporary #lightbox_data_toLabel,
+#lightbox_toolkit_lb.contemporary #lightbox_data_toName,
+#lightbox_toolkit_lb.contemporary #lightbox_data_emailTitle {
+	display: none;
+}
+
+body.soc #lightbox_toolkit_lb.noteTextEmail.contemporary #main_container {
+	width: auto;
+}
+
+#attachmentGraphic {
+ background: url(email_attachment_graphic.png);
+ width: 30px;
+}
+
+#data_attachmentInstructions {
+ font-style: italic;
+}
+
+#data_attachmentTitle {
+ font-size: 14px;
+ font-weight: bold;
+ margin-top: 5px;
+} 
+
+#data_attachmentUrl a {
+ color: #8d8d8d;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#data_authorImage {
+ width: 55px;
+}
+
+#data_emailAuthorImage {
+ width: 63px;
+}
+
+#data_emailTitle {
+ background: url(mailicon.png) no-repeat scroll 0px 3px transparent;
+ font-size: 1.2em;
+ padding-left: 23px;
+}
+
+#email_container {
+ background-color: #ffffff;
+ margin: 0 5px 6px;
+ overflow: auto;
+ /*width: 584px;*/
+ }
+
+#email_container img {
+ margin-top: 4px;
+ vertical-align: middle;
+}
+
+#email_container_wrapper {
+ background-color: #ffffff;
+ /*float: left;*/
+ margin: 15px 30px;
+ overflow: hidden;
+ width: 596px;
+}
+
+#email_container_wrapper .sb-shadow {
+ background: #aaaaac;
+}
+
+#email_content_container {
+ border: 1px solid #ccc;
+ border-top: 0px;
+ padding: 15px 25px 35px 25px;
+}
+
+#email_header_container {
+ background-image: url(email-header.png);
+ height: 89px;
+ overflow: hidden;
+ padding: 3px 20px;
+}
+
+#email_header_container dd {
+ color: #333333;
+ font-weight: bold;
+ margin-left: 4.9em;
+}
+
+#email_header_container dl {
+ margin: 0px;
+}
+
+#email_header_container dt {
+ color: #666666;
+ float: left;
+ text-align: right;
+ width: 10%;
+}
+
+#email_header_container p {
+ margin: 0px;
+ text-align: center;
+}
+
+#email_footer {
+ color: #8d8d8d;
+ margin: 5px;
+ overflow: auto;
+}
+
+#email_footer p {
+ line-height: 1.3;
+ margin: 0px;
+}
+
+#email_footer .left {
+ float: left;
+}
+
+#email_footer #signature .content {
+ margin-left: 10px;
+}
+
+#email_footer #email_attachment {
+ display: none; /* Requirement removed, functionality still in place if they change their minds. */
+ float:right;
+}
+
+#email_footer #email_attachment .content {
+ margin-left: 10px;
+ width: 230px;
+}
+
+#main_content_container {
+ overflow: auto;
+}
+
+#sender_company {
+ font-style: italic;
+}
+
+#sender_name {
+ font-weight: bold;
+}
+
+#signature {
+ float: left;
+ overflow: hidden;
+}

@@ -1,0 +1,60 @@
+$(function ()
+   {
+    var template = "global_test";
+    
+    /**
+     * Prevents the script from getting loaded twice
+     */
+    function addTest()
+     {
+      App.prototype.unitTests[template] = function ()
+                                           {
+                                            return {
+                                                    init : function ()
+                                                            {
+                                                             test("global masthead structure", function()
+                                                              {
+                                                               ok($('#masthead_container'), "masthead_container exists");
+                                                               ok($('#global_masthead'), "global_masthead exists");
+                                                               ok($('#global_masthead h2'), "global_masthead h2 exists");
+                                                               ok($('#global_masthead h2 span#data_chapter_number').length > 0, "global_masthead h2 span#data_chapter_number exists");
+                                                               ok($('#global_masthead h2 span#data_chapter_name').length > 0, "global_masthead h2 span#data_chapter_name exists");
+                                                               ok($('#global_masthead h3').length > 0, "global_masthead h3 exists");
+                                                               ok($('#global_masthead h3 span#data_chapter_description').length > 0, "global_masthead h3 span#data_chapter_description exists");
+                                                              });
+                                                              
+                                                             test("global navigation structure", function()
+                                                              {
+                                                               ok($('#navigation_container'), "navigation_container exists");
+                                                               
+                                                               $('#menu_button').trigger('click');
+                                                               ok($('#page_array_container').css('display') === 'block', "menu showing");
+                                                               
+                                                               $('#nav_menu_close').trigger('click');
+                                                               ok($('#page_array_container').css('display') === 'none', "menu hiding");
+                                                              });
+                                                            }
+                                                   }
+                                           };
+     }
+    
+    if (App.prototype.unitTests)
+     {
+      if (App.prototype.unitTests[template])
+       {
+        App.prototype.unitTests[template]().init()
+       }
+      else
+       {
+        addTest();
+        App.prototype.unitTests[template]().init()
+       }
+     }
+    else
+     {
+      App.prototype.unitTests = {};
+      addTest();
+      App.prototype.unitTests[template]().init()
+     }
+
+   })();

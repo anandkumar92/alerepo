@@ -1,0 +1,74 @@
+.right {
+ float: right;
+}
+
+#activity_container table .othercol {
+ width: 15%;
+ text-align: center;
+}
+
+#data_transaction_buttton {
+ margin: 0 9px;
+}
+
+#data_transaction_buttton .button {
+ float: right;
+}
+
+/* #data_transaction */
+#FA_Activity_container {
+ margin: 10px 40px 0;
+}
+
+#feedback {
+ display: none;
+}
+
+#feedback_icon {
+ background-color: transparent;
+ background-image: url("../../img/sprite.gif");
+ background-position: -13px -801px;
+ float: right;
+ height: 49px;
+ margin-right: 25%;
+ width: 236px;
+}
+
+#question_container {
+ background: #f3f3f3;
+ clear: both;
+ margin: 19px 0 13px;
+ padding: 15px 30px 20px 30px;
+}
+
+#question_container table select {
+ width: 80%;
+}
+
+#question_container table tbody td {
+ border-bottom: 1px dotted #000000;
+}
+
+#question_container table th {
+ background: #e5e5e5;
+ font-size: 12px;
+}
+
+#question_container table .firstcol {
+ width: 70%;
+}
+
+#result {
+ background-color: #fcf6a4;
+ margin: 15px 0 15px 8px;
+}
+
+#result h3 {
+ margin: 0;
+ padding: 10px 0 0 10px;
+}
+
+#result p {
+ margin: 0;
+ padding: 0 0 10px 10px;
+}

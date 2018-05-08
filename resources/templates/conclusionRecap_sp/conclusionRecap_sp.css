@@ -1,0 +1,366 @@
+body.conclusionRecap_sp div#contentBody {
+	overflow-y: scroll;
+}
+
+div.aleInline.row {
+	width: 550px;
+}
+
+.conclusionRecap #main_header_container{
+ margin-top: 35px;
+}
+#body_container {
+ background: #ffffff;
+ margin-bottom: 150px;
+ min-width: 1100px;
+ overflow: visible;
+ padding: 0 20px;
+ position: relative;
+}
+
+#body_container .leftRegion{
+ width: 260px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border: 1px solid #F5F5F5;
+ background-color:#F5F5F5;
+ margin-right: 20px;
+ vertical-align: top;
+}
+
+#body_container .rightRegion{
+ width: 680px;
+ vertical-align: top;
+}
+
+.rightRegion .rightTop{
+ height: 42px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ background-color:#F5F5F5;
+}
+
+.rightRegion .rightBottom{
+	
+}
+
+#body_container #body_inner_container {
+ margin-left: 10px;
+ overflow: auto;
+ padding-left: 55px;
+}
+
+#body_container #body_inner_container h2 {
+ font-size: 16px;
+ font-weight: bold;
+ margin: 0;
+}
+
+#body_container #body_inner_container ul {
+ clear: both;
+ color: #737373;
+ float: left;
+ font-size: 12px;
+ list-style: none outside none;
+ overflow-x: visible;
+ overflow-y: auto;
+ padding: 0 0 0 20px;
+}
+
+#body_container #body_inner_container ul li {
+ border-bottom: 1px dashed #000000;
+ clear: both;
+ margin: 5px 0 7px;
+ overflow-x: visible;
+ overflow-y: auto; 
+ padding-top: 2px;
+}
+
+#body_container #body_inner_container ul li p {
+ margin: 0 25px 5px;
+}
+
+#body_container #body_inner_container ul li span {
+ color: #000000;
+ float : left;
+}
+
+#data_viewer{
+ margin: 0 10px 10px 10px;
+}
+#data_viewer #title{
+ font-weight: bold;
+ font-size: 16px;
+ margin: 0 5px;
+ padding: 10px 10px 10px 0;
+ height: 18px;
+}
+#data_viewer #subTitle{
+ border-bottom: 2px solid #EEEEEE;
+ text-indent: 5px;
+ font-weight: bold;
+}
+#data_viewer #subTitle .caption{
+ margin-left: 260px;
+}
+#data_viewer #subTitle .results{
+ margin-left: 530px;
+}
+#data_viewer #contentBody{
+ max-height: 500px;
+ overflow: auto;
+ border-bottom: 1px solid #EEEEEE;
+}
+#data_viewer #contentBody.empty{
+ border:none;
+}
+#data_viewer #contentBody .scBox{
+ height: 80px;
+ padding: 8px 5px 0 5px;
+ border-bottom: 1px solid gray;	
+}
+#data_viewer #contentBody .cptnBox{
+ padding: 8px 5px 0 5px;
+ border-bottom: 1px solid gray;	
+}
+#data_viewer #contentBody .headerRow{
+ border-bottom: 1px dotted #000000;
+ font-size: 14px;
+ font-weight:bold;
+ padding-top: 10px;
+}
+#data_viewer #contentBody .answerRow{
+ border-bottom: 1px dotted gray;
+ padding-top: 10px;
+}
+.cptnBox img{
+ padding: 4px;
+ border: 1px solid #021a40;
+ background-color: #FFFFFF;
+ max-width: 280px;
+}
+
+.cptnBox .imgContainer{
+ width: 295px;
+ vertical-align: top;
+}
+.cptnBox .captionBody{
+ width: 310px;
+ word-wrap: break-word;
+}
+.cptnBox .aleInline{
+ vertical-align: top;
+}
+.scBox .number, .cptnBox .number{
+ margin-right: 10px;
+ vertical-align: top;
+ font-weight: bold;
+}
+.textArea{
+ word-wrap: break-word;
+}
+.headerRow .number{
+ margin: 0 8px 0 9px;	
+}
+.answerRow .category{
+ margin-left: 25px;
+ max-width: 550px;
+}
+.answerRow .rowNo{
+ font-weight: bold;
+ margin: 0 10px 0 9px;
+}
+.scBox .record_container{
+ margin: 0;
+}
+#body_container_wrapper {
+ background: #e5e5e5;
+ clear: both;
+ margin-top: 20px;
+ overflow: auto;
+ padding: 15px;
+}
+
+#body_container_wrapper .sb-shadow {
+ background: #e5e5e5;
+}
+
+#data_videoCaption {
+ font-style: italic;
+ margin: 10px;
+ text-align: center;
+}
+
+#main_container {
+	min-width: 1100px;
+}
+
+#main_content_container {
+ margin: 0 30px;
+ min-width: 1100px;
+}
+
+#message_container {
+ overflow: auto;
+}
+
+#message_container #data_assignmentMessage {
+ color: #336600;
+ font-size: 1.2em;
+ font-weight: bold;
+ margin-left: 65px;
+ margin-top: 17px;
+}
+
+#message_container #message_image {
+ background: url("../../img/sprite.gif") no-repeat scroll 0 1px transparent;
+ float: left;
+ height: 53px;
+ margin-left: 1%;
+ width: 37px;
+}
+
+#message_container_wrapper {
+ background: #d1f0be;
+ width: 100%
+}
+
+#video_container {
+ float: left;
+ left: 10px;
+ width: 450px;
+}
+
+.flowplayer {
+ height: 300px;
+ width: 450px;
+}
+
+#attemptInfo{
+ width: 520px;
+ font-weight: bold;
+ font-size: 16px;
+ margin: 6px 10px 0 15px;
+}
+.links{
+ border-right: 2px solid #EEEEEE;
+ height: 25px;
+ color: #005599;
+ padding: 10px 5px 0 5px;
+ margin-top: 5px;
+ font-weight: bold;
+}
+#prevBtn, #nextBtn{
+ margin: 0 0 0 20px;
+ float:left;
+}
+.links .divider{
+ border-right: 1px dotted #000033;
+ margin: 0 15px 0 10px;
+}
+#questionLink{
+}
+#questionLink, #refLink{
+ cursor: pointer;
+}
+#finish_btn{
+ position: static;
+ margin: 20px 0 0;
+ cursor:pointer;
+}
+#activityList{
+ background-color: gray;
+}
+#activityList .scoreBox{
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border: 1px solid #ffffff;
+ background-color: #ffffff;
+ margin: 4px;
+ cursor:pointer;
+}
+#activityList .scoreBox.active{
+ background-color: #666666;
+ cursor:default;
+}
+#activityList .activityName{
+ color: #215DA9;
+ margin: 4px 0 0 10px;
+ font-weight:bold;
+ font-size: 14px;
+}
+#activityList .active .activityName{
+ color: #ffffff;
+}
+#activityList .score{
+ padding: 0 0 2px 10px;
+}
+#activityList .score div{
+ width: 35px;
+ height: 15px;
+ font-weight:bold;
+ margin-right:1px;
+ text-indent: 3px;
+ border-right: 1px dotted #000000;
+}
+#activityList .active .score div{
+ color: #ffffff;
+ border-color: #ffffff;
+}
+#activityList .score div.textOnly{
+ width: auto;	
+ border: none;
+}
+#activityList .score div.lastAttempt{
+ border:none;
+ color: green;
+}
+#activityList .active .score div.lastAttempt{
+ background-color: green;
+ color: #ffffff;
+}
+#activityList .score div.lastAttempt.none{
+ color: red;
+}
+#activityList .active .score div.lastAttempt.none{
+ background-color: red;
+ color: #ffffff;
+}
+
+.resultIcon{
+ background: url("../../img/sprite.gif") repeat scroll 0 0 transparent;
+ height: 20px;
+ width: 17px;
+ float:right;
+ margin: -4px 27px 0 0;
+}
+.correct .resultIcon{
+ background-position: -69px -49px;
+}
+.answerRow span.answerArea{
+ font-weight: bold;
+}
+.answerRow div.answer{
+ float:right;
+}
+.correct.answerRow span.answerArea{
+ color: #11820A;
+}
+.incorrect .resultIcon{
+ background-position: -41px -51px;
+}
+.incorrect.answerRow span.answerArea{
+ color: #CC0000;	
+}
+
+
+
+
+
+
+
+
+
+
+
+

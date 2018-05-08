@@ -1,0 +1,231 @@
+html {
+ border-top: 0;
+ height: 100%;
+}
+
+body {
+ background: url('/s3scorm/ale/content/assets/his_bg_silkroad_repeatableBG.jpg') repeat transparent;
+ margin-top: 0;
+ height: 100%;
+}
+
+body.content #data_paragraph {
+ display: none;
+}
+
+body.content.conclusion #main_content_container {
+ width: 850px;
+}
+
+
+body.counterpoint #lightbox_toolkit_lb.content #lightbox_data_timeline.data_timeline {
+ margin: -300px auto 0;
+}
+
+body.freeWrite_en div#free_write_content_right_container {
+ padding: 0 !important;
+}
+
+body.HS_atlas #main_container {
+ min-width: 970px;
+}
+
+body.noTabs #free_write_content_left_container {
+ width: 200px;
+}
+
+body.subTheme .answer, .answer, .data_contentText, .json_text, .lightbox .json_text, #contents, .lightbox #contents, .lightbox .answer, .lightbox .data_contentText, .lightbox .tag, .tag {
+ font-size: 12pt;
+}
+
+body.themes_summary span.group,
+#lightbox_toolkit_lb.themes_summary span.group {
+ height: auto;
+ line-height: 1.5;
+ margin-bottom: 15px;
+ width: auto;
+}
+
+div.json_text {
+  width: 604px;
+}
+
+div#masthead_container {
+ height: 62px;
+}
+
+div#page_array_container {
+ background-image: none;
+}
+
+p.leftColumn {
+ clear: left;
+}
+
+p.rightColumn {
+  clear: right;
+}
+
+.ebook_link {
+ display: none;
+}
+
+.full_glossary, .glossary {
+ visibility: hidden;
+}
+
+.json_text p {
+ font-size: 12pt;
+}
+
+.lightbox #main_content_container {
+ overflow: hidden;
+}
+
+.lightbox_content_container {
+ margin: 15px 25px 10px;
+}
+
+.lightbox_content_container #main_header_container {
+ padding-top: 0;
+}
+
+.lightbox_html_content {
+ overflow: visible;
+}
+
+#global_masthead {
+ background-color: white;
+ border-bottom: 0;
+ border-top: 3px solid #CC3300;
+ height: 58px;
+
+
+ left: 0;
+ line-height: 3.8;
+ margin: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ z-index: 1;
+}
+
+#global_masthead h2 {
+ display: inline;
+ margin: 0;
+ padding-left: 20px;
+}
+
+#global_masthead h3 {
+ display: inline;
+ margin: 0;
+ padding-bottom: 0;
+}
+
+#main_container {
+ background: url("/s3scorm/ale/content/assets/his_bg_silkroad_bgWithImage.jpg") no-repeat fixed right bottom transparent;
+ margin-bottom: 0;
+ min-height: 92%;
+ padding-bottom: 52px;
+ position: relative;
+}
+
+#main_content_container {
+ font-family: 'Times New Roman', Times, serif;
+}
+
+#main_header_container {
+ /*padding-top: 68px;*/
+}
+
+#lightbox_data_timeline {
+ float: left;
+ margin-top: -250px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom: 10px;
+}
+
+#lightbox_data_contentText {
+ margin-bottom: 0;
+}
+
+#lightbox_toolkit_lb {
+ /*min-width: 800px;*/
+}
+
+#lightbox_toolkit_lb #main_container {
+ background: none;
+ min-width: 0;
+ overflow: visible;
+ width: auto;
+}
+
+#masthead_progress_bar {
+ display: none;
+}
+
+#nav_menu_header_graphic {
+ background-position: -20px -556px;
+}
+
+/* 2012 changes */
+body.blank object {
+ outline: none;
+}
+
+body.blank #data_content_container {
+ text-align: center;
+}
+
+body.conclusionRecap div.aleInline a#finish_btn {
+ display: none;
+}
+
+body.conclusionRecap #body_container {
+ background-color: transparent;
+}
+
+body.conclusionRecap #data_viewer {
+ background-color: white;
+ padding: 0 10px 10px;
+}
+
+body.content div#main_content_container {
+ margin: 0;
+ margin-left: 40px;
+}
+
+body.content.counterpoint div#data_timeline {
+ float: left;
+ margin-left: 40px;
+}
+
+body.freeWrite_en.noTabs #free_write_content_left_container {
+ display: none;
+}
+
+body.themes_summary h2#data_question_containerH2,
+#lightbox_toolkit_lb.themes_summary h2#data_question_containerH2 {
+ display: none;
+}
+
+body.themes div.choose {
+ width: 120px;
+}
+
+body.themes div.answer_vals input {
+ margin-right: 10px;
+}
+
+body.themes div.answer_vals {
+ width: 180px;
+}
+
+body.themes div#lightbox_val.small {
+ width: 235px;
+}
+
+body.themes div#lightbox_val.small .pointer {
+ left: 85px;
+}

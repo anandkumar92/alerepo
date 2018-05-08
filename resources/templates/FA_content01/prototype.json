@@ -1,0 +1,39 @@
+  {
+   "metadata" : [
+    {
+     "page_title" : "McGraw-Hill Connect - Fundamentals of Financial Accounting Online Course",
+     "template" : "FA_content01",
+     "masthead" : {
+                   "ale_icon_url" : "ale_icon.gif",
+                   "chapter_name" : "Fundamentals of Accounting",
+                   "chapter_number" : "2",
+                   "chapter_description" : "Identify the financial effects of common financing and investment activities."
+                },
+     "toolbar" : {
+                  "showFAQ" : "true",
+                  "showTipsAndHints" : "true",
+                  "showGlossary" : "true"
+                 },
+     "navigation" : "true",
+     "pagination" : "true"
+    }
+   ],
+   "content" : [
+    {
+     "header_title" : "Introduction",
+     "header_paragraph" : "All companies, big and small, need systems for gathering and organizing financial information.",
+     "sidebar_content" : {
+                          "type" : "wrapper",
+                          "element" : "div",
+                          "content" : "sample sidebar content"
+                         },
+     "media_content" : "<object width='400' height='220'><param name='allowfullscreen' value='true' /><param name='allowscriptaccess' value='always' /><param name='movie' value='http://vimeo.com/moogaloop.swf?clip_id=6554592&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1' /><embed src='http://vimeo.com/moogaloop.swf?clip_id=6554592&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1' type='application/x-shockwave-flash' allowfullscreen='true' allowscriptaccess='always' width='400' height='220'></embed></object><p><a href='http://vimeo.com/6554592'>Understanding Financial Reports</a> from <a href='http://vimeo.com/learnaccounting'>Colin Burr</a> on <a href='http://vimeo.com'>Vimeo</a>.</p>",
+     "html_content" : "<div id='data_transcript_url'></div><h2>Introduction</h2><p>All, companies big and small, need systems for gathering and organizing financial information.</p><p>Just as <a href='#'>FedEx</a> must monitor and evaliate its use of $12.6 billion in delivery equipment, smaller companies must track the financial results of their activities. Accounting ststems provide the financial information companies need to manage their businesses and report their results to others interested in the business.</p><p>Fron the moment a company is organized it engages in financing and investing activities that need to be accounted for. In this chapter, you'll learn how these activities are captured in an accounting system, leading to the <a href=''>assets</a>, <a href=''>liabilities</a> and stockholders equity that are reported on the balance sheet.</p>",
+     "transcript_url" : {
+                         "type" : "file_download",
+                         "title" : "download transcript",
+                         "content" : "http://www.google.com"
+                        }
+    }
+   ]
+  }

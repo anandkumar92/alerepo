@@ -1,0 +1,422 @@
+/**
+ * the skins css for Psyc
+ */
+body.assessment.themes h2#data_question_containerH2,
+body.assessment.themes.selectAndJustify h2#data_question_containerH2,
+div#lightbox_toolkit_lb.assessment.themes h2#lightbox_data_question_containerH2
+div#lightbox_toolkit_lb.assessment.themes.selectAndJustify h2#lightbox_data_question_containerH2 {
+ display: none;	
+}
+
+body.assessment.themes input#continue,
+body.assessment.themes.selectAndJustify input#continue {
+ margin: 0;
+}
+
+body.assessment #ul_container,
+div#lightbox_toolkit_lb.assessment #ul_container {
+	margin: auto 5px 5px;
+}
+
+body.conclusionRecap div.buttons_sprite.conclusion,
+body.conclusionRecap div#navigation_container {
+ display: none;
+}
+
+body.content #main_container * {
+	zoom: 0;
+}
+
+body.content #graphic_container {
+	display: none;
+}
+
+body.interview div.button_container,
+#lightbox_toolkit_lb.interview div.button_container {
+	display: none;
+}
+
+body.themes a.feedback,
+#lightbox_toolkit_lb.themes a.feedback {
+ display: none;
+}
+
+body.video a.flowplayer {
+ background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ height: 400px;
+ width: 600px;
+}
+ 
+body.interview a.flowplayer {
+	background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+}
+
+body.assessment.portrait_ppt div#portrait_container,
+div#lightbox_toolkit_lb.portrait_ppt.assessment div#portrait_container {
+	background-color: white;
+}
+
+body.themes.portrait_ppt img#data_portrait_image,
+div#lightbox_toolkit_lb.themes.portrait_ppt img#lightbox_data_portrait_image {
+	max-width: 100%;
+}
+
+body.themes.portrait_ppt #data_portrait_caption h4,
+div#lightbox_toolkit_lb.themes.portrait_ppt #lightbox_data_portrait_caption h4 {
+	margibottom: 0;
+	padding: 5px;
+}
+
+body.themes.portrait_ppt #data_portrait_caption,
+div#lightbox_toolkit_lb.themes.portrait_ppt #lightbox_data_portrait_caption {
+	background-color: #E5E5E5;
+	margin-bottom: 10px;
+}
+ 
+div#data_instruction h3 {
+	max-width: 75%;
+}
+ 
+img#data_tooltip{
+ display:none !important;
+}
+#main_header_container h2{
+ font-size: 13px;
+}
+table.summaryTbl td{
+ padding: 0;
+}
+table.summaryTbl h4{
+ margin-bottom: 8px;
+}
+table.summaryTbl h2{
+ font-size: 1.2em;
+ font-weight: bold;
+}
+#data_chapter_description{
+ font-size: 24px;
+ padding-top: 10px;
+}
+#global_masthead h3{
+ font-size: 24px;	
+}
+body.content #main_content_container{
+ margin: 0 30px;
+ overflow: hidden;
+}
+div#clickPic_container{
+ width: 535px;
+ margin: 0 40px 0;
+}
+div#data_clickPic_content,
+#lightbox_data_clickPic_content {
+ height: 450px;
+ margin: 15px;
+ width: 505px;
+}
+#global_masthead{
+ background-color: #333333;
+ margin: 0;
+ position: relative;
+}
+.data_contentText{
+ width: 770px;
+ padding: 0;
+ margin-left: 10px;
+ background: url("/s3scorm/ale/content/assets/PSY_SC01_01_pdf.png") no-repeat scroll 0 0 transparent;
+}
+.data_contentText .contentWrapper{
+ margin: 120px 10px 0 50px;
+}
+.data_contentText td{
+ vertical-align: top;
+}
+#toolkit_container.horizontal div.toolkit-title.selected.last{
+ background-position: -169px 0;
+ /*height: 35px;*/
+ line-height: 2.5;
+ min-width: 167px;
+ margin-top: 0;
+}
+#global_masthead .masthead_header{
+ margin: 0 auto;
+}
+#masthead_container #saveExit{
+ color: #1086D9;
+ position: absolute;
+ right: 21px;
+ text-decoration: none;
+ top: 10px;
+}
+
+#toolkit_container.horizontal div.notepad-icon {
+	 background: url("../../../img/pysch_toolkit_sprite2.png") no-repeat scroll -344px 0 transparent;
+	 float: right;
+	 height: 30px;
+	 position: absolute;
+	 right: 10px;
+	 top: 10px;
+	 width: 26px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container {
+	background-color: transparent;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container div.toolkit_item {
+ /*background: url('../../../img/ALE_socPsych_icons.png') no-repeat scroll -158px 0 transparent;*/
+ background: url('../../../img/toolkit_pages_sprite.png') no-repeat scroll -158px 0 transparent;
+ height: 57px;
+ /*margin: auto;*/
+ /*margin-left: 48px;*/
+ width: 56px;
+}
+
+#toolkit_container.horizontal div.toolkit_item_container div.talk_active {
+ background-position: -60px 0px;	
+}
+#toolkit_container.horizontal div.toolkit_item_container div.talk_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.talk_inactive {
+ background-position: -549px 0px;	
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.talk_active {
+ background-position: -304px 0px;	
+}
+#toolkit_container.horizontal div.toolkit_item_container div.read_active {
+ background-position: 0px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.read_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.read_inactive {
+ background-position: -487px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.read_active {
+ background-position: -244px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.research_active {
+ background-position: -181px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.research_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.research_inactive {
+ background-position: -669px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.research_active {
+ background-position: -426px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.investigate_active {
+ background-position: -121px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.investigate_active.inactive, #toolkit_container.horizontal div.toolkit_item_container div.investigate_inactive {
+ background-position: -609px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container.currentPage div.investigate_active {
+ background-position: -364px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.hypothesize_active {
+ background-position: -120px 0px;
+}
+#toolkit_container.horizontal div.toolkit_item_container div.hypothesize_active.inactive {
+ background-position: -609px 0px;
+}
+.sprite.clickPic {
+	cursor: pointer;
+ background-image: url("../../../img/icon_braininfo.png");
+ position: absolute;
+ height: 33px;
+ width: 33px;
+}
+.lightbox_content_container.floatImage p.header{
+ font-size: 16px;
+}
+.lightbox_content_container.floatImage b{
+ font-size: 18px;
+}
+.lightbox_content_container.floatImage img{
+ float:right;
+ max-width: 180px;
+ margin: -15px 10px 40px 30px;
+}
+.masthead_header #data_chapter_name, .masthead_header #data_chapter_description{
+ color: #ffffff;
+}
+.top .sprite.logo{
+ float: none;
+ left: 10px;
+ margin-left: 10px;
+ position: absolute;
+ width: 100px;
+ height: 35px;
+ background-position: -10px -140px;
+}
+.discipline_logo{
+ background-image: url("../../../img/discipline_psyc.png");
+ left: 59px;
+ position: absolute;
+ top: 25px;
+ width: 90px;
+}
+
+
+/** Toolkit related **/
+body.interview #lightbox_toolkit_lb.video #main_container {
+	min-width: 0px;
+}
+
+body.sources #lightbox_toolkit_lb.interview #main_container #main_content_container {
+	width: auto;
+}
+
+body.themes #toolkit_lightbox_lb #main_container {
+	width: auto;
+}
+
+body.video a.flowplayer {
+	height: 400px;
+	width: 600px;
+}
+
+#lightbox_toolkit_lb.selectAndJustify .main_wrapper {
+	/*margin-right: 0;*/
+}
+
+body.interview #data_videoURL,
+#lightbox_toolkit_lb.interview #lightbox_data_videoURL {
+ background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ cursor: pointer;
+ height: 333px;
+ width: 500px;
+}
+
+body.themes #lightbox_toolkit_lb div.answer {
+	float: none;
+	width: auto;
+}
+
+body.video #lightbox_toolkit_lb {
+	width: auto;
+}
+
+div#lightbox_toolkit_lb.content #main_container *,
+div#lightbox_toolkit_lb.video #main_container * {
+	zoom: 0;
+}
+
+div#lightbox_toolkit_lb.content .lightbox_content_container ul {
+ margin: 0 1.5em 1.5em 0;
+}
+
+div#data_instruction h3 {
+ max-width: 75%;
+}
+
+h2#data_paragraph {
+ max-width: 75%;
+}
+
+#lightbox_data_tooltip {
+	display: none;
+}
+
+#lightbox_toolkit_lb.lightbox, .lightbox .sb-inner {
+ background: url("../../../img/modal.gif") repeat-x scroll center top #FFFFFF;
+}
+
+#lightbox_toolkit_lb.content .data_contentText {
+	width: 750px;
+	margin-right: 10px;
+}
+
+div#lightbox_toolkit_lb.selectAndJustify div.main_wrapper div.aleInline.rightRegion {
+ min-width: 600px;
+ width: auto;
+ max-width: 640px;
+}
+
+#lightbox_toolkit_lb.content #graphic_container,
+#lightbox_toolkit_lb.content .data_timeline {
+	display: none;
+}
+
+#lightbox_toolkit_lb.clickPic #lightbox_data_paragraph {
+	display: none;
+}
+
+#lightbox_toolkit_lb.clickPic div.sprite {
+ display: none;
+}
+
+#lightbox_toolkit_lb.clickPic.lightbox_window_width {
+ height: auto;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.content #main_container {
+	width: 810px;
+}
+
+#lightbox_toolkit_lb.content.lightbox_window_width {
+	height: auto;
+	width: auto;
+}
+
+#lightbox_toolkit_lb.sources div.json_text ul li {
+ width: 45%;
+}
+
+#lightbox_toolkit_lb.video .lightbox_content_container #main_container #main_content_container {
+	height: 405px;
+	margin-left: 25px;
+	margin-right: 25px;
+	width: 625px;
+}
+
+#lightbox_toolkit_lb.interview .lightbox_content_container {
+	width: 990px;
+}
+
+#lightbox_toolkit_lb.interview .lightbox_content_container div#main_container * {
+	zoom: 1;
+}
+
+#lightbox_toolkit_lb.interview .lightbox_content_container div.excerpt.ui-accordion-content {
+	overflow: visible !important;
+}
+
+#lightbox_toolkit_lb.interview .lightbox_content_container #main_content_container {
+	overflow: visible;
+}
+
+#lightbox_toolkit_lb.interview.lightbox_window_width {
+ height: auto;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.interview div#lightbox_data_videoURL {
+ float: left;
+ margin-left: 20px;
+ width: 500px;
+}
+
+#lightbox_toolkit_lb.interview h2#lightbox_data_paragraph {
+ max-width: 900px;
+}
+
+#lightbox_toolkit_lb.interview #main_container {
+ margin-bottom: 10px;
+}
+
+#lightbox_toolkit_lb.interview .flowplayer {
+ height: 333px;
+ width: auto;
+}
+
+#lightbox_toolkit_lb.selectAndJustify #main_container {
+ margin-right: 0px;
+}
+ 
+#lightbox_toolkit_lb.under_modal.toolkit_ignore {
+ z-index: 1 !important;
+}
+
+#lightbox_toolkit_lb.video .flowplayer {
+	height: 400px;
+	width: auto;
+}

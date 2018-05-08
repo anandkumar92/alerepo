@@ -1,0 +1,167 @@
+div#carousel_container {
+ background: none repeat scroll 0 0 #E5E5E5;
+ float: left;
+ height: 215px;
+ overflow: hidden;
+ padding: 25px;
+ padding-left: 0;
+ width: 805px;
+}
+
+div#carousel_container ul {
+ height: 205px;
+ list-style-type: none;
+ margin: 0;
+ overflow: hidden;
+ padding: 0;
+ width: 130%;
+}
+
+div#scroller_content_container {
+ background-color: #E5E5E5;
+ height: 264px;
+ margin-top: 10px;
+ padding: 2px;
+ width: 904px;
+}
+
+div.controls {
+ background-color: white;
+ float: left;
+ height: 100%;
+ width: 32px;
+}
+
+div.controls.next {
+ background: url("../../img/next-horizontal.jpg") no-repeat scroll 0 120px #FFFFFF;
+ margin-left: 10px;
+}
+
+div.controls.prev {
+ background: url("../../img/prev-horizontal.jpg") no-repeat scroll 0 120px #FFFFFF
+}
+
+div.controls.next.active,
+div.controls.prev.active {
+ background-position: -64px 120px;
+}
+
+div.controls.next.inactive,
+div.controls.prev.inactive {
+ background-position: -96px 120px;
+}
+
+div.data_slide {
+ background-color: white;
+ border: 1px solid #d6d0bc;
+ float: left;
+ margin-top: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+ padding: 5px;
+}
+
+div.data_slide img {
+ height: 180px;
+}
+
+div.frame {
+ color: #D62300;
+ /*cursor: pointer;*/
+ font-size: 12pt;
+ font-weight: bold;
+ line-height: 0;
+}
+
+li {
+ display: inline;
+ float: left;
+}
+
+.frame p {
+ margin-bottom: 0;
+ margin-left: 10px;
+}
+
+.niftyFix {
+ display: block;
+ height: 264px;
+ width: 32px;
+}
+
+#data_articleTitle {
+ border-bottom: 1px solid #e2e2e2;
+ font-size: 12pt;
+ font-weight: bold;
+ margin: auto;
+ width: 95%;
+}
+
+#data_subText_container {
+ margin:5px 0;
+}
+
+#data_subText_container a {
+ color: #1086d9;
+ font-size: 10pt;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#data_webPageHeader {
+ color: #d62300;
+ display: inline;
+ font-size: 14pt;
+ font-weight: bold;
+ margin: 0px;
+}
+
+#fakeNavigationImage {
+ float: right; 
+}
+
+#mainImage {
+ border: 5px solid white; 
+}
+
+#mainImage_container {
+ border: 1px solid #d1caaf;
+ height: 209px; 
+}
+
+#webpage_body_container {
+ border: 1px solid #e2e2e2;
+ padding-top: 10px;
+}
+
+#webpage_images_container {
+ display: none;
+ margin: auto;
+ margin-top: 10px;
+ width: 95%;
+}
+
+#webpage_content_container {
+ float: left;
+ margin: auto auto auto 20px;
+ width: 910px;
+}
+
+#webpage_header_content {
+ height: 107px; 
+}
+
+#webpage_images_container {
+ background-color: #e2e2e2;
+ height: 312px;
+ width: 850px; 
+}
+
+#webpage_left_container {
+ float: left;
+ margin: 15px 15px 0 35px; 
+}
+
+#webPageHeader_container {
+ overflow: auto;
+}

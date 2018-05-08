@@ -1,0 +1,176 @@
+body.freeWrite #body_inner_container ul li p {
+ min-width: 45%;
+}
+
+body.freeWrite #data_notes li,
+body.freeWrite #notesContent li {
+ clear: both;
+ overflow: auto;
+}
+
+body.freeWrite #data_notes li p,
+body.freeWrite #notesContent li p {
+ float: left;
+ margin-left: 0;
+ width: 80%;
+}
+
+body.freeWrite #data_notes li span,
+body.freeWrite #notesContent li span {
+ /*float: left;
+ width: 145px;*/
+}
+
+body.freeWrite.trueFalse #body_container #body_inner_container #data_notes li,
+body.freeWrite.trueFalse #body_container #body_inner_container #notesContent li {
+ margin-left: 0px;
+}
+
+body.freeWrite.trueFalse #body_container #body_inner_container #data_notes ul,
+body.freeWrite.trueFalse #body_container #body_inner_container #notesContent ul {
+ position: relative;
+}
+
+.freeWrite.trueFalse #body_container #body_inner_container #data_notes ul li p,
+.freeWrite.trueFalse #body_container #body_inner_container #notesContent ul li p {
+
+}
+
+body.freeWrite.trueFalse #body_container #data_notes ul li span,
+body.freeWrite.trueFalse #body_container #notesContent ul li span {
+ left: 20px;
+ position: absolute;
+}
+
+body.freeWrite #notesContent {
+ clear: both;
+}
+
+body #main_container {
+	overflow: visible;
+}
+
+.pre {
+ clear: both;
+ font-family: inherit;
+ font-size: inherit;
+ overflow-x: hidden;
+ overflow-y: auto;
+ white-space: pre-wrap;
+ width: 100%;
+}
+
+#body_container {
+ background: #ffffff;
+ overflow: hidden;
+ min-width: 980px;
+ padding: 30px 20px;
+ position: relative;
+}
+
+#body_container #body_inner_container {
+ margin-left: 10px;
+ overflow: visible;
+ padding-left: 55px;
+}
+
+#body_container #body_inner_container h2 {
+ font-size: 16px;
+ font-weight: bold;
+ margin: 0;
+}
+
+#body_container #body_inner_container ul {
+ /*clear: both;
+ */color: #737373;
+ float: left;
+ font-size: 12px;
+ list-style: none outside none;
+ overflow-x: visible;
+ overflow-y: visible;
+ padding: 0 0 0 20px;
+}
+
+#body_container #body_inner_container ul li {
+ border-bottom: 1px dashed #000000;
+ clear: both;
+ margin: 5px 0 7px;
+ overflow-x: visible;
+ overflow-y: visible; 
+ padding-top: 2px;
+}
+
+#body_container #body_inner_container ul li p {
+ margin: 0 25px 5px;
+ max-width: 400px;
+}
+
+#body_container #body_inner_container ul li span {
+ color: #000000;
+ float : left;
+}
+
+#body_container_wrapper {
+ background: #e5e5e5;
+ clear: both;
+ margin-top: 20px;
+ /*min-width: 1400px;
+ */overflow: visible;
+ padding: 15px;
+}
+
+#body_container_wrapper .sb-shadow {
+ background: #e5e5e5;
+}
+
+#data_videoCaption {
+ font-style: italic;
+ margin: 10px;
+ text-align: center;
+}
+
+#main_content_container {
+ margin: 0 30px;
+ overflow: visible;
+}
+
+#message_container {
+ overflow: auto;
+}
+
+#message_container #data_assignmentMessage {
+ color: #336600;
+ font-size: 1.2em;
+ font-weight: bold;
+ margin-left: 65px;
+ margin-top: 17px;
+}
+
+#message_container #message_image {
+ background: url("../../img/sprite.gif") no-repeat scroll 0 1px transparent;
+ float: left;
+ height: 53px;
+ margin-left: 1%;
+ width: 37px;
+}
+
+#message_container_wrapper {
+ background: #d1f0be;
+ width: 100%
+}
+
+#notes_container {
+	float: left;
+	margin-left: 10px;
+}
+
+#video_container {
+ float: left;
+ left: 10px;
+ width: 450px;
+}
+
+.flowplayer {
+ height: 300px;
+ width: 450px;
+}

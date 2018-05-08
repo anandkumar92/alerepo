@@ -1,0 +1,302 @@
+body.soc div.lightbox.normal {
+ height: 485px;
+ width: 450px;
+}
+
+body.soc.graph div.lightbox.normal {
+ height: auto;
+ min-height: 75px;
+ width: 400px;
+}
+
+body.soc.graph div.lightbox.normal div.pointer {
+ display: none;
+}
+
+body.soc.graph #lightbox_things_lb.soc  div.lightbox_title_content {
+ background-color: transparent;
+ margin-top: 6px;
+}
+
+body.soc.graph .lightbox, .lightbox .sb-inner {
+ background: none repeat scroll 0 0 white;
+ margin-top: 6px;
+}
+
+#lightbox_things_lb.soc {
+ padding-top: 0;
+}
+#lightbox_things_lb.soc .lightbox_html_content {
+ margin-top: -25px;
+ padding-left: 5px;
+ width: 360px;
+}
+
+#lightbox_things_lb.soc .lightbox_content_container {
+ background-color: transparent;
+ margin: 0;
+ margin-left: 7px;
+ padding-top: 5px;
+}
+
+#lightbox_things_lb.soc .pointer,
+#lightbox_things_lb.soc div.sb-gen {
+ /*display: none;
+*/}
+
+body.soc #clickPic_container {
+ width: 750px;
+}
+
+body.soc.graph #clickPic_container,
+body.soc #lightbox_toolkit_lb #clickPic_container {
+ width: 620px;
+}
+
+body.soc.audio #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.soc.audio #lightbox_data_clickPic_content {
+ height: 525px;
+ margin-top: 10px;
+ width: 800px;
+}
+
+body.soc.graph #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph #lightbox_data_clickPic_content {
+ height: 225px;
+ margin-top: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+ width: 600px;
+}
+
+body.soc #lightbox_toolkit_lb #lightbox_data_clickPic_content {
+ /*background-image: url("/s3scorm/ale/content/assets/SOC_SC01_01_BaltimoreMap_icons.png") !important;*/
+}
+
+body.soc.audio .image_caption_content .imageCaptionURL {
+ width: 400px;
+}
+
+body.soc div.sprite.clickPic {
+ height: 75px;
+ width: 75px;
+}
+
+body.soc.graph div.sprite.clickPic {
+ height: 25px;
+ width: 25px;
+}
+
+body.soc #lightbox_toolkit_lb div.sprite.clickPic {
+ display: none;
+}
+
+body.soc.graph #lightbox_toolkit_lb div.sprite.clickPic,
+body.soc #lightbox_toolkit_lb.graph div.sprite.clickPic {
+ display: inline;
+ position: absolute;
+}
+
+.flowplayer {
+ height: 26px;
+ width: 400px;
+}
+
+.definition {
+ margin-top: 10px;
+}
+
+.image_caption_content {
+ display: inline-table;
+ position: relative;
+ vertical-align: bottom;
+ width: 50%;
+}
+
+.image_caption_content .imageCaption {
+ color: #777;
+ display: table-cell;
+ font-size: 11px;
+ vertical-align: bottom;
+}
+
+.image_caption_content .imageCaptionURL {
+ float: left;
+ width: 60px;
+}
+
+.lightbox .definition span.header {
+ color: #555;
+ display: block;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+body.soc #clickPic_container,
+body.soc #lightbox_toolkit_lb.clickPic  #clickPic_container {
+	width: auto;
+}
+
+body.soc #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.clickPic #data_clickPic_content {
+	height: 507px;
+	width: 845px;
+}
+
+body.soc .image_caption_content .imageCaptionURL,
+body.soc #lightbox_toolkit_lb.clickPic .image_caption_content .imageCaptionURL {
+	width: 200px;
+}
+
+/* this is used for both a & b templates */
+body.SP_SC04a_01 #clickPic_container, 
+body.SP_SC04a_01 #data_clickPic_content{
+ height: 479px;
+ width: 979px;
+ background: none;
+}
+
+/* this is used for both SP_SC01a_03 & SP_SC01b_03 templates */
+body.SP_SC01a_03 #clickPic_container, 
+body.SP_SC01a_03 #data_clickPic_content{
+ background: none;
+ height: 450px;
+ width: 950px;
+}
+
+body.SP_SC01a_03 #data_clickPic_content {
+ margin : 0px;
+}
+
+body.SP_SC01a_03 #clickPic_header_container {
+ display : none;
+}
+
+body.PU_SC02_03 #clickPic_container,
+body.PU_SC02_03 #data_clickPic_content {
+	background: #FFFFFF;
+	height: 552px;
+	width: 800px;
+}
+
+/* this is used for both SP_SC01a_05 & SP_SC01b_05 templates */
+body.SP_SC01a_05 #clickPic_container, 
+body.SP_SC01a_05 #data_clickPic_content {
+ background: none;
+ height: 563px;
+ width: 500px;
+}
+
+body.SP_SC01a_05 #data_clickPic_content {
+ margin : 0px;
+}
+
+body.SP_SC01a_05 #clickPic_header_container {
+ display : none;
+}
+
+/* this is used for both SP_SC03a_05 & SP_SC03b_05 templates */
+body.SP_SC03a_05 #clickPic_container, 
+body.SP_SC03a_05 #data_clickPic_content {
+ background: none;
+ height: 409px;
+ width: 900px;
+}
+
+/* this is used for both SP_SC05a_07 & SP_SC05b_07 templates */
+body.SP_SC05a_07 #clickPic_container, 
+body.SP_SC05a_07 #data_clickPic_content {
+ background: none;
+ height: 555px;
+ width: 367px;
+}
+
+body.SP_SC05a_07 #clickPic_header_container {
+display: none;
+}
+
+/* this is used for both SP_SC08a_01 & SP_SC08b_01 templates */
+body.SP_SC08a_01 #clickPic_container, 
+body.SP_SC08a_01 #data_clickPic_content {
+ background: none;
+ height: 249px;
+ width: 800px;
+}
+
+body.SP_SC08a_01 #clickPic_header_container {
+ display : none;
+}
+
+/* this is used for both SP_SC08a_02 & SP_SC08b_02 templates */
+body.SP_SC08b_02 #clickPic_container, 
+body.SP_SC08b_02 #data_clickPic_content {
+ background: none;
+ height: 534px;
+ width: 800px;
+}
+
+/* this is used for both SP_SC08a_05 & SP_SC08b_05 templates */
+body.SP_SC08a_05 #clickPic_header_container {
+ display : none;
+}
+
+body.height868px #data_clickPic_content {
+ height: 868px;
+}
+
+body.height500px #data_clickPic_content {
+ height: 500px;
+}
+
+body.height657px #data_clickPic_content {
+ height: 657px;
+}
+
+#clickPic_container {
+ background: #f3f3f3;
+ float: left;
+ margin: 10px 40px 0;
+ width: 620px;
+}
+
+#clickPic_container p#clickPic_header_container {
+ margin-bottom: -10px;
+ text-align: center;
+}
+
+#data_clickPic_content {
+ margin: 4px 15px 15px;
+}
+
+#data_clickPic_content {
+  background: none no-repeat scroll center center transparent;
+ height: 363px;
+ position: relative;
+ width: 593px;
+}
+
+#data_clickPic_content .sprite.clickPic {
+ position: absolute;
+}
+
+#data_clickPic_content .sprite.clickPic:hover {
+ cursor: pointer;
+}
+
+#main_header_container h1 {
+ font-size: 19px;
+ font-weight: bold;
+ margin: 10px 10px 5px 10px;
+}
+
+#main_header_container h2 {
+ font-size: 14px;
+ margin: 0 10px 10px 10px;
+}
+/*
+ * override flowplayer style of clickPic when show video from Toolkit on video page.
+ */
+#lightbox_toolkit_lb .flowplayer{
+ height: 400px;
+ width: 615px;
+}

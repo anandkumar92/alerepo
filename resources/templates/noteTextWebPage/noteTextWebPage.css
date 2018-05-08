@@ -1,0 +1,230 @@
+body.audio_player div#data_video object {
+	height: 30px;
+}
+
+body.noHeader div#graphic_container {
+	display: none;
+}
+
+body.noHeader div#middle_container div#text_container {
+	margin-bottom: 0;
+	width: 734px;
+}
+
+body.noHeader div#webpage_header {
+	display: none;
+}
+
+body.puntos div#bottom_container {
+ background: url("footer.gif") no-repeat scroll right bottom #ABABAB;
+ height: 14px;
+}
+
+body.puntos div#middle_container div#webpage_body,
+body.puntos div#middle_container div#webpage_wrapper {
+ overflow: hidden;
+ zoom: 0;
+}
+
+body.puntos div#webpage_header {
+	display: none;
+}
+
+body.puntos div#webpage_container_wrapper {
+	overflow: none;
+}
+
+body.puntos div#webpage_header_container {
+ background: url("/s3scorm/ale/content/assets/PU_SC01_ART_sources_top.jpg") no-repeat scroll 0 0 transparent;
+ height: 107px;
+}
+
+body.puntos div#graphic_container {
+	margin-top: 265px;
+	margin-right: 15px;
+}
+
+body.puntosSc4Ac1 div#middle_container div#webpage_header h1 {
+ margin: 0;
+ }
+
+body.puntosSc4Ac1 div#middle_container div#webpage_wrapper {
+	padding: 0;
+}
+
+body.puntosSc3Ac1 div#webpage_body {
+	background-color: #ded2af;
+}
+
+.flowplayer {
+ height: auto;
+}
+
+div#data_video {
+ float: left;
+ margin: 0pt 10px 10px;
+}
+
+div#data_video object{
+ width: 300px;
+ height: 220px;
+}
+
+#bottom_container {
+ background: url("footer.gif") no-repeat scroll 0 0 transparent;
+ border: 1px solid #999999;
+ border-top: 0px;
+ height: 15px;
+}
+
+#data_image {
+ margin: 0 auto;
+}
+
+#image_container {
+ text-align: center;
+}
+
+#middle_container {
+ background: #fff repeat-x;
+ border: 1px solid #999999;
+ border-bottom: 0px;
+ border-top: 0px;
+ clear: both;
+}
+
+#middle_container #data_navigationLinks {
+ overflow: auto;
+}
+
+#middle_container #data_navigationLinks p {
+ background: url(webpage_dot_bg.gif) no-repeat left center #333;
+ color: #FFFFFF;
+ float: left;
+ padding:6px 0px;
+ text-align:center;
+ width: 127px;
+}
+
+#middle_container #data_navigationLinks p:first-child {
+ background: #333;
+}
+
+#middle_container #text_container {
+ float: left;
+ margin-bottom: 28px;
+ width: 363px;
+}
+
+#middle_container #graphic_container {
+ float: right;
+ width: 355px;
+}
+
+#middle_container #graphic_container #data_articleColumn2 {
+ margin-top: 15px;
+}
+
+#middle_container #graphic_container #data_optionalCaption {
+ color: #838383;
+ font-size: 0.9em;
+ padding: 4px 6px;
+ text-align: center;
+}
+
+#middle_container #graphic_container #image_container {
+ clear: both;
+}
+
+#middle_container #webpage_body {
+ overflow: auto;
+}
+
+#middle_container #webpage_header h1 {
+ font-size: 2em;
+ margin: 16px 0 23px 0;
+ text-align: center;
+}
+
+#middle_container #webpage_wrapper {
+ clear: both;
+ overflow: auto;
+ padding: 0px 14px;
+}
+
+#webpage_container {
+ background: #d3d3d3;
+ border: 0px solid #D3D3D3;
+ margin: 0 auto;
+ width: 764px;
+}
+
+#webpage_container_wrapper {
+ float: left;
+ margin: 15px 30px;
+ padding: 6px 4px;
+ width: 768px; 
+}
+
+#webpage_container_wrapper .sb-shadow {
+ background: #aaaaac;
+}
+
+#webpage_header_container {
+ background: url("webpage-header.png") no-repeat 0px 0px transparent;
+ height: 58px;
+}
+
+#webpage_header_container #data_browserTitle {
+ font-size: 1.1em;
+ text-align:center;
+}
+
+#webpage_header_container #data_url {
+ margin: 8px 0 0 139px;
+}
+
+body.oneColumnCentered div#data_articleColumn1 {
+	text-align: center;
+}
+
+/*To Override the css added in the top*/
+body.oneColumnCentered #text_container,
+body.hide_graphic_container #text_container{
+ width : 100% !important;
+}
+
+body.oneColumnCentered #graphic_container,
+body.hide_graphic_container #graphic_container{
+ display : none;
+}
+
+body.oneColumnCentered2 div#data_articleColumn1 {
+ text-align: center;
+}
+
+/*To Override the css added in the top*/
+body.oneColumnCentered2 #text_container,
+body.hide_graphic_container #text_container{
+ width : 100% !important;
+}
+
+body.oneColumnCentered2 #graphic_container,
+body.hide_graphic_container #graphic_container{
+ display : none;
+}
+
+body.oneColumnCentered2 div#middle_container div#webpage_header h1 {
+ margin: 0;
+ }
+
+body.oneColumnCentered2 div#middle_container div#webpage_wrapper {
+ padding: 0;
+}
+
+
+
+
+.flowplayer {
+ height: auto;
+}

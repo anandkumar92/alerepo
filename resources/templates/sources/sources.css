@@ -1,0 +1,359 @@
+body.autoLI #mycarousel div.json_text li {
+	max-width: 560px;
+}
+
+body.psySc2 p.footer {
+ display: none;
+}
+
+body.puntos p.footer {
+ display: none;
+}
+
+body.puntos div#contents {
+ display: none;
+}
+
+body.puntos div#webpage_content_container {
+ margin: -23px auto auto 25px;
+}
+
+body.puntosSc5 .jcarousel-skin-tango .jcarousel-container-horizontal {
+	height: 540px;
+}
+
+body.puntosSc5 .jcarousel-skin-tango .jcarousel-clip-horizontal {
+	height: 540px;
+}
+
+body.puntosSc5 .jcarousel-skin-tango .jcarousel-item {
+	height: 540px;
+}
+
+body.puntosSc5 .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal {
+ /*background-position: 0 265px;
+ */margin-top: 40px;
+}
+
+body.puntosSc5 .jcarousel-skin-tango .jcarousel-prev-horizontal, .jcarousel-skin-tango .jcarousel-next-horizontal {
+	/*background-position: 0 265px;
+	*/margin-top: 40px;
+}
+
+body.puntosSc5Ac4 .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal {
+ /*background-position: 0 190px;
+*/margin-top: 40px;
+}
+
+body.puntosSc5Ac4 .jcarousel-skin-tango .jcarousel-prev-horizontal, .jcarousel-skin-tango .jcarousel-next-horizontal {
+ /*background-position: 0 190px;
+ */margin-top: 40px;
+}
+
+body.puntosSc8Ac4 .jcarousel-skin-tango .jcarousel-container-horizontal {
+	height: 410px;
+}
+
+.hr {
+ background-color: white;
+ border-bottom: 1px solid #C0C0C0;
+ border-top: 1px solid #C0C0C0;
+ line-height: 1.2;
+ margin-bottom: 5px;
+ margin-top: 5px;
+ min-height: 5px;
+ padding: 2px;
+ text-align: center;
+}
+
+.hr.empty {
+ height: 5px;
+}
+
+a.active {
+ color: #306EFF;
+}
+
+p.footer {
+ background-color: white;
+ border-top: 1px solid #c0c0c0;
+ color: gray;
+ line-height: 1;
+ margin: auto;
+ padding-left: 8px;
+ padding-right: 8px;
+ padding-top: 5px;
+ text-align: center;
+ width: 575px;
+}
+
+p.header {
+ margin: auto;
+ text-align: center;
+}
+
+p.header, p.sourceTitle {
+ font-weight: bold;
+ text-indent: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+ height: 480px; /* this height is increased in ie.css */
+ margin-left: 3px;
+ width: 625px;
+}
+
+.jcarousel-skin-tango .jcarousel-container {
+ background-color: transparent;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+ height: 500px;
+ width: 625px;
+ padding-top: 0;
+ padding-bottom: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+  background:url("../../img/next-horizontal-trans.png") no-repeat scroll 0 120px transparent;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+  background:url("../../img/prev-horizontal-trans.png") no-repeat scroll 0 120px transparent;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal, .jcarousel-skin-tango .jcarousel-next-horizontal {
+ height: 511px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal {
+ background-position: 0 225px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+ background-position: -32px 225px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+ background-position: -64px 225px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+ background-position: -64px 225px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active {
+ background-position: -64px 225px;
+}
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+ background-position: -96px 225px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+ background-position: -96px 225px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+ height: 500px;
+}
+
+.json_text {
+ background-color: white;
+ font-weight: normal;
+ height: 440px;
+ line-height: 1.5;
+ margin: 8px 0 0;
+ padding-left: 8px;
+ padding-right: 8px;
+ width: 600px;
+}
+
+.json_text p {
+ text-indent: 10px; 
+}
+
+div.json_text p.quote {
+ font-weight: bold;
+ margin: 0;
+ text-indent: 0;
+}
+
+div#webpage_images_container:hover {
+ cursor: pointer;
+}
+
+div.data_slide {
+ background-color: white;
+ margin: auto;
+ margin-top: 5px;
+ text-align: center;
+}
+ 
+img.data_slide {
+ height: 177px;
+}
+
+.cancel_edit {
+ background-position: -115px -909px;
+ float: left;
+ height: 30px;
+ text-indent: -10000px;
+ width: 102px;
+}
+
+.caption_area {
+ padding: 10px 0 0;
+ float: left;
+ height: 89px;
+ width: 100%;
+ word-wrap: break-word;
+}
+
+.caption_area textarea{
+ font-size: 10pt;
+ height: 80px;
+ overflow: hidden;
+ width: 100%;
+}
+
+.frame {
+ /*cursor: pointer;*/
+ font-size: 12pt;
+ font-weight: bold;
+ line-height: 0;
+ width: 100%;
+}
+
+.leftColumn {
+ float: left;
+}
+
+.leftColumn, .rightColumn {
+ width: 290px;
+}
+
+/*lightbox requires an auto width*/
+.lightbox_content_container #main_container #main_content_container {
+ overflow: hidden;
+ width: 965px;
+}
+
+
+.lightbox #webpage_content_container {
+ width: 710px;
+}
+
+.rightColumn {
+ float: right;
+}
+
+.sourcesHeaderFix {
+ background-color: black;
+ float: left;
+ margin-bottom: 5px;
+ width: 100%;
+}
+
+#contents {
+ color: blue;
+ font-size: 10pt;
+ font-weight: bold;
+ float: left;
+ height: 100%;
+ width: 210px;
+}
+
+#contents a {
+ color: #1c8cd8;
+ text-decoration: none;
+}
+
+#contents ul li {
+ clear: both;
+ float: left;
+ list-style: none;
+ margin-top: 10px;
+}
+
+#data_articleTitle {
+ /*border-bottom: 1px solid #e2e2e2;*/
+ font-size: 12pt;
+ font-weight: bold;
+ margin: auto;
+ width: 95%;
+}
+
+#data_subText_container {
+ margin:5px 0;
+}
+
+#data_subText_container a {
+ color: #1086d9;
+ font-size: 10pt;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#data_webPageHeader {
+ color: #d62300;
+ display: inline;
+ font-size: 14pt;
+ font-weight: bold;
+ margin: 0px;
+}
+
+#fakeNavigationImage {
+ float: right; 
+}
+
+#lightbox_toolkit_lb #main_container {
+ height: auto;
+ margin: 0;
+ min-height: 0;
+ padding: 0;
+}
+
+#main_container {
+ min-width: 940px;
+}
+
+#main_content_container {
+ /*height: 550px;*/
+ height: auto;
+ width: 920px;
+}
+
+#mainImage {
+ border: 5px solid white; 
+}
+
+#mainImage_container {
+ border: 1px solid #d1caaf;
+ height: 209px;
+}
+
+#mycarousel li {
+ background-color: #FFFFFF;
+ width: 600px;
+}
+
+#scroller_content_container {
+ margin: 10px auto auto;
+}
+
+#webpage_body_container {
+ /*border: 1px solid #e2e2e2;*/
+}
+
+#webpage_images_container {
+ display: none;
+ margin: auto;
+ margin-top: 10px;
+ width: 95%;
+}
+
+#webpage_content_container {
+ float: left;
+ margin: auto auto auto 0;
+ width: 710px;
+}

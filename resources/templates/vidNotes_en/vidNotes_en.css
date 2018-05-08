@@ -1,0 +1,179 @@
+.answerColumn h2 {
+ font-size: 20px;
+ font-weight: bold;
+ margin: 0 20px;
+}
+
+.answerColumn p {
+ margin: 0 20px 20px 20px;
+}
+
+.answerColumn p.answerDescription {
+ display: inline;
+ margin: 0;
+ padding-right: 5px;
+}
+
+.button.ok {
+ background: #00f;
+ color: #fff;
+ text-align: center;
+}
+
+.contentColumn img {
+ margin: 0 10px;
+}
+
+.contentColumn p {
+ margin: 10px 20px;
+ text-align: left;
+}
+
+.excerpt {
+ background: #e5e5e5;
+ margin: 5px;
+ overflow: auto;
+}
+
+.excerpt h1 {
+  background: url("../../img/arrows.gif") no-repeat 0 4px transparent;
+  color: #1086d9;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  text-indent: 15px;
+ }
+
+.excerpt h1:hover {
+ cursor: pointer;
+}
+
+.excerpt h1.active {
+  background: url("../../img/arrows.gif") no-repeat 0 -35px transparent;
+  color: #333;
+ }
+ 
+.excerpt .answerColumn {
+ float: right;
+ width: 49%;
+ }
+ 
+.excerpt .contentColumn {
+  float: left;
+  width: 50%;
+}
+
+.excerpt .excerptBody {
+ background: url(../../img/bg_dotted.gif) center center repeat-y;
+ height: 0px;
+ margin: 5px;
+ overflow: hidden;
+}
+
+.lightbox .pointer {
+ left: 86px;
+ position: absolute;
+ top: -72px;
+}
+
+.lightbox_content_container {
+ margin: 10px 25px 25px;
+}
+
+.lightbox_feedbackCorrectAnswer_content {
+ color: inherit;
+}
+
+.lightbox_html_content input:hover,
+.lightbox_html_content label:hover {
+ cursor: pointer;
+}
+
+.lightbox_html_content .answers {
+ clear: both;
+ float: left;
+}
+
+.lightbox_html_content .go {
+ height: 26px;
+ margin-top: 5px;
+}
+
+.no_h2 .answerColumn h2 {
+ display: none;
+}
+
+#feedback {
+ display: none;
+}
+
+#main_header_container {
+ *overflow: hidden; /*FOR IE 7 UI issue please clarify if we can use hacks*/
+}
+
+#main_header_container h1 {
+ font-size: 19px;
+ font-weight: bold;
+ margin: 10px 10px 5px 10px;
+}
+
+#main_header_container h2 {
+ font-size: 14px;
+ margin: 0 10px 10px 10px;
+}
+
+#question_container {
+ background: #717171;
+ margin: 0 40px;
+ overflow: auto;
+}
+
+#question_container .answerArea {
+ background: #fff !important; /* !important overrides diagnostic */
+ border: 1px dotted #00f;
+ display: inline-block;
+ height: 20px;
+ margin: 5px;
+ padding: 2px 9px !important; /* !important overrides diagnostic */
+ /* position: relative; */ /* relative position is creating UI to break in IE7 */
+ text-align: center;
+ vertical-align: middle;
+ min-width: 140px; 
+}
+
+#question_container .answerArea:hover {
+ cursor: pointer;
+}
+
+#questions_content {
+ margin: 0 20px;
+}
+
+#results_col1_header {
+ text-align: center;
+ font-size: 15px;
+}
+
+#submit_container {
+ margin: 10px 40px;
+ text-align: right;
+}
+
+#submit_container span {
+ font-size: 14px;
+ font-weight: bold;
+}
+
+#submit_container input.saveAndContinue {
+ float: right;
+ margin-left: 10px;
+}
+
+#test .answerArea.correct {
+ color: #11820a;
+}
+
+#test .answerArea.incorrect {
+ color: #c00;
+}
+

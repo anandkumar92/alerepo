@@ -1,0 +1,215 @@
+body.soc div.lightbox.normal {
+ height: 485px;
+ width: 450px;
+}
+
+div.lightbox.audio a.flowplayer {
+ height: 26px;
+ width: 400px;
+}
+
+div#lightbox_things_lb.soc {
+ height: auto;
+ min-height: 75px;
+ width: 400px;
+}
+
+body.soc.graph #lightbox_things_lb div.pointer,
+#lightbox_things_lb div.pointer {
+	background: url("/s3scorm/ale/content/assets/soc_lightbox_arrow.png") no-repeat scroll 0 0 transparent;
+ height: 50px;
+ width: 92px;
+}
+
+body.soc.graph #lightbox_things_lb.soc  div.lightbox_title_content,
+#lightbox_things_lb.soc div.pointer {
+ background-color: transparent;
+ margin-top: 6px;
+}
+
+body.sources div.lightbox p.header {
+ text-align: left;
+}
+
+#lightbox_things_lb.soc div.pointer,
+#lightbox_things_lb.soc .sb-inner {
+ background: none repeat scroll 0 0 white;
+ margin-top: 6px;
+}
+
+#lightbox_things_lb.soc {
+ padding-top: 0;
+}
+
+#lightbox_things_lb.soc .lightbox_html_content {
+ margin-top: -25px;
+ padding-left: 5px;
+ width: 360px;
+}
+
+#lightbox_things_lb.soc .lightbox_content_container {
+ background-color: transparent;
+ margin: 0;
+ margin-left: 7px;
+ padding-top: 5px;
+}
+
+#lightbox_things_lb.soc .pointer,
+#lightbox_things_lb.soc div.sb-gen {
+ /*display: none;
+*/}
+
+body.soc #clickPic_container{
+ width: 750px;
+}
+
+
+#lightbox_toolkit_lb.multibox.soc #clickPic_container {
+ width: auto;
+}
+
+body.soc.graph #clickPic_container{
+ width: 620px;
+}
+
+body.soc #lightbox_toolkit_lb #clickPic_container {
+ width: auto;
+}
+
+body.soc #data_clickPic_content{
+ height: 500px;
+ margin-top: 10px;
+ width: 720px;
+}
+body.soc #lightbox_toolkit_lb #lightbox_data_clickPic_content {
+ height: 500px;
+ margin-top: 10px;
+ width: 750px;
+}
+
+body.soc #lightbox_toolkit_lb.glovebox #lightbox_data_clickPic_content {
+ width: auto;
+}
+
+body.soc.graph #data_clickPic_content,
+body.soc #lightbox_toolkit_lb.graph #lightbox_data_clickPic_content {
+ height: 225px;
+ margin-top: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+ width: 600px;
+}
+
+body.soc #lightbox_toolkit_lb #lightbox_data_clickPic_content {
+	/*background-image: url("/s3scorm/ale/content/assets/SOC_SC01_01_BaltimoreMap_icons.png") !important;*/
+}
+
+body.soc .image_caption_content .imageCaptionURL {
+ width: 400px;
+}
+
+body.soc div.sprite.clickPic,
+div#lightbox_toolkit_lb.soc div.sprite.clickPic {
+ cursor: pointer;
+ height: 75px;
+ position: absolute;
+ width: 75px;
+}
+
+body.soc.graph div.sprite.clickPic {
+ height: 25px;
+ width: 25px;
+}
+
+body.soc #lightbox_toolkit_lb div.sprite.clickPic {
+ /*display: none;
+*/}
+
+body.soc.graph #lightbox_toolkit_lb div.sprite.clickPic,
+body.soc #lightbox_toolkit_lb.graph div.sprite.clickPic {
+ display: inline;
+ position: absolute;
+}
+
+body.soc4 #data_clickPic_content,
+body #lightbox_toolkit_lb.soc4 #lightbox_data_clickPic_content {
+ height: 380px;
+}
+
+.flowplayer {
+ height: 26px;
+ width: 400px;
+}
+
+.definition {
+ margin-top: 10px;
+}
+
+.image_caption_content {
+ display: inline-table;
+ position: relative;
+ vertical-align: bottom;
+ width: 50%;
+}
+
+.image_caption_content .imageCaption {
+ color: #777;
+ display: table-cell;
+ font-size: 11px;
+ vertical-align: bottom;
+}
+
+.image_caption_content .imageCaptionURL {
+ float: left;
+ width: 60px;
+}
+
+.lightbox .definition span.header {
+ color: #555;
+ display: block;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+#clickPic_container {
+ background: #f3f3f3;
+ /*float: left;*/
+ margin: 10px 40px 0;
+ width: 623px;
+}
+
+#clickPic_container p#clickPic_header_container {
+ margin-bottom: -18px;
+ text-align: center;
+}
+
+#data_clickPic_content {
+ margin: 4px 15px 15px;
+}
+
+#data_clickPic_content {
+ background:none no-repeat scroll center center transparent;
+ height: 363px;
+ position: relative;
+ width: 593px;
+}
+
+#data_clickPic_content .sprite.clickPic {
+ position: absolute;
+}
+
+#data_clickPic_content .sprite.clickPic:hover {
+ cursor: pointer;
+}
+
+#main_header_container h1 {
+ font-size: 19px;
+ font-weight: bold;
+ margin: 10px 10px 5px 10px;
+ width: 700px;
+}
+
+#main_header_container h2 {
+ font-size: 14px;
+ margin: 0 10px 10px 10px;
+}

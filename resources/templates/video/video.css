@@ -1,0 +1,46 @@
+body.textTop #data_contentTextTop {
+ border: 5px solid red;
+ margin: 50px;
+}
+
+body.textTop div .flowplayer {
+ height: 100px;
+}
+
+body.video #lightbox_toolkit_lb.video .lightbox_window_width {
+ height: 540px;
+ width: 690px;
+}
+
+body.video #data_contentText {
+	clear:left;
+	float: left;
+	margin: 10px 40px 0;
+	width: 600px;
+}
+
+body.wide_vid a.flowplayer {
+	width: 640px !important;
+}
+
+body.wide_vid div#lightbox_toolkit_lb {
+	width: 680px !important;
+}
+
+div.textTop {
+
+}
+
+
+div#lightbox_toolkit_lb.video #main_container #main_header_container {
+	margin-left: 14px;
+}
+
+
+div#data_videoURL {
+ margin: 0 40px;
+}
+
+#main_container {
+ min-height: 400px;
+}

@@ -1,0 +1,118 @@
+.lightbox .sb-inner {
+ background-image : none; /*To override the background red image of lightbox css*/
+}
+
+.lightbox.map.sb {
+ margin-top: -60px;
+}
+
+#bottom_container {
+ margin-bottom: 50px;
+ overflow: auto;
+ padding: 0 25px;
+}
+#bottom_container_left {
+ float: left; 
+ overflow: hidden;
+}
+#bottom_container_right {
+ float: left;
+ margin: 0 0 0 20px;
+}
+#bottom_container_right .block_container {
+ background: url("block_bottom_bg.gif") no-repeat scroll left bottom transparent;
+ margin-bottom: 15px;
+ padding-bottom: 6px;
+ width: 175px;
+}
+#bottom_container_right .block_container h2 {
+ background: url("block_header_bg.gif") no-repeat scroll 0 0 transparent;
+ font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 0;
+ padding: 4px 0 4px 15px;
+ width: 175px;
+}
+
+#bottom_container_right .block_container img {
+ padding: 10px 0 0 0; 
+}
+
+#bottom_container_right .block_container .assignment_result {
+ font-weight: bold;
+}
+
+#bottom_container_right .block_container .assignment_button {
+ background-image: url("button.gif");
+ background-repeat: no-repeat;
+ border: 0 none;
+ cursor: pointer;
+ height: 32px;
+ margin-top: 25px;
+ width: 145px;
+}
+
+#bottom_container_right .block_container .block_body_container {
+ background-color: #F2F2F2;
+ margin: 0;
+ padding: 0 12px 5px;
+}
+
+#bottom_container_right .block_container .block_body_container ul {
+ list-style: none outside none;
+ margin: 0;
+ padding: 4px 0 0;
+}
+
+#data_screenshotURL {
+ display: none;
+}
+
+#data_videoURL {
+ margin-left: 20px;
+}
+
+#main_content_container {
+ margin: 10px 0 0 40px;
+}
+
+#map_container {
+ font-size: 20px;
+ padding-left: 30px;
+}
+
+#top_container {
+ margin-top: 10px;
+ overflow: auto;
+ padding: 10px 0 0 25px;
+}
+
+#top_container div {
+ float: left;
+}
+
+#top_container h2 {
+ font-size: 30px; 
+ color: #333;
+}
+
+#top_container img {
+ padding-right: 10px;
+ width: 58px; 
+}
+
+#top_container p {
+ color: #666666;
+ font-size: 12px; 
+ padding: 0px;
+ margin: 0px;
+}
+
+#top_container p span {
+ font-weight: bold;
+}
+
+.flowplayer {
+ height: 300px;
+ width: 450px;
+}

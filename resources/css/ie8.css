@@ -1,0 +1,89 @@
+/*
+ * The purpose of this file is to store style information related
+ * to lightbox display in IE 8. The current plugin for rounding corners
+ * causes the DOM to be too heavy and unresponsive. We will be using
+ * square corners until another method can be implemented.
+ * 
+ * NOTE: This code was lifted from the ie.css and moved here so that it
+ * can be applied to both versions of IE
+ */
+
+body.counting div#question_container {
+ min-width: 95%;
+}
+
+body.soc.selectAndJustify #lightbox_toolkit_lb #main_container {
+	min-height: 0;
+}
+
+body.soc div#lightbox_things_lb.soc div.lightbox_title_content {
+ background-color: white !important;
+ margin-top: 0 !important;
+}
+
+body #main_container.toolkitIEFix {
+ padding-bottom: 40px;
+}
+
+div.answer_vals {
+ top: -18px;
+}
+
+div.lightbox {
+ border: 6px solid #333;
+ padding-top: 11px;
+}
+
+div.lightbox .lightbox_title_content {
+ margin: 0px;
+}
+
+div.lightbox .pointer {
+ top: -27px;
+}
+
+body.soc.graph #lightbox_things_lb div.pointer,
+#lightbox_things_lb.soc div.pointer {
+ top: -51px;
+}
+
+div.lightbox .lightbox_content_container ul {
+ margin-bottom: -20px;
+}
+
+div.lightbox .lightbox_title_content a.close {
+ top: 10px;
+}
+
+div#lightbox_things_lb .lightbox_content_container ul {
+	margin-bottom: 0;
+}
+
+div#lightbox_toolkit_lb a.close {
+ top: 10px; 
+}
+
+div#page_array_container {
+ margin-left: 65px;
+}
+
+ul#jcarousel-list,
+ul#jcarousel-list li {
+ width: auto;
+}
+
+div#free_write_content_right_container {
+ padding: 25px 6px 0 556px;
+}
+
+div#lightbox_things_lb .pointer {
+ top: -23px;
+}
+
+#lightbox_toolkit_lb.graph.soc div#lightbox_data_clickPic_content {
+ margin-bottom: 10px;
+}
+
+#lightbox_toolkit_lb.box_lightBox .lightbox_content_container .pointer_img{
+ top: 110px !important;
+}

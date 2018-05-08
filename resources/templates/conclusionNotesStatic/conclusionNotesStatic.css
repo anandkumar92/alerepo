@@ -1,0 +1,100 @@
+#body_container {
+ background: #ffffff;
+ overflow: hidden;
+ padding: 30px 20px;
+ position: relative;
+}
+
+#body_container #body_inner_container {
+ margin-left: 10px;
+ padding-left: 455px;
+}
+
+#body_container #body_inner_container h2 {
+ font-size: 16px;
+ font-weight: bold;
+ margin: 0;
+}
+
+#body_container #body_inner_container ul {
+ color: #737373;
+ float: left;
+ font-size: 12px;
+ list-style: none outside none;
+ padding: 0 0 0 20px;
+}
+
+#body_container #body_inner_container ul li {
+ border-bottom: 1px dashed #000000;
+ clear: both;
+ margin: 5px 0 7px;
+ padding-top: 2px;
+}
+
+#body_container #body_inner_container ul li p {
+ margin: 0 25px 5px;
+}
+
+#body_container #body_inner_container ul li span {
+ color: #000000;
+ float : left;
+}
+
+#body_container_wrapper {
+ background: #e5e5e5;
+ clear: both;
+ margin-top: 20px;
+ overflow: auto;
+ padding: 15px;
+}
+
+#body_container_wrapper .sb-shadow {
+ background: #e5e5e5;
+}
+
+#data_videoCaption {
+ font-style: italic;
+ margin: 10px;
+ text-align: center;
+}
+
+#main_content_container {
+ margin: 0 30px;
+ overflow: auto;
+}
+
+#message_container {
+ overflow: auto;
+}
+
+#message_container #data_assignmentMessage {
+ color: #336600;
+ font-size: 1.2em;
+ font-weight: bold;
+ margin-left: 65px;
+ margin-top: 17px;
+}
+
+#message_container #message_image {
+ background: url("../../img/sprite.gif") no-repeat scroll 0 1px transparent;
+ float: left;
+ height: 53px;
+ margin-left: 1%;
+ width: 37px;
+}
+
+#message_container_wrapper {
+ background: #d1f0be;
+ width: 100%
+}
+
+#video_container {
+ float: left;
+ left: 10px;
+ width: 450px;
+}
+
+.flowplayer {
+ height: 300px;
+ width: 450px;
+}
