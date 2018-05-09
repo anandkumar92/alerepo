@@ -266,7 +266,7 @@ function Toolkit(args)
                                                                            {
 //                                                                            alert(e)
          }
-         
+         app.template.videoplayerHelper().pauseOtherVideo();
          scaffoldLightbox({
           template : template,
           callback : function()
@@ -752,7 +752,7 @@ function Toolkit(args)
    {
 //                                                                      alert(e)
    }
-   
+   app.template.videoplayerHelper().pauseOtherVideo();
    scaffoldLightbox({
     template : template,
     callFrom: args,
@@ -1186,6 +1186,8 @@ function Toolkit(args)
                          if (app.template.getData(app.getPageName()).metadata[0].template === 'video' && responseText.metadata[0].template === 'interview')
                           {
                            $('#data_videoURL a.flowplayer').removeClass('flowplayer');
+                           // We are removing video-js class for same reason we are removing above class -- currently unknown why above class removed TODO
+                           $('#data_videoURL .video-js').removeClass('video-js');
                           }
                          
                          setData(responseText);
@@ -1238,6 +1240,7 @@ function Toolkit(args)
    */
   function onLightboxClose()
    {
+     console.log('lighbox closed');
     // If we are on a counterpoint page then display the flash underneath (see lightbox invocation regarding webkit)
     $('body.counterpoint #data_timeline').show();
       
@@ -1268,7 +1271,10 @@ function Toolkit(args)
     {
 //     alert(e)
     }
-    
+    // below code is for videoplayer
+    app.template.videoplayerHelper().pauseOtherVideo();
+    var videoPlayerId;
+
     // find the visible flowplayer at current page and load it.
     var flowplayerId;
     if(flowplayerId = $('#data_videoURL .flowplayer').attr('id'))
@@ -1280,6 +1286,15 @@ function Toolkit(args)
                               $('div#lightbox_toolkit_lb').remove();
                               $('div#lightbox_things_lb').remove();
                              });
+     }else if(videoPlayerId =  $('#data_videoURL .video-js').attr('id')){
+      //  Followed same logic as per flowplayer
+      // console.log('disposed videoplayer id is: '+ videoPlayerId);
+      $('div#lightbox_toolkit_lb').hide();
+      $('div#lightbox_things_lb').hide();
+      // videojs(videoPlayerId).dispose();
+      // No need 
+      $('div#lightbox_toolkit_lb').remove();
+      $('div#lightbox_things_lb').remove();
      }
     else
      {
