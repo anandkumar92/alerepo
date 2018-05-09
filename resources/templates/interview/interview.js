@@ -253,29 +253,8 @@ function Interview(app) {
         file,
         groupId = args.groupId || 0,
         linkId = args.linkId || 0;
-  
+      app.template.videoplayerHelper().pauseOtherVideo();
       $('#lightbox_transcript').remove();
-  
-      //     try
-      //     {      
-      //      flowplayer('*').each(function()
-      //        {
-      //         if (this.isLoaded() === true)
-      //          {
-      //           this.stop();
-      //           this.close();
-      //           this.unload();
-      //          }
-      //        });
-      //     }
-      //    catch(e)
-      //     {
-      // //     alert(e)
-      //     }
-  
-      // Removing flowplayer now every time because of compatibility with toolkit
-      //   $('a.flowplayer').remove();
-  
       if ($('div#lightbox_data_videoURL').length > 0) {
         id = $('div#lightbox_data_videoURL');
       } else {
@@ -311,14 +290,8 @@ function Interview(app) {
           playerId: playerId,
           DOMelement: DOMelement
         });
-        //   app.template.flowplayerHelper().registerFlowplayer({
-        //                                                       playerId : $f('*').length,
-        //                                                       DOMelement : DOMelement
-        //                                                      });
         function onPlayerReady() {
           this.on('loadedmetadata', function() {
-            // console.log(this);
-            // console.log('metaData loaded');
             // This will set the first (default video) link to active if the play button is clicked in the flowplayer video and the first clip is the same as the first file
             if (this.player().src() === ('/s3scorm/ale/content/assets/' + data[0].videos[0].file.content)) {
               console.log('viewing added');
@@ -331,35 +304,12 @@ function Interview(app) {
         app.template.videoplayerHelper().initializePlayer(playerId, {
           controls: true,
           autoplay: false,
-          preload: 'auto',
-          height: 333
+          preload: 'metadata'
         }, onPlayerReady);
-        //   $(DOMelement).flowplayer({
-        //                             src : app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-        //                             wmode : 'opaque'
-        //                            },
-        //                            {
-        //                             clip : {
-        //                                     autoPlay : false,
-        //                                     onStart : function(clip)
-        //                                                {
-        //                                                 // This will set the first (default video) link to active if the play button is clicked in the flowplayer video and the first clip is the same as the first file
-        //                                                 if (clip.url === ('/s3scorm/ale/content/assets/' + data[0].videos[0].file.content))
-        //                                                  {
-        //                                                   $('div.excerpt:eq(0) li:eq(0) span.status').html('&nbsp;(viewing)');
-  
-        //                                                   $('div.excerpt:eq(0) li:eq(0) a').addClass('active');
-        //                                                  }
-        //                                                }
-        //                                    }
-        //                            });
-  
+
         if ($('#lightbox_toolkit_lb.interview').length > 0) {
-          //        app.template.flowplayerHelper().load('#lightbox_toolkit_lb.interview a.flowplayer:eq(0)');
-          // app.template.videoplayerHelper().getVideoPlayerId('#lightbox_toolkit_lb.interview .video-js:eq(0)');
           app.template.videoplayerHelper().play(app.template.videoplayerHelper().getVideoPlayerId('#lightbox_toolkit_lb.interview .video-js:eq(0)'));
         } else {
-          //        app.template.flowplayerHelper().load(DOMelement);
           app.template.videoplayerHelper().play(playerId);
         }
       } else {
@@ -369,16 +319,7 @@ function Interview(app) {
         } else {
           DOMelement = '.video-js:eq(' + ($('.video-js').length - 1) + ')';
         }
-  
-  
-        // setClip method does not work correctly, after browsing flowplayer's forum this is the solution to replace setClip:
-        //   app.template.flowplayerHelper().getClip(DOMelement).update({
-        //                                                               autoPlay : true,
-        //                                                               url : ('/s3scorm/ale/content/assets/' + file)
-        //                                                              });
-  
         app.template.videoplayerHelper().setClip(app.template.videoplayerHelper().getVideoPlayerId(DOMelement), ('/s3scorm/ale/content/assets/' + file), true);
-        //   app.template.videoplayerHelper().play(DOMelement);
       }
   
       // Check if the default is loaded, if it is a clicked link then do the first block
@@ -389,16 +330,9 @@ function Interview(app) {
   
         $('div.excerpt:eq(' + groupId + ') li:eq(' + linkId + ') a').addClass('active');
       } else {
-        // console.log('unknow territory');
         //  ---------------------------TODO anand-----------------------------------
         // First page load, don't play it by default
-        app.template.videoplayerHelper().initializePlayer(app.template.videoplayerHelper().getVideoPlayerId(DOMelement), {
-            controls: true,
-            autoplay: false,
-            preload: 'auto',
-            height: 333
-          })
-        // app.template.flowplayerHelper().load(DOMelement);
+        app.template.videoplayerHelper().load(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
       }
   
       if ($('a.transcript').length > 0) {

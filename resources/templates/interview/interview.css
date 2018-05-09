@@ -119,6 +119,6 @@ div#data_videoURL {
  width: 400px;
 }
 
-.interview .flowplayer{
+.interview .flowplayer, .interview .video-js{
  height: 333px;
 }

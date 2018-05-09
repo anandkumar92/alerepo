@@ -121,7 +121,8 @@ function Template(app) {
       source = args.source || '',
       html = [],
       prefix = args.prefix || '#data_',
-      thisFlowplayerIndex;
+      thisFlowplayerIndex,
+      thisVideoPlayerIndex;
 
     // Ensure that custom prefix is applied to nested elements (nested within JSON node string content)
     // Otherwise elements will not get bound correctly within lightboxes
@@ -505,23 +506,13 @@ function Template(app) {
                   videoplayerHelper().initializePlayer(playerId, {
                     controls: true,
                     autoplay: true,
-                    preload: 'auto',
-                    height: 390
+                    preload: 'auto'
                   });
-                  // $(DOMelement).flowplayer({
-                  //   src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-                  //   wmode: 'opaque'
-                  // }, {
-                  //   clip: {
-                  //     'autoPlay': true
-                  //   }
-                  // });
 
                   $('.lightbox_content_container .video-js').css('height', '390px')
                     .css('margin', 'auto')
                     .css('width', '550px');
 
-                  // flowplayerHelper().play(DOMelement);
                   videoplayerHelper().play(playerId)
 
                   // Check if a transcript exists for this video
@@ -773,8 +764,6 @@ function Template(app) {
     }
     var playerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
     html.push('<video class="video-js" id="', playerId, '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
-    // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', file, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
-    // html.push('&nbsp;</a>');
 
     $('div' + prefix + prop).append(html.join(''));
 
@@ -798,16 +787,8 @@ function Template(app) {
     videoplayerHelper().initializePlayer(playerId, {
       controls: true,
       autoplay: true,
-      preload: 'auto'
+      preload: 'metadata'
     });
-    // $(DOMelement).flowplayer({
-    //   src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-    //   wmode: 'opaque'
-    // }, {
-    //   clip: options || {
-    //     'autoPlay': true
-    //   }
-    // });
 
     // Play the flowplayer according to the flag isDefault.
     var isDefault = source[prop].isDefault;
@@ -821,11 +802,7 @@ function Template(app) {
     if (isDefault && options.autoPlay === true) {
       videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
     } else {
-      videoplayerHelper().initializePlayer(app.template.videoplayerHelper().getVideoPlayerId(DOMelement), {
-        controls: true,
-        autoplay: false,
-        preload: 'auto'
-      })
+      videoplayerHelper().load(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
       // videoplayerHelper().load(DOMelement);
     }
 
@@ -950,11 +927,18 @@ function Template(app) {
       getVideoPlayerId: function(DOMelement) {
         return _videoPlayers[DOMelement];
       },
+      pauseOtherVideo(){
+        for (var key in _videoPlayers) {
+          if (_videoPlayers.hasOwnProperty(key)) {
+            videojs.getPlayer(_videoPlayers[key]).pause();
+          }
+       }
+      },
       initializePlayer: function(playerId, options, callback) {
         options = options || {
           controls: true,
           autoplay: false,
-          preload: 'auto'
+          preload: 'metadata'
         }
         videojs(playerId, options, callback)
       },
@@ -969,6 +953,10 @@ function Template(app) {
         myPlayer.ready(function() {
           myPlayer.pause();
         })
+      },
+      load: function(playerId) {
+        myPlayer = videojs.getPlayer(playerId);
+        myPlayer.load();
       },
       setClip: function(playerId, clip, playClip) {
         myPlayer = videojs.getPlayer(playerId);
@@ -988,20 +976,6 @@ function Template(app) {
           player = args.playerId;
         _videoPlayers[DOMelement] = player;
       }
-      // registerFlowplayer : function (args)
-      //                       {
-      //                        var DOMelement = args.DOMelement,
-      //                            player = args.playerId;
-
-      //                        _flowplayers[DOMelement] = player;
-
-      //                        // Added these while debugging vidNotesRemediation to make it more associative-array-ish. May be able to remove later.
-      //                        _flowplayers.length++;
-      //                        _flowplayers[_flowplayers.length] = {
-      //                                                             DOMelement : DOMelement,
-      //                                                             player : player
-      //                                                            };
-      //                       }
     }
   }
   /**

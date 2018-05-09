@@ -34,7 +34,7 @@ body {
  font-family: helvetica, arial, "Helvetica Neue", sans-serif;
 }
 
-body.audio_only .flowplayer, #lightbox_toolkit_lb.audio_only .flowplayer {
+body.audio_only .flowplayer, #lightbox_toolkit_lb.audio_only .flowplayer,body.audio_only .video-js, #lightbox_toolkit_lb.audio_only .video-js {
  height: 30px !important;
 }
 
@@ -46,7 +46,7 @@ body.soc .toolkit_item_container {
  background-color: transparent;
 }
 
-body.vidNotes div.contentColumn a.flowplayer {
+body.vidNotes div.contentColumn a.flowplayer, body.vidNotes div.contentColumn .video-js {
  margin-right: 10px;
 }
 
@@ -220,7 +220,7 @@ li.timeline_point.inactive {
  width: 45px;
 }
 
-.flowplayer {
+.flowplayer, .video-js {
  display: block;
  height: 400px;
 }
@@ -1902,4 +1902,10 @@ body #lightbox_toolkit_lb.box_lightBox .glovebox_img{
 }
 .video-js .vjs-icon-placeholder{
   position: static;
+}
+.video-js .vjs-poster{
+  background-size: auto;
+}
+.video-js .vjs-big-play-button{
+  display: none;
 }
