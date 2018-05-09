@@ -347,9 +347,19 @@ function Template(app) {
 
           case 'swf':
             var options = {};
-
+            console.log('i am in swf');
             html = [];
-
+            if(isVideoSupported()){
+              createVideo({
+                html: html,
+                options: options,
+                prefix: prefix,
+                prop: prop,
+                source: source
+              });
+              break;
+            }
+            console.log('I am not triggered');
             createSwf({
               html: html,
               options: options,
@@ -741,6 +751,87 @@ function Template(app) {
     loadHTML({
       appendTo: appendTo,
       url: templateName
+    });
+  }
+  function createVideo(args) {
+    var file,
+      html = args.html,
+      options = args.options,
+      prefix = args.prefix,
+      prop = args.prop,
+      source = args.source;
+
+    //  Ensure HTML element exists
+    if ($(prefix + prop).length < 1) {
+      return;
+    }
+
+    if (typeof source[prop].content === 'object') {
+      file = source[prop].content[0].file;
+    } else {
+      file = source[prop].content;
+    }
+    var playerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
+    html.push('<video class="video-js" id="', playerId, '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
+    // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', file, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
+    // html.push('&nbsp;</a>');
+
+    $('div' + prefix + prop).append(html.join(''));
+
+    thisVideoPlayerIndex = $('.video-js').length - 1;
+
+    DOMelement = 'a.flowplayer:eq(' + thisVideoPlayerIndex + ')';
+
+    if (prefix === '#lightbox_data_') {
+      DOMelement = '.video-js:eq(0)';
+    }
+
+    flowplayerHelper().registerFlowplayer({
+      playerId: playerId,
+      DOMelement: DOMelement
+    });
+
+    // Options to set for flowplayer
+    // if (app.getPackageData().packageData[0].flowplayer !== undefined) {
+    //   $.extend(options, app.getPackageData().packageData[0].flowplayer);
+    // }
+    videoplayerHelper().initializePlayer(playerId, {
+      controls: true,
+      autoplay: true,
+      preload: 'auto'
+    });
+    // $(DOMelement).flowplayer({
+    //   src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
+    //   wmode: 'opaque'
+    // }, {
+    //   clip: options || {
+    //     'autoPlay': true
+    //   }
+    // });
+
+    // Play the flowplayer according to the flag isDefault.
+    var isDefault = source[prop].isDefault;
+    // Let's assume if the object doesn't have property isDefault as value true
+    // TODO:
+    //      Make this property defined in JSON
+    //      
+    if (typeof isDefault === "undefined") {
+      isDefault = true;
+    }
+    if (isDefault && options.autoPlay === true) {
+      videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
+    } else {
+      videoplayerHelper().initializePlayer(app.template.videoplayerHelper().getVideoPlayerId(DOMelement), {
+        controls: true,
+        autoplay: false,
+        preload: 'auto'
+      })
+      // videoplayerHelper().load(DOMelement);
+    }
+
+    transcript({
+      DOMelement: DOMelement,
+      file: file
     });
   }
 
@@ -1522,4 +1613,5 @@ function Template(app) {
   this.transcript = transcript;
   this.Widget = Widget;
   this.videoplayerHelper = videoplayerHelper;
+  this,isVideoSupported = isVideoSupported;
 }
