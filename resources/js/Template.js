@@ -347,7 +347,7 @@ function Template(app) {
 
           case 'swf':
             var options = {};
-            console.log('i am in swf');
+            // console.log('i am in swf');
             html = [];
             if(isVideoSupported()){
               createVideo({
@@ -780,13 +780,13 @@ function Template(app) {
 
     thisVideoPlayerIndex = $('.video-js').length - 1;
 
-    DOMelement = 'a.flowplayer:eq(' + thisVideoPlayerIndex + ')';
+    DOMelement = '.video-js:eq(' + thisVideoPlayerIndex + ')';
 
     if (prefix === '#lightbox_data_') {
       DOMelement = '.video-js:eq(0)';
     }
 
-    flowplayerHelper().registerFlowplayer({
+    videoplayerHelper().registerVideoPlayer({
       playerId: playerId,
       DOMelement: DOMelement
     });
