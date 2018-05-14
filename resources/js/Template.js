@@ -188,45 +188,62 @@ function Template(app) {
             if ($(prefix + prop).length < 1) {
               return;
             }
-
-            html.push('<a class="flowplayer" href="', '/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
-            html.push('&nbsp;</a>');
+            var audioPlayerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
+            html.push('<audio class="video-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
+            // html.push('<a class="flowplayer" href="', '/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
+            // html.push('&nbsp;</a>');
 
             $(prefix + prop).append(html.join(''));
-
-            thisFlowplayerIndex = $('a.flowplayer').length - 1;
+            thisVideoPlayerIndex = $('.video-js').length - 1;
+            // thisFlowplayerIndex = $('a.flowplayer').length - 1;
             // This DOM element wasn't matching with the format used on freeWrite
-            DOMelement = prefix + prop + ' a.flowplayer';
+            // DOMelement = prefix + prop + ' a.flowplayer';
+            DOMelement = prefix + prop + ' .video-js';
             // ..this change broke clickPic audio players, so I made the change to freeWrite to use this (original) format
             //                          DOMelement = 'a.flowplayer:eq(' + thisFlowplayerIndex + ')';
 
             // Register DOMelement to flowplayer id
-            flowplayerHelper().registerFlowplayer({
-              playerId: $f('*').length,
+            // flowplayerHelper().registerFlowplayer({
+            //   playerId: $f('*').length,
+            //   DOMelement: DOMelement
+            // });
+            // Register videojs videoplayer
+            videoplayerHelper().registerVideoPlayer({
+              playerId: audioPlayerId,
               DOMelement: DOMelement
             });
-
+            
             // Options to set for flowplayer
-            if (app.getPackageData().packageData[0].flowplayer !== undefined) {
-              $.extend(options, app.getPackageData().packageData[0].flowplayer);
-            }
+            // if (app.getPackageData().packageData[0].flowplayer !== undefined) {
+            //   $.extend(options, app.getPackageData().packageData[0].flowplayer);
+            // }
+
+            // Ignore above default setting for video, later on we will modify this as per the requirement
 
             // Creating flowplayer
-            $(DOMelement).flowplayer({
-              allowfullscreen: 'false',
-              src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-              wmode: 'opaque'
-            }, {
-              plugins: {
-                controls: {
-                  fullscreen: false,
-                  height: 30,
-                  autoHide: false
-                }
-              },
-              clip: options || {
-                autoPlay: true
-              }
+            // $(DOMelement).flowplayer({
+            //   allowfullscreen: 'false',
+            //   src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
+            //   wmode: 'opaque'
+            // }, {
+            //   plugins: {
+            //     controls: {
+            //       fullscreen: false,
+            //       height: 30,
+            //       autoHide: false
+            //     }
+            //   },
+            //   clip: options || {
+            //     autoPlay: true
+            //   }
+            // });
+
+            // Creating video-js audio player
+            videoplayerHelper().initializePlayer(playerId, {
+              controls: true,
+              autoplay: true,
+              preload: 'auto',
+              height: 30
             });
 
             // Commenting the below section out because it appears to do absolutely nothing
@@ -234,11 +251,13 @@ function Template(app) {
             //                          if (app.thisTemplate.disableFlowplayerAutoplay) {
             //                            // do nothing
             //                           }
-
+            // replace below flowplayer config with video-js config
             if (options.autoPlay === true) {
-              flowplayerHelper().play(DOMelement);
+              videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
+              // flowplayerHelper().play(DOMelement);
             } else {
-              flowplayerHelper().load(DOMelement);
+              videoplayerHelper().load(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+              // flowplayerHelper().load(DOMelement);
             }
 
             //                        Check if a transcript exists for this video
@@ -290,42 +309,59 @@ function Template(app) {
             if ($(prefix + prop).length < 1) {
               return;
             }
-
+            
             // If the player already exists, just play it, don't rebuild it
-            if ($(prefix + prop + ' a.flowplayer').length > 0) {
-              DOMelement = prefix + prop + ' a.flowplayer';
+            // if ($(prefix + prop + ' a.flowplayer').length > 0) {
+            //   DOMelement = prefix + prop + ' a.flowplayer';
 
-              flowplayerHelper().play(DOMelement);
+            //   flowplayerHelper().play(DOMelement);
+            //   return;
+            // }
+            if ($(prefix + prop + ' .video-js').length > 0) {
+              DOMelement = prefix + prop + ' .video-js';
+
+              videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
               return;
             }
-
-            html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
-            html.push('&nbsp;</a>');
+            var audioPlayerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
+            html.push('<audio class="video-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
+            
+            // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
+            // html.push('&nbsp;</a>');
 
             $(prefix + prop).append(html.join(''));
 
-            DOMelement = prefix + prop + ' a.flowplayer';
+            DOMelement = prefix + prop + ' .video-js';
+            // DOMelement = prefix + prop + ' a.flowplayer';
 
-            flowplayerHelper().registerFlowplayer({
-              playerId: $f('*').length,
+            // flowplayerHelper().registerFlowplayer({
+            //   playerId: $f('*').length,
+            //   DOMelement: DOMelement
+            // });
+            videoplayerHelper().registerVideoPlayer({
+              playerId: audioPlayerId,
               DOMelement: DOMelement
             });
 
-            $(DOMelement).flowplayer({
-              src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-              wmode: 'opaque'
-            }, {
-              plugins: {
-                audio: {
-                  url: app.baseURL + 'resources/js/lib/flowplayer/flowplayer.audio-3.2.0.swf'
-                }
-              },
-              clip: {
-                autoPlay: false
-              }
+            // $(DOMelement).flowplayer({
+            //   src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
+            //   wmode: 'opaque'
+            // }, {
+            //   plugins: {
+            //     audio: {
+            //       url: app.baseURL + 'resources/js/lib/flowplayer/flowplayer.audio-3.2.0.swf'
+            //     }
+            //   },
+            //   clip: {
+            //     autoPlay: false
+            //   }
+            // });
+            videoplayerHelper().initializePlayer(playerId, {
+              controls: true,
+              autoplay: true,
+              preload: 'auto'
             });
-
-            flowplayerHelper().play(DOMelement);
+            videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
 
             break;
 
@@ -393,34 +429,52 @@ function Template(app) {
                 if ($(prefix + prop).length < 1) {
                   return;
                 }
+                var playerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
+                html.push('<video class="video-js" id="', playerId, '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
 
-                html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
-                html.push('&nbsp;</a>');
+                // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
+                // html.push('&nbsp;</a>');
 
                 $('div.lightbox_content_container').html(html.join(''));
+                
+                // thisFlowplayerIndex = $('a.flowplayer').length - 1;
+                // DOMelement = 'a.flowplayer:eq(' + thisFlowplayerIndex + ')';
 
-                thisFlowplayerIndex = $('a.flowplayer').length - 1;
-                DOMelement = 'a.flowplayer:eq(' + thisFlowplayerIndex + ')';
+                thisVideoPlayerIndex = $('.video-js').length - 1;
+                DOMelement = '.video-js:eq(' + thisVideoPlayerIndex + ')';
 
-                flowplayerHelper().registerFlowplayer({
-                  playerId: $f('*').length,
+                // flowplayerHelper().registerFlowplayer({
+                //   playerId: $f('*').length,
+                //   DOMelement: DOMelement
+                // });
+
+                videoplayerHelper().registerVideoPlayer({
+                  playerId: playerId,
                   DOMelement: DOMelement
                 });
-
-                $(DOMelement).flowplayer({
-                  src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
-                  wmode: 'opaque'
-                }, {
-                  clip: {
-                    'autoPlay': true
-                  }
+                videoplayerHelper().initializePlayer(playerId, {
+                  controls: true,
+                  autoplay: true,
+                  preload: 'auto'
                 });
+                // $(DOMelement).flowplayer({
+                //   src: app.baseURL + 'resources/js/lib/flowplayer/flowplayer-3.2.2.swf',
+                //   wmode: 'opaque'
+                // }, {
+                //   clip: {
+                //     'autoPlay': true
+                //   }
+                // });
 
-                $('.lightbox_content_container a.flowplayer').css('height', '390px')
+                // $('.lightbox_content_container a.flowplayer').css('height', '390px')
+                //   .css('margin', 'auto')
+                //   .css('width', '550px');
+                $('.lightbox_content_container .video-js').css('height', '390px')
                   .css('margin', 'auto')
                   .css('width', '550px');
 
-                flowplayerHelper().play(DOMelement);
+                // flowplayerHelper().play(DOMelement);
+                videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
 
                 // Fix for centering code in IE, the outer container is selected for centering instead of the inner
                 $('.lightbox').css('height', '450px');
@@ -495,9 +549,9 @@ function Template(app) {
                   // html.push('&nbsp;</a>');
 
                   $('div.lightbox_content_container').html(html.join(''));
-
-                  thisFlowplayerIndex = $('.video-js').length - 1;
-                  DOMelement = '.video-js:eq(' + thisFlowplayerIndex + ')';
+                  
+                  thisVideoPlayerIndex = $('.video-js').length - 1;
+                  DOMelement = '.video-js:eq(' + thisVideoPlayerIndex + ')';
 
                   videoplayerHelper().registerVideoPlayer({
                     playerId: playerId,
@@ -1528,7 +1582,8 @@ function Template(app) {
                 }
               },
               'callback': function() {
-                $('#lightbox_transcript').width($('a.flowplayer').width() + 3);
+                // $('#lightbox_transcript').width($('a.flowplayer').width() + 3);
+                $('#lightbox_transcript').width($('.video-js').width() + 3);
                 $('a.transcript').hide();
 
                 $('body').one('lightbox.closed', function() {
