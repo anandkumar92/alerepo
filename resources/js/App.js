@@ -492,22 +492,24 @@ function App(baseURL)
 
   function goToPage()
    {
-    try
-    {      
-     flowplayer('*').each(function()
-       {
-        if (this.isLoaded() === true)
-         {
-          this.stop();
-          this.close();
-          this.unload();
-         }
-       });
-    }
-   catch(e)
-    {
- //    alert(e)
-    }
+     // Removed flow_player reference
+//     try
+//     {      
+//      flowplayer('*').each(function()
+//        {
+//         if (this.isLoaded() === true)
+//          {
+//           this.stop();
+//           this.close();
+//           this.unload();
+//          }
+//        });
+//     }
+//    catch(e)
+//     {
+//  //    alert(e)
+//     }
+    app.template.videoplayerHelper().pauseOtherVideo();
     var _currentPage = getCurrentPage();
     
     // Call templateUnloaded Hook
