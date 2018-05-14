@@ -50,8 +50,10 @@ function VidNotes(args)
                                                                                     });
     $('div.excerpt:eq(' + id + ') h1').addClass('active');
                                                                                     
-    var DOMelement = 'a.flowplayer:eq(' + id + ')';
-    app.template.flowplayerHelper().play(DOMelement);
+    var DOMelement = '.video-js:eq(' + id + ')';
+    app.template.videoplayerHelper().play(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+    // var DOMelement = 'a.flowplayer:eq(' + id + ')';
+    // app.template.flowplayerHelper().play(DOMelement);
    }
 
   function applyLightboxFunctions(args)
@@ -555,8 +557,11 @@ function VidNotes(args)
   function submitAnswers()
    {
     // Must include a stop for IE
-    var DOMelement = 'a.flowplayer:eq(' + getVisibleQuestion() + ')';
-    app.template.flowplayerHelper().stop(DOMelement);
+    var DOMelement = '.video-js:eq(' + getVisibleQuestion() + ')';
+    app.template.videoplayerHelper().pause(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+
+    // var DOMelement = 'a.flowplayer:eq(' + getVisibleQuestion() + ')';
+    // app.template.flowplayerHelper().stop(DOMelement);
     
     $('.lightbox').hide();
     $('#question_container').hide();
@@ -642,7 +647,7 @@ function VidNotes(args)
       //matching if the glossary terms are more than one and at any index level in place of only one glossary term of single index level
       newDescription = newDescription.replace(/<a href=\'#\' class=\'contextual_glossary( )?(data_[0-9]+)?\'>/g, '');
       newDescription = newDescription.replace(/<\/a>/g, '');
-      newDescription = newDescription.replace(/'|’/g, "&#146;");
+      newDescription = newDescription.replace(/'|ï¿½/g, "&#146;");
       newLearnerResponse = newDescription; // So the Lightbox type case is semantic
       
       // Value is passed to the lightbox however, the vidNotes lightbox case was 

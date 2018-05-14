@@ -573,8 +573,10 @@ function SimConvo(args)
      }
     else
      {
-      var DOMelement = 'a.flowplayer:eq(' + question + ')';
-      app.template.flowplayerHelper().play(DOMelement);
+    //   var DOMelement = 'a.flowplayer:eq(' + question + ')';
+    //   app.template.flowplayerHelper().play(DOMelement);
+        var DOMelement = '.video-js:eq(' + question + ')';
+      app.template.videoplayerHelper().play(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
       $('div.question_content').hide();
       $('div.question_content:eq(' + question + ')').show();
       

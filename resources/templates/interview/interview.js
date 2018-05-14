@@ -484,6 +484,7 @@ function Interview(app) {
       // Add the flowplayer class back to the flowplayer video.
       // Removed the flowplayer class in toolkit.js (renderContents) because it was conflicting with what was loading in the toolkit
       $('#data_videoURL a:not(.flowplayer)').addClass('flowplayer');
+      $('#data_videoURL :not(.video-js)').addClass('video-js');
   
       setData(args.jsonData.content[0]);
   

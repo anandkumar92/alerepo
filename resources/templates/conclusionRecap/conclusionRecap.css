@@ -270,7 +270,7 @@ body.conclusionRecap  .lightbox_content_container #main_container {
  width: 450px;
 }
 
-.flowplayer {
+.flowplayer, .video-js {
  height: 300px;
  width: 450px;
 }

@@ -166,7 +166,7 @@
  width: 92px;
 }
 
-.flowplayer {
+.flowplayer,.video-js {
  height: 300px;
  width: 450px;
 }

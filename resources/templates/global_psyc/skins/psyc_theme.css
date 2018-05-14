@@ -41,13 +41,13 @@ body.themes a.feedback,
  display: none;
 }
 
-body.video a.flowplayer {
+body.video a.flowplayer, body.video .video-js {
  background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
  height: 400px;
  width: 600px;
 }
  
-body.interview a.flowplayer {
+body.interview a.flowplayer, body.interview .video-js {
 	background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
 }
 
@@ -268,7 +268,7 @@ body.themes #toolkit_lightbox_lb #main_container {
 	width: auto;
 }
 
-body.video a.flowplayer {
+body.video a.flowplayer, body.video .video-js {
 	height: 400px;
 	width: 600px;
 }
@@ -403,7 +403,7 @@ div#lightbox_toolkit_lb.selectAndJustify div.main_wrapper div.aleInline.rightReg
  margin-bottom: 10px;
 }
 
-#lightbox_toolkit_lb.interview .flowplayer {
+#lightbox_toolkit_lb.interview .flowplayer, #lightbox_toolkit_lb.interview .video-js {
  height: 333px;
  width: auto;
 }
@@ -416,7 +416,7 @@ div#lightbox_toolkit_lb.selectAndJustify div.main_wrapper div.aleInline.rightReg
  z-index: 1 !important;
 }
 
-#lightbox_toolkit_lb.video .flowplayer {
+#lightbox_toolkit_lb.video .flowplayer, #lightbox_toolkit_lb.video .video-js {
 	height: 400px;
 	width: auto;
 }

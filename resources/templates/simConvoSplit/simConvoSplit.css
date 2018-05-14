@@ -1,12 +1,12 @@
-a.flowplayer {
+a.flowplayer, .video-js {
  height: 227px;
 }
 
-body.puntos a.flowplayer{
+body.puntos a.flowplayer, body.puntos .video-js{
 	height: 275px;
 }
 
-body.audio_only .flowplayer,body.audio_only .video-js {
+body.audio_only .flowplayer, body.audio_only .video-js, body.audio_only .video-js {
  height: 30px !important;
 }
 

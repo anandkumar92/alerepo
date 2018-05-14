@@ -50,8 +50,10 @@ function VidNotes(args)
                                                                                     });
     $('div.excerpt:eq(' + id + ') h1').addClass('active');
                                                                                     
-    var DOMelement = 'a.flowplayer:eq(' + id + ')';
-    app.template.flowplayerHelper().play(DOMelement);
+    var DOMelement = '.video-js:eq(' + id + ')';
+    app.template.videoplayerHelper().play(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+    // var DOMelement = 'a.flowplayer:eq(' + id + ')';
+    // app.template.flowplayerHelper().play(DOMelement);
    }
 
   function applyLightboxFunctions(args)
@@ -555,8 +557,10 @@ function VidNotes(args)
   function submitAnswers()
    {
     // Must include a stop for IE
-    var DOMelement = 'a.flowplayer:eq(' + getVisibleQuestion() + ')';
-    app.template.flowplayerHelper().stop(DOMelement);
+    var DOMelement = '.video-js:eq(' + getVisibleQuestion() + ')';
+    app.template.videoplayerHelper().pause(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+    // var DOMelement = 'a.flowplayer:eq(' + getVisibleQuestion() + ')';
+    // app.template.flowplayerHelper().stop(DOMelement);
     
     $('.lightbox').hide();
     $('#question_container').hide();

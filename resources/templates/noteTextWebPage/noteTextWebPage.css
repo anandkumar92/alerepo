@@ -56,7 +56,7 @@ body.puntosSc3Ac1 div#webpage_body {
 	background-color: #ded2af;
 }
 
-.flowplayer {
+.flowplayer, .video-js {
  height: auto;
 }
 
@@ -225,6 +225,6 @@ body.oneColumnCentered2 div#middle_container div#webpage_wrapper {
 
 
 
-.flowplayer {
+.flowplayer, .video-js {
  height: auto;
 }

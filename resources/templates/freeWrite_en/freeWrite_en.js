@@ -83,11 +83,18 @@ function FreeWrite(args)
                                            $('#data_' + contentTitle + '_content').show();
                                            
                                            // Load up a flowplayer if there is a video in that tab
-                                           if ($('#data_' + contentTitle + '_content a.flowplayer').length > 0) 
+                                        //    if ($('#data_' + contentTitle + '_content a.flowplayer').length > 0) 
+                                        //     {
+                                        //      var thisIndex = $('#data_' + contentTitle + '_content a.flowplayer').index('a.flowplayer');
+                                        //      var DOMelement = 'a.flowplayer:eq(' + thisIndex + ')';
+                                        //      app.template.flowplayerHelper().play(DOMelement);
+                                        //     }
+                                        if ($('#data_' + contentTitle + '_content .video-js').length > 0) 
                                             {
-                                             var thisIndex = $('#data_' + contentTitle + '_content a.flowplayer').index('a.flowplayer');
-                                             var DOMelement = 'a.flowplayer:eq(' + thisIndex + ')';
-                                             app.template.flowplayerHelper().play(DOMelement);
+                                             var thisIndex = $('#data_' + contentTitle + '_content .video-js').index('.video-js');
+                                             var DOMelement = '.video-js:eq(' + thisIndex + ')';
+                                             app.template.videoplayerHelper().play(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+                                            //  app.template.flowplayerHelper().play(DOMelement);
                                             }
     
                                            //app.template.flowplayerHelper().init();

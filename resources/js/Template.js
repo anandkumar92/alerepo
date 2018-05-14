@@ -256,7 +256,7 @@ function Template(app) {
               videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
               // flowplayerHelper().play(DOMelement);
             } else {
-              videoplayerHelper().load(app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+              videoplayerHelper().load(videoplayerHelper().getVideoPlayerId(DOMelement));
               // flowplayerHelper().load(DOMelement);
             }
 

@@ -10,7 +10,7 @@ function Video(app) {
     if ($('#lightbox_toolkit_lb').length > 0) {
       // Do nothing since video.js is loading into a lightbox
     } else {
-      var thisFlowplayerIndex = $('a.flowplayer').length - 1,
+      // var thisFlowplayerIndex = $('a.flowplayer').length - 1,
         vidWidth = app.template.getData().content[0].videoWidth || '600';
 
       if (app.template.getData().content[0].videoURL.type === 'audio') {
