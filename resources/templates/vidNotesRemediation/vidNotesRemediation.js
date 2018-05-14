@@ -83,11 +83,11 @@ function VidNotesRemediation(app) {
         }
 
         // Fixes multiple videos playing at once in chrome
-        $('.video-js').each(function(index, element) {
-          if ($(this).parent().parent().parent().find('h1:not(.active)').length > 0) {
-            $(this).html('');
-          }
-        });
+        // $('.video-js').each(function(index, element) {
+        //   if ($(this).parent().parent().parent().find('h1:not(.active)').length > 0) {
+        //     $(this).html('');
+        //   }
+        // });
 
         // $('a.flowplayer').each(function(index, element) {
         //   if ($(this).parent().parent().parent().find('h1:not(.active)').length > 0) {
@@ -130,7 +130,7 @@ function VidNotesRemediation(app) {
       case 'video':
         // If isDefaultToPlay flag is false, stop the previous player and play the current player.
         if (!isDefaultToPlay) {
-          videoplayerHelper.stop(videoplayerHelper.getVideoPlayerId('.video-js:eq(' + previous + ')'));
+          videoplayerHelper.pause(videoplayerHelper.getVideoPlayerId('.video-js:eq(' + previous + ')'));
           // flowPlayerHelper.stop('a.flowplayer:eq(' + previous + ')');
         }
         videoplayerHelper[playMode](videoplayerHelper.getVideoPlayerId('.video-js:eq(' + id + ')'));
