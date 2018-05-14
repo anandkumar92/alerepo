@@ -214,9 +214,9 @@ function Template(app) {
             });
             
             // Options to set for flowplayer
-            // if (app.getPackageData().packageData[0].flowplayer !== undefined) {
-            //   $.extend(options, app.getPackageData().packageData[0].flowplayer);
-            // }
+            if (app.getPackageData().packageData[0].flowplayer !== undefined) {
+              $.extend(options, app.getPackageData().packageData[0].flowplayer);
+            }
 
             // Ignore above default setting for video, later on we will modify this as per the requirement
 
@@ -239,9 +239,9 @@ function Template(app) {
             // });
 
             // Creating video-js audio player
-            videoplayerHelper().initializePlayer(playerId, {
+            videoplayerHelper().initializePlayer(audioPlayerId, {
               controls: true,
-              autoplay: true,
+              autoplay: (options.autoPlay === true) ? true : false,
               preload: 'auto',
               height: 30
             });
@@ -356,7 +356,7 @@ function Template(app) {
             //     autoPlay: false
             //   }
             // });
-            videoplayerHelper().initializePlayer(playerId, {
+            videoplayerHelper().initializePlayer(audioPlayerId, {
               controls: true,
               autoplay: true,
               preload: 'auto'
@@ -835,12 +835,13 @@ function Template(app) {
     });
 
     // Options to set for flowplayer
-    // if (app.getPackageData().packageData[0].flowplayer !== undefined) {
-    //   $.extend(options, app.getPackageData().packageData[0].flowplayer);
-    // }
+    if (app.getPackageData().packageData[0].flowplayer !== undefined) {
+      $.extend(options, app.getPackageData().packageData[0].flowplayer);
+    }
+    // var autoplayOptions = options.autoPlay === true ? true : false;
     videoplayerHelper().initializePlayer(playerId, {
       controls: true,
-      autoplay: true,
+      autoplay: (options.autoPlay === true) ? true : false,
       preload: 'metadata'
     });
 
@@ -981,7 +982,7 @@ function Template(app) {
       getVideoPlayerId: function(DOMelement) {
         return _videoPlayers[DOMelement];
       },
-      pauseOtherVideo(){
+      pauseOtherVideo: function(){
         for (var key in _videoPlayers) {
           if (_videoPlayers.hasOwnProperty(key)) {
             videojs.getPlayer(_videoPlayers[key]).pause();

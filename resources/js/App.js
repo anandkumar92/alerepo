@@ -509,7 +509,7 @@ function App(baseURL)
 //     {
 //  //    alert(e)
 //     }
-    app.template.videoplayerHelper().pauseOtherVideo();
+    // app.template.videoplayerHelper().pauseOtherVideo();
     var _currentPage = getCurrentPage();
     
     // Call templateUnloaded Hook

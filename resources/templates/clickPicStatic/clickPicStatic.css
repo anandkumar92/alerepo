@@ -3,7 +3,7 @@ body.soc div.lightbox.normal {
  width: 450px;
 }
 
-div.lightbox.audio a.flowplayer {
+div.lightbox.audio a.flowplayer, div.lightbox.audio .video-js {
  height: 26px;
  width: 400px;
 }
@@ -136,7 +136,7 @@ body #lightbox_toolkit_lb.soc4 #lightbox_data_clickPic_content {
  height: 380px;
 }
 
-.flowplayer {
+.flowplayer, .video-js {
  height: 26px;
  width: 400px;
 }

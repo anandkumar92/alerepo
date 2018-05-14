@@ -542,11 +542,13 @@ function SimConvoSplit(app)
       // Audio uses a different format than video ('swf' case)
       if (app.template.getData().content[0].questionGroups[question].videoURL.type === 'audio')
        {
-        DOMelement = '#data_videoURL_' + question  + ' a.flowplayer';
+        DOMelement = '#data_videoURL_' + question  + ' .video-js';
+        // DOMelement = '#data_videoURL_' + question  + ' a.flowplayer';
        }
       else
        {
-        DOMelement = 'a.flowplayer:eq(' + question + ')';
+        DOMelement = '.video-js:eq(' + question + ')';
+        // DOMelement = 'a.flowplayer:eq(' + question + ')';
        }
       
       // Check if flowplayer package config exists and disable autplay if it is set to do so
@@ -562,7 +564,8 @@ function SimConvoSplit(app)
          }
        }
       
-      app.template.flowplayerHelper()[playMode](DOMelement);
+      app.template.videoplayerHelper()[playMode](app.template.videoplayerHelper().getVideoPlayerId(DOMelement));
+    //   app.template.flowplayerHelper()[playMode](DOMelement);
       $('div.question_content').hide();
       $('div.question_content:eq(' + question + ')').show();
      }

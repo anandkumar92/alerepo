@@ -6,7 +6,7 @@ body.puntos a.flowplayer{
 	height: 275px;
 }
 
-body.audio_only .flowplayer {
+body.audio_only .flowplayer,body.audio_only .video-js {
  height: 30px !important;
 }
 

@@ -97,7 +97,7 @@ body.soc #lightbox_toolkit_lb.graph div.sprite.clickPic {
  position: absolute;
 }
 
-.flowplayer {
+.flowplayer,.video-js {
  height: 26px;
  width: 400px;
 }
@@ -296,7 +296,7 @@ body.height657px #data_clickPic_content {
 /*
  * override flowplayer style of clickPic when show video from Toolkit on video page.
  */
-#lightbox_toolkit_lb .flowplayer{
+#lightbox_toolkit_lb .flowplayer,#lightbox_toolkit_lb .video-js{
  height: 400px;
  width: 615px;
 }
