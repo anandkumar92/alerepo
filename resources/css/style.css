@@ -1909,3 +1909,28 @@ body #lightbox_toolkit_lb.box_lightBox .glovebox_img{
 .video-js .vjs-big-play-button{
   display: none;
 }
+
+.video-js.vjs-has-started.vjs-paused .vjs-big-play-button{
+  display: block;
+}
+.video-js .vjs-big-play-button{
+  border-radius: 50%;
+  width: 1.5em;
+}
+.vjs-big-play-centered .vjs-big-play-button{
+  margin-left: -.75em;
+  margin-top: -.75em;
+}
+.video-js.vjs-has-started.vjs-paused.vjs-ended .vjs-big-play-button{
+  display: block;
+}
+.video-js.vjs-has-started.vjs-paused.vjs-ended .vjs-big-play-button .vjs-icon-placeholder:before{
+  content: "\f116" !important;
+}
+
+/* .video-js.vjs-paused.vjs-ended.vjs-show-big-pause-button-on-end .vjs-big-play-button .vjs-icon-placeholder:before{
+	content: "\f116" !important;
+}
+.vjs-has-started.vjs-paused.vjs-show-big-replay-button-on-end .vjs-big-play-button .vjs-icon-placeholder:before{
+	content: "\f103" !important;
+} */

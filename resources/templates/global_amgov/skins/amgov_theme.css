@@ -62,7 +62,7 @@ body.conclusionRecap #data_viewer.themes #contentBody .answerRow {
 
 body.interview #data_videoURL,
 #lightbox_toolkit_lb.interview #lightbox_data_videoURL {
- background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ /* background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black; */
  cursor: pointer;
  height: 333px;
  width: 500px;
@@ -710,14 +710,14 @@ body.themes.soc #lightbox_toolkit_lb .lightbox_content_container {
 }
 
 body.video a.flowplayer,body.video .video-js {
-	background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+	/* background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black; */
  height: 400px;
  width: 600px;
 }
 
 body.interview a.flowplayer, body.interview .video-js,
 #lightbox_toolkit_lb.interview {
-	background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+	/* background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black; */
 }
 
 body.video div#lightbox_toolkit_lb.lightbox_window_width.noteTextNewspaper {

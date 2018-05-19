@@ -430,7 +430,7 @@ function Template(app) {
                   return;
                 }
                 var playerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
-                html.push('<video class="video-js" id="', playerId, '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
+                html.push('<video class="video-js vjs-big-play-centered" id="', playerId, '" data-setup={"poster":"/s3scorm/ale/content/assets/flowplay.jpg"}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
 
                 // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
                 // html.push('&nbsp;</a>');
@@ -544,7 +544,7 @@ function Template(app) {
                     return;
                   }
                   var playerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
-                  html.push('<video class="video-js" id="', playerId, '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="video/mp4"></source></video>');
+                  html.push('<video class="video-js vjs-big-play-centered" id="', playerId, '"  data-setup={"poster":"/s3scorm/ale/content/assets/flowplay.jpg"}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="video/mp4"></source></video>');
                   // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
                   // html.push('&nbsp;</a>');
 
@@ -817,7 +817,7 @@ function Template(app) {
       file = source[prop].content;
     }
     var playerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
-    html.push('<video class="video-js" id="', playerId, '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
+    html.push('<video class="video-js vjs-big-play-centered" id="', playerId, '" data-setup={"poster":"/s3scorm/ale/content/assets/flowplay.jpg"}><source src="/s3scorm/ale/content/assets/',file,'" type="video/mp4"></source></video>');
 
     $('div' + prefix + prop).append(html.join(''));
 

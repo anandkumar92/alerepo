@@ -42,13 +42,13 @@ body.themes a.feedback,
 }
 
 body.video a.flowplayer, body.video .video-js {
- background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ /* background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black; */
  height: 400px;
  width: 600px;
 }
  
 body.interview a.flowplayer, body.interview .video-js {
-	background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+	/* background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black; */
 }
 
 body.assessment.portrait_ppt div#portrait_container,
@@ -279,7 +279,7 @@ body.video a.flowplayer, body.video .video-js {
 
 body.interview #data_videoURL,
 #lightbox_toolkit_lb.interview #lightbox_data_videoURL {
- background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black;
+ /* background: url("/s3scorm/ale/content/assets/flowplay.jpg") no-repeat scroll center center black; */
  cursor: pointer;
  height: 333px;
  width: 500px;

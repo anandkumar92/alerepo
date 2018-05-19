@@ -280,7 +280,7 @@ function Interview(app) {
       if ($(lightboxPrefix + '.video-js').length === 0) {
         var playerId = "videojs_" + app.template.videoplayerHelper().nextVideoPlayerId();
         //   id.html('<a class="flowplayer" href="/s3scorm/ale/content/assets/' + file + '" id="flowplayer_' + app.template.flowplayerHelper().nextFlowplayerId() + '">&nbsp;</a>');
-        id.html('<video class="video-js" id="' + playerId + '" poster="/s3scorm/ale/content/assets/flowplay.jpg" data-setup={}><source src="/s3scorm/ale/content/assets/' + file + '" type="video/mp4"></source></video>')
+        id.html('<video class="video-js vjs-big-play-centered" id="' + playerId + '" data-setup={"poster":"/s3scorm/ale/content/assets/flowplay.jpg"}><source src="/s3scorm/ale/content/assets/' + file + '" type="video/mp4"></source></video>')
         if ($('#lightbox_toolkit_lb.interview').length > 0) {
           DOMelement = '#lightbox_toolkit_lb.interview .video-js:eq(0)';
         } else {
