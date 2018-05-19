@@ -1898,7 +1898,7 @@ body #lightbox_toolkit_lb.box_lightBox .glovebox_img{
     width: 171px;
 }
 .video-js{
-  width: 100%;
+  width: 100% !important;
 }
 .video-js .vjs-icon-placeholder{
   position: static;
@@ -1927,7 +1927,9 @@ body #lightbox_toolkit_lb.box_lightBox .glovebox_img{
 .video-js.vjs-has-started.vjs-paused.vjs-ended .vjs-big-play-button .vjs-icon-placeholder:before{
   content: "\f116" !important;
 }
-
+.video-js.audio-js .vjs-big-play-button,.video-js.audio-js .vjs-loading-spinner{
+  display: none !important;
+}
 /* .video-js.vjs-paused.vjs-ended.vjs-show-big-pause-button-on-end .vjs-big-play-button .vjs-icon-placeholder:before{
 	content: "\f116" !important;
 }

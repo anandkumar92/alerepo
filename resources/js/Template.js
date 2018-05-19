@@ -189,7 +189,7 @@ function Template(app) {
               return;
             }
             var audioPlayerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
-            html.push('<audio class="video-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
+            html.push('<audio class="video-js audio-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
             // html.push('<a class="flowplayer" href="', '/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
             // html.push('&nbsp;</a>');
 
@@ -243,6 +243,9 @@ function Template(app) {
               controls: true,
               autoplay: (options.autoPlay === true) ? true : false,
               preload: 'auto',
+              controlBar: {
+                fullscreenToggle: false
+              },
               height: 30
             });
 
@@ -324,7 +327,7 @@ function Template(app) {
               return;
             }
             var audioPlayerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
-            html.push('<audio class="video-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
+            html.push('<audio class="video-js audio-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
             
             // html.push('<a class="flowplayer" href="/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
             // html.push('&nbsp;</a>');
@@ -359,7 +362,10 @@ function Template(app) {
             videoplayerHelper().initializePlayer(audioPlayerId, {
               controls: true,
               autoplay: true,
-              preload: 'auto'
+              preload: 'auto',
+              controlBar: {
+                fullscreenToggle: false
+              }
             });
             videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
 
