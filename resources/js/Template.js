@@ -1001,7 +1001,27 @@ function Template(app) {
           autoplay: false,
           preload: 'metadata'
         }
-        videojs(playerId, options, callback)
+       var player=  videojs(playerId, options, callback);
+       player.on("ended", function() {
+          $(".vjs-big-play-button").attr("title", "Replay");
+       })
+/*         player.on("play", function (params) {
+          $(".vjs-fullscreen-control").attr("title", "Full screen");
+        }); */
+        player.on("pause", function(params) {
+          $(".vjs-big-play-button").attr("title", "Play Video");
+        });
+/*         player.on("loadeddata", function(params) {
+          $(".vjs-fullscreen-control").attr("title", "Full screen");
+        }); */
+        player.ready(function() {
+          $(".vjs-fullscreen-control").attr("title", "Full screen");
+        });
+
+        videojs.addLanguage("en", {
+          Play: "Play Video"
+        });
+        // videojs
       },
       play: function(playerId) {
         myPlayer = videojs.getPlayer(playerId);
