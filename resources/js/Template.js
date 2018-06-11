@@ -1005,23 +1005,15 @@ function Template(app) {
        player.on("ended", function() {
           $(".vjs-big-play-button").attr("title", "Replay");
        })
-/*         player.on("play", function (params) {
-          $(".vjs-fullscreen-control").attr("title", "Full screen");
-        }); */
         player.on("pause", function(params) {
           $(".vjs-big-play-button").attr("title", "Play Video");
         });
-/*         player.on("loadeddata", function(params) {
-          $(".vjs-fullscreen-control").attr("title", "Full screen");
-        }); */
         player.ready(function() {
           $(".vjs-fullscreen-control").attr("title", "Full screen");
         });
-
         videojs.addLanguage("en", {
           Play: "Play Video"
         });
-        // videojs
       },
       play: function(playerId) {
         myPlayer = videojs.getPlayer(playerId);
@@ -1044,7 +1036,12 @@ function Template(app) {
         myPlayer.src(clip);
         if (playClip) {
           myPlayer.ready(function() {
-            myPlayer.play();
+              var playPromise = myPlayer.play();
+              if (playPromise !== undefined) {
+                playPromise
+                .then(_ => {})
+                .catch(error => {});
+              }
           })
         }
       },
