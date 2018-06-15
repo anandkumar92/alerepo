@@ -189,7 +189,7 @@ function Template(app) {
               return;
             }
             var audioPlayerId = "videojs_" + videoplayerHelper().nextVideoPlayerId();
-            html.push('<audio class="video-js audio-js" id="', audioPlayerId, '" data-setup={}><source src="/s3scorm/ale/content/assets/',source[prop].content,'" type="audio/mp3"></source></audio>');
+            html.push('<audio class="video-js audio-js" id="', audioPlayerId, '" data-setup={}></audio>');
             // html.push('<a class="flowplayer" href="', '/s3scorm/ale/content/assets/', source[prop].content, '" id="flowplayer_', flowplayerHelper().nextFlowplayerId(), '">');
             // html.push('&nbsp;</a>');
 
@@ -241,8 +241,16 @@ function Template(app) {
             // Creating video-js audio player
             videoplayerHelper().initializePlayer(audioPlayerId, {
               controls: true,
-              autoplay: (options.autoPlay === true) ? true : false,
-              preload: 'auto',
+              autoplay: true,
+              preload: "metadata",
+              sources: [
+                {
+                  src:
+                    "/s3scorm/ale/content/assets/" +
+                    source[prop].content,
+                  type: "audio/mp3"
+                }
+              ],
               controlBar: {
                 fullscreenToggle: false
               },
@@ -259,7 +267,7 @@ function Template(app) {
               videoplayerHelper().play(videoplayerHelper().getVideoPlayerId(DOMelement));
               // flowplayerHelper().play(DOMelement);
             } else {
-              videoplayerHelper().load(videoplayerHelper().getVideoPlayerId(DOMelement));
+              videoplayerHelper().pauseAudio(videoplayerHelper().getVideoPlayerId(DOMelement));
               // flowplayerHelper().load(DOMelement);
             }
 
@@ -1018,13 +1026,26 @@ function Template(app) {
       play: function(playerId) {
         myPlayer = videojs.getPlayer(playerId);
         myPlayer.ready(function() {
-          myPlayer.play();
+            var playPromise = myPlayer.play();
+            if (playPromise !== undefined) {
+              playPromise
+                .then(function() {})
+                .catch(function(error) {});
+            }
         })
       },
       pause: function(playerId) {
         myPlayer = videojs.getPlayer(playerId);
         myPlayer.ready(function() {
           myPlayer.pause();
+        })
+      },
+      pauseAudio: function(playerId) {
+        myPlayer = videojs.getPlayer(playerId);
+        myPlayer.ready(function() {
+          setTimeout(function() {
+            myPlayer.pause();
+          }, 1000); 
         })
       },
       load: function(playerId) {
@@ -1039,8 +1060,8 @@ function Template(app) {
               var playPromise = myPlayer.play();
               if (playPromise !== undefined) {
                 playPromise
-                .then(_ => {})
-                .catch(error => {});
+                .then(function() {})
+                .catch(function(error) {});
               }
           })
         }
